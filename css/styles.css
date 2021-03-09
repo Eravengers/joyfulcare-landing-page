@@ -100,6 +100,11 @@ div#preloader {
   height: auto;
 }
 
+.navbar {
+  height: 85px;
+  max-height: 80px;
+}
+
 .navbar-nav {
   font-family: "WorkSans Medium", sans-serif;
 }
@@ -112,11 +117,50 @@ div#preloader {
   min-width: 3rem !important;
 }
 
+
+/* Header */
+
+header {
+  height: 100vh;
+  margin: 0;
+}
+
+section.hero {
+  display: block;
+  background-color: #285185;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.hero .hero-image {
+  display: none;
+}
+
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
   .logo {
     width: 100%;
     height: auto;
+  }
+
+  .navbar {
+    height: 90px;
+    max-height: 90px;
+  }
+
+  section.hero {
+    height: calc(100% - 90px);
+  }
+
+  .hero .hero-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../assets/Hero-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover
   }
 }
