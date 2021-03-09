@@ -93,3 +93,30 @@ div#preloader {
     opacity: 0;
   }
 }
+
+/* Navigation */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-nav {
+  font-family: "WorkSans Medium", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: #53749d;
+}
+
+.dropdown-menu.w-3rem {
+  min-width: 3rem !important;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+}

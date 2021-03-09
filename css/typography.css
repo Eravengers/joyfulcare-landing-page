@@ -246,6 +246,12 @@ a.active-page {
 	color: #e6ae48 !important;
 }
 
+/* font-sizes */
+
+.fs-small {
+	font-size: small;
+	line-height: inherit;
+}
 
 /* list */
 
