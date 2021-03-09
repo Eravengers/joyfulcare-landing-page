@@ -5,6 +5,43 @@
 =========================
 */
 
+/* Custom Fonts */
+@import url(../fonts/Nexa-Bold.otf);
+@import url(../fonts/Nexa-Light.otf);
+@import url(../fonts/WorkSans-Bold.otf);
+@import url(../fonts/WorkSans-Light.otf);
+@import url(../fonts/WorkSans-Medium.otf);
+@import url(../fonts/WorkSans-Regular.otf);
+
+@font-face {
+	font-family: 'Nexa Bold';
+	src: url(../fonts/Nexa-Bold.otf)
+}
+
+@font-face {
+	font-family: 'Nexa Light';
+	src: url(../fonts/Nexa-Light.otf)
+}
+
+@font-face {
+	font-family: 'WorkSans Bold';
+	src: url(../fonts/WorkSans-Bold.otf)
+}
+
+@font-face {
+	font-family: 'WorkSans Light';
+	src: url(../fonts/WorkSans-Light.otf)
+}
+
+@font-face {
+	font-family: 'WorkSans Medium';
+	src: url(../fonts/WorkSans-Medium.otf)
+}
+
+@font-face {
+	font-family: 'WorkSans Regular';
+	src: url(../fonts/WorkSans-Regular.otf)
+}
 
 /* 
 --------------------------
@@ -13,7 +50,7 @@
 */
 
 body {
-	font-family: 'Comic Neue', cursive;
+	font-family: 'WorkSans Regular', sans-serif;
 }
 
 h1,
@@ -23,7 +60,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-family: 'Comic Neue', cursive;
+	font-family: 'Nexa Bold', sans-serif;
 	font-weight: 700;
 	color: #000;
 	letter-spacing: 1.5px;
@@ -36,7 +73,7 @@ h4 a,
 h5 a,
 h6 a {
 	font-weight: inherit;
-	font-family: 'Comic Neue', cursive;
+	font-family: 'Nexa Bold', sans-serif;
 }
 
 h1 {
@@ -74,7 +111,7 @@ h6 {
 }
 
 p {
-	font-family: 'Comic Neue', cursive;
+	font-family: 'WorkSans Regular', sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	letter-spacing: 0;
@@ -87,7 +124,7 @@ p img {
 }
 
 span {
-	font-family: 'Comic Neue', cursive;
+	font-family: 'WorkSans Regular', sans-serif;
 }
 
 
@@ -112,7 +149,7 @@ small {
 
 blockquote {
 	border-left: 0 none;
-	font-family: 'Comic Neue', cursive;
+	font-family: 'Nexa Bold', sans-serif;
 	margin: 10px 0;
 	padding-left: 40px;
 	position: relative;
@@ -325,7 +362,7 @@ div#preloader {
 	width: 40px;
 	height: 40px;
 	margin: auto;
-	background-color: #333;
+	background-color: #d67940;
 	border-radius: 100%;
 	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
 	animation: sk-scaleout 1.0s infinite ease-in-out;
