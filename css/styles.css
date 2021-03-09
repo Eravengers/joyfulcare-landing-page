@@ -1,0 +1,95 @@
+* {
+  -webkit-user-select: none;
+  /* Chrome, Safari, Android and iOS */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  user-select: none;
+  /* Disables text selection */
+  margin: 0;
+  padding: 0;
+  /* Remove margins and paddings on elements */
+  box-sizing: border-box;
+  /* Generate paddings inside elements */
+  -webkit-tap-highlight-color: transparent;
+  /* Removes the blue highlight when button tapped on mobile */
+
+  /* for development use only */
+  /* background: rgba(255, 0, 0, .1);
+    box-shadow: 0 0 0 1px red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+
+/* Utilities */
+
+.displayNone {
+  display: none;
+}
+
+.noOutline {
+  outline: 0;
+}
+
+
+/* Preloader*/
+
+div#preloader {
+  height: 100%;
+  left: 0;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  background: #fff;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #d67940;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0)
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
