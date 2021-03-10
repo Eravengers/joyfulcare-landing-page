@@ -42,6 +42,7 @@ html {
   padding: 0.725rem 3.125rem;
   line-height: 8px;
   font-weight: 500;
+  border-radius: 2px;
 }
 
 .get-in-touch-btn {
@@ -143,6 +144,7 @@ section.hero {
 .hero .hero-description {
   margin: 2.25rem auto;
   font-size: 1.125rem;
+  line-height: 30px;
 }
 
 
@@ -157,6 +159,7 @@ section.hero {
   .hero .hero-text-content {
     text-align: left;
     padding: 3rem;
+    margin-top: 2rem;
   }
 }
 
