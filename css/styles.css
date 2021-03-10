@@ -143,7 +143,7 @@ section.hero {
 
 .hero .hero-description {
   margin: 2.25rem auto;
-  font-size: 1.125rem;
+  font-size: 1.225rem;
   line-height: 30px;
 }
 
@@ -151,16 +151,30 @@ section.hero {
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
+
+  .cta-btn {
+    padding: 1rem 4rem;
+    line-height: 8px;
+    border-radius: 4px;
+  }
+
   .logo {
     width: 100%;
     height: auto;
+  }
+
+  .hero .hero-description {
+    margin: 2.65rem auto;
+    font-size: 1.425rem;
   }
 
   .hero .hero-text-content {
     text-align: left;
     padding: 3rem;
     margin-top: 2rem;
+    margin-left: 2rem;
   }
+
 }
 
 @media screen and (min-width: 769px) {
