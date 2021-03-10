@@ -1,9 +1,23 @@
 /* Table Of Contents
 =========================
+- Default colors
 - Default Typography
 - Custom Typography
 =========================
 */
+
+/* Default colors */
+.color-theme-white {
+	color: #fff;
+}
+
+.color-theme-blue {
+	color: #285185;
+}
+
+.color-theme-orange {
+	color: #d67940;
+}
 
 /* Custom Fonts */
 @import url(../fonts/Nexa-Bold.otf);

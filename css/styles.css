@@ -129,7 +129,8 @@ section.hero {
   display: block;
   background-color: #285185;
   width: 100%;
-  height: calc(100% - 80px);
+  height: 75%;
+  text-align: center;
 }
 
 .hero .hero-image {
@@ -148,10 +149,6 @@ section.hero {
   .navbar {
     height: 90px;
     max-height: 90px;
-  }
-
-  section.hero {
-    height: calc(100% - 90px);
   }
 
   .hero .hero-image {
