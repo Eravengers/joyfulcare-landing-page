@@ -24,16 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header,
-section,
-footer,
-aside,
-nav,
-main,
-article,
-figure {
-  display: block;
-}
 
 /* Utilities */
 
@@ -45,6 +35,19 @@ figure {
   outline: 0;
 }
 
+/* Buttons */
+
+.cta-btn {
+  text-align: center;
+  padding: 0.725rem 3.125rem;
+  line-height: 8px;
+  font-weight: 500;
+}
+
+.get-in-touch-btn {
+  background-color: #fff;
+  color: #d67940;
+}
 
 /* Preloader*/
 
@@ -100,11 +103,6 @@ div#preloader {
   height: auto;
 }
 
-.navbar {
-  height: 85px;
-  max-height: 80px;
-}
-
 .navbar-nav {
   font-family: "WorkSans Medium", sans-serif;
 }
@@ -115,6 +113,7 @@ div#preloader {
 
 .dropdown-menu.w-3rem {
   min-width: 3rem !important;
+  padding: 12px;
 }
 
 
@@ -130,11 +129,20 @@ section.hero {
   background-color: #285185;
   width: 100%;
   height: 75%;
+}
+
+.hero .hero-text-content {
   text-align: center;
+  padding: 1rem;
 }
 
 .hero .hero-image {
   display: none;
+}
+
+.hero .hero-description {
+  margin: 2.25rem auto;
+  font-size: 1.125rem;
 }
 
 
@@ -146,10 +154,13 @@ section.hero {
     height: auto;
   }
 
-  .navbar {
-    height: 90px;
-    max-height: 90px;
+  .hero .hero-text-content {
+    text-align: left;
+    padding: 3rem;
   }
+}
+
+@media screen and (min-width: 769px) {
 
   .hero .hero-image {
     display: block;
@@ -160,4 +171,5 @@ section.hero {
     background-repeat: no-repeat;
     background-size: cover
   }
+
 }
