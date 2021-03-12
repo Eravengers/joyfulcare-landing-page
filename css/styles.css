@@ -147,6 +147,46 @@ section.hero {
   line-height: 30px;
 }
 
+.cards {
+  margin: auto;
+  height: 250px;
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 2px;
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.cards .card-icon {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cards .card-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.cards.hero-card {
+  background-color: #fff;
+  transition: border 0.2s linear;
+}
+
+.cards.hero-card:hover {
+  border-width: 1px 1px 3px 1px;
+  border-color: #d67940;
+}
+
+.card-description--hero {
+  color: #a7a7a7;
+}
+
 
 /* Responsiveness */
 
@@ -175,9 +215,13 @@ section.hero {
     margin-left: 2rem;
   }
 
+  .cards-container {
+    position: relative;
+    top: -150px;
+  }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
 
   .hero .hero-image {
     display: block;
@@ -189,4 +233,10 @@ section.hero {
     background-size: cover
   }
 
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .hero-description {
+    line-height: 40px;
+  }
 }
