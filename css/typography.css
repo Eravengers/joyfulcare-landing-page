@@ -66,6 +66,7 @@
 body {
 	font-family: 'WorkSans Regular', sans-serif;
 	font-size: 16px;
+	overflow: auto;
 }
 
 section h1,
@@ -399,6 +400,10 @@ dd {
 
 .mt--20 {
 	margin-top: 20px
+}
+
+.mt---20 {
+	margin-top: -20px
 }
 
 .mt--30 {
