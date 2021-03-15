@@ -1,0 +1,301 @@
+* {
+  -webkit-user-select: none;
+  /* Chrome, Safari, Android and iOS */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  user-select: none;
+  /* Disables text selection */
+  margin: 0;
+  padding: 0;
+  /* Remove margins and paddings on elements */
+  box-sizing: border-box;
+  /* Generate paddings inside elements */
+  -webkit-tap-highlight-color: transparent;
+  /* Removes the blue highlight when button tapped on mobile */
+
+  /* for development use only */
+  /* background: rgba(255, 0, 0, .1);
+    box-shadow: 0 0 0 1px red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Utilities */
+
+.displayNone {
+  display: none;
+}
+
+.noOutline {
+  outline: 0;
+}
+
+.js-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+
+.cta-btn {
+  text-align: center;
+  padding: 0.725rem 3.125rem;
+  line-height: 8px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.get-in-touch-btn {
+  background-color: #fff;
+  color: #d67940 !important;
+}
+
+/* Preloader*/
+
+div#preloader {
+  height: 100%;
+  left: 0;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  background: #fff;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #d67940;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0)
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* Navigation */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-nav {
+  font-family: "WorkSans Medium", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: #53749d;
+}
+
+.dropdown-menu.w-3rem {
+  min-width: 3rem !important;
+  padding: 12px;
+}
+
+
+/* Header */
+
+header {
+  margin: 0;
+}
+
+section.hero {
+  display: block;
+  background-color: #285185;
+  width: 100%;
+  height: 75vh;
+}
+
+.hero .hero-text-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero .hero-image {
+  display: none;
+}
+
+.hero .hero-description {
+  margin: 2.25rem auto;
+  font-size: 1.225rem;
+  line-height: 30px;
+}
+
+.cards {
+  margin: auto;
+  height: 250px;
+  width: 300px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 2px;
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.cards .card-icon {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cards .card-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.cards.hero-card {
+  background-color: #fff;
+  transition: border 0.2s linear;
+}
+
+.cards.hero-card:hover {
+  border-width: 1px 1px 3px 1px;
+  border-color: #d67940;
+}
+
+.card-description--hero {
+  color: #a7a7a7;
+}
+
+
+/* ScrollToTop button */
+
+.scrollToTop {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 500;
+  transition: all .3s ease-in-out;
+}
+
+.scrollToTop.hideScrollTop {
+  opacity: 0;
+}
+
+.scrollToTop.showScrollTop {
+  opacity: 1;
+}
+
+.scrollToTop img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* About us section */
+.about-us .about-image-container {
+  position: absolute;
+  top: 50%;
+}
+
+.about-us .about-image-container .img-3 {
+  width: 100%;
+  height: auto;
+}
+
+.about-us .about-image-container .img-1,
+.about-us .about-image-container .img-2 {
+  width: 40%;
+  height: auto;
+}
+
+.about-us .about-image-container .img-1 {
+  position: relative;
+  top: 50px;
+  left: 70%;
+}
+
+.about-us .about-image-container .img-2 {
+  position: relative;
+  bottom: 50px;
+  left: -15%;
+}
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 768px) {
+
+  .cta-btn {
+    padding: 1rem 4rem;
+    line-height: 8px;
+    border-radius: 4px;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero .hero-description {
+    margin: 2.65rem auto;
+    font-size: 1.425rem;
+  }
+
+  .hero .hero-text-content {
+    text-align: left;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .cards-container {
+    position: relative;
+    top: -150px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+
+  .hero .hero-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../assets/Hero-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .hero-description {
+    line-height: 40px;
+  }
+}
