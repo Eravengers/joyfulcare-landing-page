@@ -26,6 +26,10 @@ html {
 
 
 /* Utilities */
+.text-description {
+  font-size: 1.225rem;
+  line-height: 30px;
+}
 
 .displayNone {
   display: none;
@@ -156,8 +160,6 @@ section.hero {
 
 .hero .hero-description {
   margin: 2.25rem auto;
-  font-size: 1.225rem;
-  line-height: 30px;
 }
 
 .cards {
@@ -281,6 +283,9 @@ section.services {
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
+  .text-description {
+    font-size: 1.425rem;
+  }
 
   .cta-btn {
     padding: 1rem 4rem;
@@ -295,7 +300,6 @@ section.services {
 
   .hero .hero-description {
     margin: 2.65rem auto;
-    font-size: 1.425rem;
   }
 
   .hero .hero-text-content {
@@ -336,7 +340,8 @@ section.services {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero .hero-description {
+
+  .text-description {
     line-height: 40px;
   }
 
