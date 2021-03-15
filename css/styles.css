@@ -43,19 +43,23 @@ html {
   scroll-behavior: smooth;
 }
 
+a.cta-link,
+a.cta-btn {
+  text-decoration: none !important;
+}
+
 /* Buttons */
 .cta-btn-container {
   margin: 2rem auto;
   height: auto;
 }
 
-a.cta-btn {
+.cta-btn {
   text-align: center;
   padding: 0.725rem 3.125rem;
   line-height: 8px;
   font-weight: 500;
   border-radius: 2px;
-  text-decoration: none !important;
 }
 
 .get-in-touch-btn {
@@ -164,7 +168,7 @@ section.hero {
 
 .cards {
   margin: auto;
-  height: 250px;
+  height: 300px;
   width: 300px;
   max-width: 300px;
   text-align: center;
@@ -278,6 +282,24 @@ section.hero {
 /* Services section */
 section.services {
   background-color: #285185;
+  padding: 1rem;
+}
+
+.services .services-card {
+  background-color: #285185;
+}
+
+.services .cards.card {
+  border: 1px solid #fff !important;
+}
+
+.card-description--services {
+  color: #fff;
+}
+
+.services-card .services-card-link {
+  color: #fff;
+  font-size: 1.125rem;
 }
 
 /* Responsiveness */
@@ -342,6 +364,7 @@ section.services {
 @media screen and (min-width: 1024px) {
 
   .text-description {
+    font-size: 1.625rem;
     line-height: 40px;
   }
 
