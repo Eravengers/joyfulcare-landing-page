@@ -219,12 +219,10 @@ section.hero {
 
 /* About us section */
 .about-us .about-image-container {
-  position: absolute;
-  top: 50%;
+  
 }
 
 .about-us .about-image-container .img-3 {
-  width: 100%;
   height: auto;
 }
 
@@ -237,7 +235,7 @@ section.hero {
 .about-us .about-image-container .img-1 {
   position: relative;
   top: 50px;
-  left: 70%;
+  left: 50%;
 }
 
 .about-us .about-image-container .img-2 {
