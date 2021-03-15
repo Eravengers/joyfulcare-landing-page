@@ -40,18 +40,28 @@ html {
 }
 
 /* Buttons */
+.cta-btn-container {
+  margin: 2rem auto;
+  height: auto;
+}
 
-.cta-btn {
+a.cta-btn {
   text-align: center;
   padding: 0.725rem 3.125rem;
   line-height: 8px;
   font-weight: 500;
   border-radius: 2px;
+  text-decoration: none !important;
 }
 
 .get-in-touch-btn {
   background-color: #fff;
   color: #d67940 !important;
+}
+
+.learn-in-touch-btn {
+  background-color: #d67940;
+  color: #fff !important;
 }
 
 /* Preloader*/
@@ -218,24 +228,32 @@ section.hero {
 
 
 /* About us section */
+.about-us {
+  margin-top: -20px;
+  padding: 0;
+}
+
 .about-us .about-image-container {
-  
+  margin: auto;
+  width: 80%;
 }
 
 .about-us .about-image-container .img-3 {
   height: auto;
+  width: 100%;
 }
 
 .about-us .about-image-container .img-1,
 .about-us .about-image-container .img-2 {
   width: 40%;
   height: auto;
+  z-index: 2;
 }
 
 .about-us .about-image-container .img-1 {
   position: relative;
   top: 50px;
-  left: 50%;
+  left: 75%;
 }
 
 .about-us .about-image-container .img-2 {
@@ -244,6 +262,15 @@ section.hero {
   left: -15%;
 }
 
+.about-us .about-details {
+  color: #a7a7a7;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.about-us .about-details p {
+  margin-bottom: 1.125rem;
+}
 
 /* Responsiveness */
 
@@ -274,8 +301,18 @@ section.hero {
 
   .cards-container {
     position: relative;
-    top: -150px;
+    top: -100px;
   }
+
+  .cta-btn-container {
+    margin: 3rem auto;
+    height: auto;
+  }
+
+  .about-us {
+    margin-top: -30px;
+  }
+
 }
 
 @media screen and (min-width: 801px) {
@@ -295,5 +332,19 @@ section.hero {
 @media screen and (min-width: 1024px) {
   .hero .hero-description {
     line-height: 40px;
+  }
+
+  .about-us .about-image-container .img-3 {
+    height: 100%;
+    max-height: 380px;
+  }
+
+  .about-us .about-details {
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .about-us .about-us-content {
+    padding: 0 2rem;
   }
 }
