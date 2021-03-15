@@ -272,6 +272,12 @@ section.hero {
   margin-bottom: 1.125rem;
 }
 
+
+/* Services section */
+section.services {
+  background-color: #285185;
+}
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
