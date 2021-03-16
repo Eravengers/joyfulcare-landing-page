@@ -302,6 +302,15 @@ section.services {
   font-size: 1.125rem;
 }
 
+
+/* Testimonial section */
+
+section.testimonials {
+  background-color: #fbf3ee;
+}
+
+
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
