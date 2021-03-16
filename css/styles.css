@@ -302,6 +302,61 @@ section.services {
   font-size: 1.125rem;
 }
 
+
+/* Testimonial section */
+
+section.testimonials {
+  background-color: #fbf3ee;
+  padding: 2rem;
+}
+
+.testimonials .testimonial-container {
+  margin: 3rem auto;
+}
+
+.testimonial-container .testimonial-rating {
+  margin-top: 1rem;
+}
+
+.testimonial-container .testimonial-rating .fa {
+  color: #fe9532;
+}
+
+.testimonial-container .testimonial-name {
+  color: #285185;
+  font-weight: 600;
+  font-size: 1.525rem;
+}
+
+.testimonial-container .testimonial-text {
+  color: #d67940;
+  margin: auto;
+  margin-top: 1.325rem;
+  max-width: 80%;
+  font-size: 1.225rem;
+}
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px !important;
+}
+
+.carousel-indicators li {
+  background-color: #f7e4d9 !important;
+}
+
+.carousel-indicators li.active {
+  background-color: #de9466 !important;
+}
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
