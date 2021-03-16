@@ -67,7 +67,7 @@ a.cta-btn {
   color: #d67940 !important;
 }
 
-.learn-in-touch-btn {
+.learn-more-btn {
   background-color: #d67940;
   color: #fff !important;
 }
@@ -355,6 +355,19 @@ section.testimonials {
 
 .carousel-indicators li.active {
   background-color: #de9466 !important;
+}
+
+
+/* Blog */
+
+section.blog {
+  padding: 3rem 0;
+}
+
+
+.blog .blog-description {
+  font-size: 1.225rem;
+  margin-top: 1.225rem;
 }
 
 /* Responsiveness */
