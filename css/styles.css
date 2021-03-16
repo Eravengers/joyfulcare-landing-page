@@ -235,7 +235,7 @@ section.hero {
 
 /* About us section */
 .about-us {
-  margin-top: -20px;
+  margin-top: -30px;
   padding: 0;
 }
 
@@ -393,6 +393,7 @@ section.testimonials {
 
   .cta-btn-container {
     margin: 3rem auto;
+    margin-top: 7rem;
     height: auto;
   }
 
