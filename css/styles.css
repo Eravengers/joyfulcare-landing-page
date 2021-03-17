@@ -450,6 +450,7 @@ section.contact {
 
 .contact-details .contact-detail {
   margin: 0 auto;
+  padding: 1.225rem 0;
 }
 
 .contact-details .contact-detail .icon {
@@ -581,8 +582,11 @@ section.contact {
     padding: 0 2rem;
   }
 
-  .contact-details .contact-detail .icon,
-  .contact-details .contact-detail.icon:first-child {
-    margin-right: 0;
+  .contact-details .contact-detail .icon {
+    margin-right: 0 !important;
+  }
+
+  .row a.blog-link *+* {
+    margin: 1rem auto;
   }
 }
