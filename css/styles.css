@@ -149,6 +149,9 @@ header {
 section.hero {
   display: block;
   background-color: #285185;
+  background-image: url(../assets/Hero-image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 75vh;
 }
@@ -541,6 +544,8 @@ section.contact {
 
   section.hero {
     height: 80vh;
+    background-color: #285185;
+    background-image: none;
   }
 
   .cards-container {
