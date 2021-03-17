@@ -172,8 +172,6 @@ section.hero {
 .cards {
   margin: auto;
   height: 300px;
-  width: 300px;
-  max-width: 300px;
   text-align: center;
   border-radius: 2px;
   display: block;
