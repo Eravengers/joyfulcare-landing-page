@@ -361,13 +361,27 @@ section.testimonials {
 /* Blog */
 
 section.blog {
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 }
 
+.blog .blog-title {
+  font-weight: 700;
+  font-size: 1.825rem;
+}
 
 .blog .blog-description {
   font-size: 1.225rem;
   margin-top: 1.225rem;
+}
+
+.blog-cards-container .blog-cards {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-cards-container .blog-card {
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, .125);
 }
 
 /* Responsiveness */
@@ -410,6 +424,10 @@ section.blog {
     height: auto;
   }
 
+  .blog .cta-btn-container {
+    margin: 2rem 0;
+  }
+
   .about-us {
     margin-top: -30px;
   }
@@ -431,6 +449,15 @@ section.blog {
 }
 
 @media screen and (min-width: 1024px) {
+
+  section.hero {
+    height: 80vh;
+  }
+
+  .cards-container {
+    position: relative;
+    top: -80px;
+  }
 
   .text-description {
     font-size: 1.625rem;
