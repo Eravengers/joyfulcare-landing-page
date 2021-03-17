@@ -541,6 +541,11 @@ section.contact {
 
 }
 
+footer.footer {
+  background-color: #4f4f4f;
+  padding: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
 
   section.hero {
