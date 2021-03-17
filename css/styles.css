@@ -528,6 +528,11 @@ section.contact {
 
 @media screen and (min-width: 801px) {
 
+  section.hero {
+    background-color: #285185;
+    background-image: none;
+  }
+
   .hero .hero-image {
     display: block;
     height: 100%;
@@ -544,8 +549,6 @@ section.contact {
 
   section.hero {
     height: 80vh;
-    background-color: #285185;
-    background-image: none;
   }
 
   .cards-container {
