@@ -596,6 +596,7 @@ pre code {
   .container {
     max-width: 720px
   }
+
 }
 
 @media (min-width:992px) {
@@ -5897,8 +5898,7 @@ button.close {
   align-items: flex-start;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #e9ecef;
+  padding: 0 1rem;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem
 }
@@ -5909,7 +5909,7 @@ button.close {
 }
 
 .modal-title {
-  margin-bottom: 0;
+  margin: 0 1rem;
   line-height: 1.5
 }
 
@@ -5968,7 +5968,7 @@ button.close {
 
 @media (min-width:992px) {
   .modal-lg {
-    max-width: 800px
+    max-width: 850px
   }
 }
 

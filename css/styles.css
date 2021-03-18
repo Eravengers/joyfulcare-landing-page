@@ -552,6 +552,20 @@ footer.footer {
   border-radius: 2px;
 }
 
+.modal-header .small-line {
+  width: 58px;
+  height: 4px;
+  background-color: #da641c;
+  border-radius: 6px;
+  clear: both;
+}
+
+.modal .modal-body .modal-text {
+  font-size: 1.125rem;
+  margin-top: 1.225rem;
+}
+
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
@@ -599,6 +613,12 @@ footer.footer {
   .contact-details .contact-detail .text {
     margin: 1.125rem 0;
   }
+
+  .modal.show .modal-dialog {
+    -webkit-transform: translate(0, 40%) !important;
+    transform: translate(0, 40%) !important;
+  }
+
 }
 
 @media screen and (min-width: 801px) {
