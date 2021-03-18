@@ -333,7 +333,10 @@
 
             <!-- Learn more btn -->
             <div class="cta-btn-container">
-              <a href="#learnmore" class="cta-btn learn-more-btn">Learn More</a>
+              <a href="#learnmore" class="cta-btn learn-more-btn" role="button" data-toggle="modal"
+                data-target="#detailsModal" data-title="About Us"
+                data-text="Everything you need to support you in your efforts as a family caregiver. <br> Joyful Care is dedicated to providing families with the best in-home care facilities available. Our commitment to you is simple: we'll help your loved one stay at home while still giving you peace of mind. <br><br> We at Joyful Care recognize why you want the best home care for your senior loved one. You're looking for a knowledgeable, competent elder care provider who can treat your loved one with integrity and reverence. We will assist you in locating a senior home care provider that satisfies all of your requirements. <br><br> Our senior home care providers are experts with the qualifications and expertise you're looking for. We'll pair you with a senior home care provider that will look after your loved one's health and well-being. ">Learn
+                More</a>
             </div>
             <!-- /Learn more btn -->
 
@@ -716,6 +719,39 @@
       </div>
     </section>
     <!-- /Contact section -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="container mt-4">
+            <!-- Modal content starts-->
+            <div class="modal-header">
+              <div class="small-line">
+
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <h3 class="modal-title color-theme-blue" id="detailsModalLabel">
+              </h4>
+
+              <div class="modal-body">
+                <p class="modal-text" id="modal-text">
+
+                </p>
+              </div>
+              <!-- Modal content ends-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
 
     <!-- Footer -->
     <footer class="footer" id="footer">
