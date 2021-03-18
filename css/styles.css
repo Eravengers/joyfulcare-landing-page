@@ -503,6 +503,10 @@ footer.footer {
   margin: 1rem auto;
 }
 
+.footer .legal {
+  margin: 0.925rem auto;
+}
+
 .footer ul.footer-links {
   display: block;
   list-style-type: none;
