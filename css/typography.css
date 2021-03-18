@@ -81,6 +81,13 @@ section h6 {
 	letter-spacing: 1.5px;
 }
 
+footer.footer {
+	font-family: 'WorkSans Light', sans-serif;
+	font-weight: 500;
+	font-size: 0.825rem;
+	letter-spacing: 1.5px;
+}
+
 h1 a,
 h2 a,
 h3 a,
