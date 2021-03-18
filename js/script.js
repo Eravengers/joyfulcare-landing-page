@@ -53,4 +53,11 @@ $(function () {
     });
   });
 
+
+  // Add current year to copyright 
+  let date = new Date();
+  let copyrightYear = date.getFullYear();
+
+  $("#copyright").text(`© ${copyrightYear}`);
+
 }(jQuery))

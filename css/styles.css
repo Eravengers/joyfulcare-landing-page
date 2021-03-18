@@ -398,7 +398,7 @@ section.blog {
 }
 
 .blog-cards.blog-card {
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .blog-card .blog-image {
@@ -443,7 +443,7 @@ section.contact {
 
 .contact .contact-details {
   padding: 1rem;
-  margin: 1rem auto;
+  margin: auto;
   text-align: center;
 }
 
@@ -473,6 +473,85 @@ section.contact {
   text-decoration: none;
 }
 
+
+footer.footer {
+  background-color: #4f4f4f;
+  padding: 3rem 2rem;
+  color: #fff;
+}
+
+.footer .footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #de9466;
+}
+
+.footer a:visited {
+  color: #da641c;
+}
+
+.footer .footer-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.footer .legal {
+  margin: 0.925rem auto;
+}
+
+.footer ul.footer-links {
+  display: block;
+  list-style-type: none;
+}
+
+.footer-links li.footer-link {
+  margin: 0.425rem 0;
+}
+
+.footer .newsletter-text {
+  line-height: 1.225rem;
+}
+
+.footer .newsletter-input-box {
+  margin: 2.825rem auto;
+}
+
+.footer input.newsletter-input {
+  margin-bottom: 0.625rem;
+}
+
+.footer button.newsletter-button {
+  background-color: #d67940;
+  color: #fff;
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+}
+
+.footer button.newsletter-button:hover {
+  background-color: #da641c;
+  color: #fff;
+}
+
+.footer input.newsletter-input,
+.footer button.newsletter-button {
+  padding: 0.825rem;
+  font-size: 0.905rem;
+  width: 100%;
+  border: none;
+  outline: 0;
+  border-radius: 2px;
+}
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
@@ -483,7 +562,7 @@ section.contact {
   .cta-btn {
     padding: 1rem 3rem;
     line-height: 8px;
-    border-radius: 4px;
+    border-radius: 2px;
   }
 
   .logo {
@@ -555,7 +634,7 @@ section.contact {
   .cta-btn {
     padding: 1.115rem 4rem;
     line-height: 8px;
-    border-radius: 4px;
+    border-radius: 2px;
   }
 
   .text-description {
@@ -583,5 +662,32 @@ section.contact {
 
   .row a.blog-link *+* {
     margin: 1rem auto;
+  }
+
+  footer.footer {
+    padding: 3rem 0;
+  }
+
+  .footer .fourth-col {
+    padding: 0;
+  }
+
+  .footer .newsletter-input-box {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer input.newsletter-input {
+    margin-bottom: 0;
+  }
+
+  .footer input.newsletter-input {
+    width: 60%;
+  }
+
+  .footer button.newsletter-button {
+    width: 40%;
   }
 }
