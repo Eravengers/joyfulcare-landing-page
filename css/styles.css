@@ -127,7 +127,7 @@ div#preloader {
 }
 
 .navbar-nav {
-  font-family: "WorkSans Medium", sans-serif;
+  font-family: "Lato Medium", sans-serif;
 }
 
 .navbar-nav .nav-link {
@@ -494,7 +494,7 @@ footer.footer {
 }
 
 .footer a:visited {
-  color: #da641c;
+  color: #fff;
 }
 
 .footer .footer-title {
@@ -612,6 +612,7 @@ footer.footer {
 
   .contact-details .contact-detail .text {
     margin: 1.125rem 0;
+    text-align: left !important;
   }
 
   .modal.show .modal-dialog {
