@@ -535,6 +535,7 @@ footer.footer {
   transition-duration: 1s;
   transition-property: background-color;
   transition-timing-function: linear;
+  cursor: pointer;
 }
 
 .footer button.newsletter-button:hover {
