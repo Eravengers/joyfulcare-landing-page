@@ -127,7 +127,7 @@ div#preloader {
 }
 
 .navbar-nav {
-  font-family: "WorkSans Medium", sans-serif;
+  font-family: "Lato Medium", sans-serif;
 }
 
 .navbar-nav .nav-link {
@@ -494,7 +494,7 @@ footer.footer {
 }
 
 .footer a:visited {
-  color: #da641c;
+  color: #fff;
 }
 
 .footer .footer-title {
@@ -535,6 +535,7 @@ footer.footer {
   transition-duration: 1s;
   transition-property: background-color;
   transition-timing-function: linear;
+  cursor: pointer;
 }
 
 .footer button.newsletter-button:hover {
@@ -612,6 +613,7 @@ footer.footer {
 
   .contact-details .contact-detail .text {
     margin: 1.125rem 0;
+    text-align: left !important;
   }
 
   .modal.show .modal-dialog {
@@ -704,10 +706,15 @@ footer.footer {
   }
 
   .footer input.newsletter-input {
-    width: 60%;
+    width: 70%;
   }
 
   .footer button.newsletter-button {
-    width: 40%;
+    width: 30%;
+  }
+
+  .footer .pd-1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
