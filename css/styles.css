@@ -20,6 +20,12 @@
     box-shadow: 0 0 0 1px red; */
 }
 
+:root {
+  --color-orange: #d67940;
+  --color-orange: #215885;
+  --color-gray: #4f4f4f;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +52,30 @@ html {
 a.cta-link,
 a.cta-btn {
   text-decoration: none !important;
+}
+
+.heading-outline {
+  font-size: 3.335rem;
+  line-height: 0;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.heading-outline-orange {
+  -webkit-text-stroke-color: #d679403f;
+}
+
+.heading-outline-blue {
+  -webkit-text-stroke-color: #2158853f;
+}
+
+.heading-outline-white {
+  -webkit-text-stroke-color: #ffffff3f;
 }
 
 /* Buttons */
@@ -310,7 +340,7 @@ section.services {
 
 section.testimonials {
   background-color: #fbf3ee;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .testimonials .testimonial-container {
@@ -570,6 +600,10 @@ footer.footer {
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
+  .heading-outline {
+    font-size: 6.5rem;
+  }
+
   .text-description {
     font-size: 1.425rem;
   }
@@ -643,6 +677,10 @@ footer.footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  .heading-outline {
+    font-size: 7rem;
+  }
 
   section.hero {
     height: 80vh;
