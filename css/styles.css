@@ -67,15 +67,15 @@ a.cta-btn {
 
 
 .heading-outline-orange {
-  -webkit-text-stroke-color: #d679403f;
+  -webkit-text-stroke-color: #d679407a;
 }
 
 .heading-outline-blue {
-  -webkit-text-stroke-color: #2158853f;
+  -webkit-text-stroke-color: #2158857a;
 }
 
 .heading-outline-white {
-  -webkit-text-stroke-color: #ffffff3f;
+  -webkit-text-stroke-color: #ffffff7a;
 }
 
 /* Buttons */
@@ -524,7 +524,7 @@ footer.footer {
 }
 
 .footer a:visited {
-  color: #fff;
+  color: #d67940;
 }
 
 .footer .footer-title {
