@@ -186,7 +186,7 @@ section.hero {
   height: 75vh;
 }
 
-.hero .hero-text-content { 
+.hero .hero-text-content {
   padding: 1rem;
   margin-top: 1.5rem;
 }
@@ -647,11 +647,6 @@ footer.footer {
   .contact-details .contact-detail .text {
     margin: 1.125rem 0;
     text-align: left !important;
-  }
-
-  .modal.show .modal-dialog {
-    -webkit-transform: translate(0, 40%) !important;
-    transform: translate(0, 40%) !important;
   }
 
 }
