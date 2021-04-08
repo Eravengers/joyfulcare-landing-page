@@ -75,21 +75,16 @@ $(function () {
     modal.find('.modal-title').text(modalTitle);
     modal.find('.modal-text').html(modalText);
 
+    // Check modal type (if blog or ...)
 
-    if (modalType != undefined) {
+    if (modalType !== undefined) { // === modalType = blog
       modal.find('#blogPostImg').attr("src", modalSrc);
-      modalSrc = button.data('src') // Extract info from data-* attributes
-
-      console.log(modalType);
-      console.log(modalSrc);
-
+      modal.find('#blogPostImg').css("display", "block"); // Display set to "block" the blog image if there is none
+      modal.find('#blogDetailsModalLabel').css("display", "block"); // Display set to "block" the blog image if there is none
 
     } else if (modalType == undefined) {
-      modal.find('#blogPostImg').css("display", "none");
-
-      console.log(modalType);
-      console.log(modalSrc);
-
+      modal.find('#blogPostImg').css("display", "none"); // Hide the blog image if there is none
+      modal.find('#blogDetailsModalLabel').css("display", "none"); // Hide the blog image if there is none
     }
 
   })
