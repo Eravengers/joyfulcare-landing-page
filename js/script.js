@@ -77,14 +77,19 @@ $(function () {
 
     // Check modal type (if blog or ...)
 
-    if (modalType !== undefined) { // === modalType = blog
+    // modalType === blog
+    if (modalType !== undefined) {
       modal.find('#blogPostImg').attr("src", modalSrc);
       modal.find('#blogPostImg').css("display", "block"); // Display set to "block" the blog image if there is none
       modal.find('#blogDetailsModalLabel').css("display", "block"); // Display set to "block" the blog image if there is none
+      modal.find('#detailsModalLabel').css("display", "none"); // Hide set to "block" the blog image if there is none
 
+      // === modalType !== blog
     } else if (modalType == undefined) {
       modal.find('#blogPostImg').css("display", "none"); // Hide the blog image if there is none
       modal.find('#blogDetailsModalLabel').css("display", "none"); // Hide the blog image if there is none
+      modal.find('#detailsModalLabel').css("display", "block"); // Display set to "block" the blog image if there is none
+
     }
 
   })

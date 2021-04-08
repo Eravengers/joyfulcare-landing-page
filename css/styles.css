@@ -609,23 +609,19 @@ footer.footer {
   max-width: 100%;
 }
 
-
-.modal-image-container .modal-title {
+.modal-image-container .modal-title#blogDetailsModalLabel {
   font-size: 1.525rem;
   position: absolute;
   top: 3rem;
   padding: 0;
-}
-
-.modal-image-container #blogDetailsModalLabel {
   color: #fff;
   background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
 }
 
 
-.modal-image-container #detailsModalLabel {
-  color: #fff;
-  background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
+.modal-image-container .modal-title#detailsModalLabel {
+  margin: 0 1rem 1rem;
+  line-height: 0.5;
 }
 
 /* Responsiveness */
@@ -681,7 +677,8 @@ footer.footer {
     text-align: left !important;
   }
 
-  .modal-image-container .modal-title {
+  .modal-image-container .modal-title#blogDetailsModalLabel,
+  .modal-image-container .modal-title#detailsModalLabel {
     font-size: 2.525rem;
   }
 }
@@ -785,9 +782,13 @@ footer.footer {
     padding-left: 1rem;
   }
 
-  .modal-image-container .modal-title {
-    font-size: 3.525rem;
+  .modal-image-container .modal-title#blogDetailsModalLabel {
     top: 4rem;
+  }
+
+  .modal-image-container .modal-title#blogDetailsModalLabel,
+  .modal-image-container .modal-title#detailsModalLabel {
+    font-size: 3.125rem;
   }
 
   .footer input.newsletter-input,
