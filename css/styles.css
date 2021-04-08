@@ -775,9 +775,17 @@ footer.footer {
     padding-left: 1rem;
   }
 
-
   .modal-image-container .modal-title {
     font-size: 3.525rem;
     top: 4rem;
+  }
+
+  .footer input.newsletter-input,
+  .footer button.newsletter-button {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
 }

@@ -59,12 +59,14 @@ $(function () {
 
   $("#copyright").text(`© ${copyrightYear}`);
 
-  // Modal
+
+  // Modal for other details contents
   $('#detailsModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal
     var modalTitle = button.data('title') // Extract info from data-* attributes
     var modalText = button.data('text') // Extract info from data-* attributes
     var modalSrc = button.data('src') // Extract info from data-* attributes
+
 
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
@@ -73,6 +75,7 @@ $(function () {
     modal.find('.modal-text').html(modalText);
     modal.find('#blogPostImg').attr("src", modalSrc);
   })
+
 
 
 }(jQuery))
