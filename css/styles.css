@@ -609,11 +609,21 @@ footer.footer {
   max-width: 100%;
 }
 
+
 .modal-image-container .modal-title {
   font-size: 1.525rem;
   position: absolute;
   top: 3rem;
   padding: 0;
+}
+
+.modal-image-container #blogDetailsModalLabel {
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
+}
+
+
+.modal-image-container #detailsModalLabel {
   color: #fff;
   background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
 }
