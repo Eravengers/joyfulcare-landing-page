@@ -1,0 +1,4 @@
+Rewrite On
+RewriteCond %{HTTP_HOST} ^joyfulcarect\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.joyfulcarect.com/$1 [R,L]
