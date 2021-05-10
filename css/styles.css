@@ -412,7 +412,7 @@ section.blog {
   font-size: 1.825rem;
 }
 
-.blog .blog-description {
+.blog .title-description {
   font-size: 1.225rem;
   margin-top: 1.225rem;
 }
@@ -468,41 +468,55 @@ section.blog {
 /* Contact section */
 
 section.contact {
-  background-color: #fbf3ee;
+  margin: 1rem;
 }
 
-.contact .contact-details {
-  padding: 1rem;
+.contact .title-description {
+  font-size: 1.225rem;
+  margin-top: 1.225rem;
+}
+
+.contact .contact-map {
+  height: 500px;
+  max-height: 500px;
+  width: 100%;
+}
+
+.contact .contact-map .contact-img-map {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/contact\ -map.svg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .contact-map .contact-overlay {
+  padding: 1.625rem;
   margin: auto;
-  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  color: #4f4f4f;
+  height: 250px;
+  width: auto;
+  max-width: 250px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
-.contact-details .contact-detail {
-  margin: 0 auto;
-  padding: 1.225rem 0;
+.contact .contact-map .contact-overlay .overlay-content {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  margin: auto;
 }
 
-.contact-details .contact-detail .icon {
-  padding: 1.225rem;
-  border: 3px solid #da641c;
-  width: 5rem;
-  height: 5rem;
-  line-height: 1rem;
-  margin: 1rem auto;
+.contact .contact-img-map .contact-overlay .icon {
+  margin-right: 1rem;
 }
-
-.contact-details .contact-detail .cta-contact {
-  font-weight: 700;
-  font-size: 1.325rem;
-  color: #d67940;
-}
-
-.contact-heading a,
-.contact-heading a:link,
-.contact-heading a:active {
-  text-decoration: none;
-}
-
 
 footer.footer {
   background-color: #4f4f4f;
@@ -673,11 +687,6 @@ footer.footer {
     margin: 2rem 0;
   }
 
-  .contact-details .contact-detail .text {
-    margin: 1.125rem 0;
-    text-align: left !important;
-  }
-
   .modal-image-container .modal-title#blogDetailsModalLabel,
   .modal-image-container .modal-title#detailsModalLabel {
     font-size: 2.525rem;
@@ -741,10 +750,6 @@ footer.footer {
 
   .about-us .about-us-content {
     padding: 0 2rem;
-  }
-
-  .contact-details .contact-detail .icon {
-    margin-right: 0 !important;
   }
 
   .row a.blog-link *+* {
