@@ -798,14 +798,42 @@ be used, as well as the turning off battery LED wick-burning candles.">Read
           <!-- /Contact Map -->
 
           <!-- Contact form -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
             <div class="contact-form">
               <div class="heading-outline">
                 <span class="heading-outline-orange">Contact Us</span>
               </div>
-              <p class="title-description">
+              <h3 class="title color-theme-blue">Get in touch with us</h3>
+              <p class="title-description mb-3">
                 We're here to help! Get in touch if you have any question, enquiry, or request.
               </p>
+
+              <!-- Contact form starts -->
+              <form action="#" class="w-lg-75 mt-3">
+                <div class="form-group">
+
+                  <!-- Remove .displayNone to display the label -->
+                  <label for="nameFormControlInput1" class="displayNone">Name</label>
+                  <input type="text" name="name" class="form-control" id="formName" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <!-- Remove .displayNone to display the label -->
+                  <input type="email" name="email" class="form-control" id="formEmail" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                  <!-- Remove .displayNone to display the label -->
+
+                  <label for="exampleFormControlTextarea1" class="displayNone">Your message</label>
+                  <textarea class="form-control" name="message" id="formMessage" rows="4" placeholder="Your message"></textarea>
+                </div>
+
+                <button class="button">
+                  Send
+                </button>
+              </form>
+              <!-- /Contact form ends -->
+
             </div>
           </div>
           <!-- /Contact form -->
@@ -906,17 +934,17 @@ be used, as well as the turning off battery LED wick-burning candles.">Read
             </div>
             <div class="footer-links-container">
               <ul class="footer-links">
-                <li class="footer-link">
+                <li class="footer-link mb-2">
                   <a href="#facebook">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
-                <li class="footer-link">
+                <li class="footer-link mb-2">
                   <a href="#twitter">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
-                <li class="footer-link">
+                <li class="footer-link mb-2">
                   <a href="#instagram">
                     <i class="fa fa-instagram"></i>
                   </a>
@@ -938,7 +966,7 @@ be used, as well as the turning off battery LED wick-burning candles.">Read
             <div class="newsletter-input-box">
               <input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address"
                 class="newsletter-input">
-              <button class="newsletter-button">
+              <button class="button newsletter-button">
                 Subscribe
               </button>
             </div>
