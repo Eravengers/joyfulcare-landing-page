@@ -54,8 +54,13 @@ a.cta-btn {
   text-decoration: none !important;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 1.925rem;
+}
+
 .heading-outline {
-  font-size: 3.335rem;
+  font-size: 3.235rem;
   line-height: 0;
   letter-spacing: 3px;
   -webkit-text-stroke-width: 0.5px;
@@ -63,9 +68,8 @@ a.cta-btn {
   font-weight: 700;
   width: 100%;
   max-width: 100%;
-  margin-bottom: -15px;
+  margin-bottom: 0.525rem;
 }
-
 
 .heading-outline-orange {
   -webkit-text-stroke-color: #d679407a;
@@ -91,6 +95,30 @@ a.cta-btn {
   line-height: 8px;
   font-weight: 500;
   border-radius: 2px;
+}
+
+.button {
+  background-color: #d67940;
+  color: #fff;
+  transition-delay: 0.2s;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  cursor: pointer;
+  padding: 0.925rem 0.825rem;
+  font-size: 0.905rem;
+  border: none;
+  outline: 0;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: #da641c;
+  color: #fff;
+}
+
+.button {
+  width: 158px;
 }
 
 .get-in-touch-btn {
@@ -407,12 +435,7 @@ section.blog {
   font-weight: 700;
 }
 
-.blog .blog-title {
-  font-weight: 700;
-  font-size: 1.825rem;
-}
-
-.blog .blog-description {
+.blog .title-description {
   font-size: 1.225rem;
   margin-top: 1.225rem;
 }
@@ -468,44 +491,59 @@ section.blog {
 /* Contact section */
 
 section.contact {
-  background-color: #fbf3ee;
+  margin: 1rem;
 }
 
-.contact .contact-details {
-  padding: 1rem;
+.contact .title-description {
+  font-size: 1.225rem;
+  margin-top: 1.225rem;
+}
+
+.contact .contact-map {
+  height: 500px;
+  max-height: 500px;
+  width: 100%;
+}
+
+.contact .contact-map .contact-img-map {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/contact\ -map.svg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .contact-map .contact-overlay {
+  padding: 1.625rem;
   margin: auto;
-  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  color: #4f4f4f;
+  height: 250px;
+  width: auto;
+  max-width: 250px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
-.contact-details .contact-detail {
-  margin: 0 auto;
-  padding: 1.225rem 0;
+.contact .contact-map .contact-overlay .overlay-content {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  margin: auto;
 }
 
-.contact-details .contact-detail .icon {
-  padding: 1.225rem;
-  border: 3px solid #da641c;
-  width: 5rem;
-  height: 5rem;
-  line-height: 1rem;
-  margin: 1rem auto;
+.contact .contact-img-map .contact-overlay .icon {
+  margin-right: 1rem;
 }
-
-.contact-details .contact-detail .cta-contact {
-  font-weight: 700;
-  font-size: 1.325rem;
-  color: #d67940;
-}
-
-.contact-heading a,
-.contact-heading a:link,
-.contact-heading a:active {
-  text-decoration: none;
-}
-
 
 footer.footer {
   background-color: #4f4f4f;
+  margin-top: 2rem;
   padding: 3rem 2rem;
   color: #fff;
 }
@@ -554,27 +592,15 @@ footer.footer {
   margin: 2.825rem auto;
 }
 
+.footer button.newsletter-button {
+  width: 100%;
+}
+
 .footer input.newsletter-input {
   margin-bottom: 0.625rem;
 }
 
-.footer button.newsletter-button {
-  background-color: #d67940;
-  color: #fff;
-  transition-delay: 0.2s;
-  transition-duration: 1s;
-  transition-property: background-color;
-  transition-timing-function: linear;
-  cursor: pointer;
-}
-
-.footer button.newsletter-button:hover {
-  background-color: #da641c;
-  color: #fff;
-}
-
-.footer input.newsletter-input,
-.footer button.newsletter-button {
+.footer input.newsletter-input {
   padding: 0.825rem;
   font-size: 0.905rem;
   width: 100%;
@@ -673,11 +699,6 @@ footer.footer {
     margin: 2rem 0;
   }
 
-  .contact-details .contact-detail .text {
-    margin: 1.125rem 0;
-    text-align: left !important;
-  }
-
   .modal-image-container .modal-title#blogDetailsModalLabel,
   .modal-image-container .modal-title#detailsModalLabel {
     font-size: 2.525rem;
@@ -743,12 +764,12 @@ footer.footer {
     padding: 0 2rem;
   }
 
-  .contact-details .contact-detail .icon {
-    margin-right: 0 !important;
-  }
-
   .row a.blog-link *+* {
     margin: 1rem auto;
+  }
+
+  .w-lg-75 {
+    max-width: 75%;
   }
 
   footer.footer {
