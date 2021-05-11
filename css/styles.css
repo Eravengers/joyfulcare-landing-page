@@ -73,10 +73,12 @@ a.cta-btn {
 
 .heading-outline-orange {
   -webkit-text-stroke-color: #d679407a;
+  text-stroke-color: #d679407a;
 }
 
 .heading-outline-blue {
   -webkit-text-stroke-color: #2158857a;
+  -o-text-stroke-color: #2158857a;
 }
 
 .heading-outline-white {
