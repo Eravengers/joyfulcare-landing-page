@@ -38,7 +38,7 @@ html {
 }
 
 .displayNone {
-  display: none;
+  display: none !important;
 }
 
 .noOutline {
