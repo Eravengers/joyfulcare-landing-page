@@ -3,9 +3,7 @@ $(function () {
   // Preloader
   // fadeOut the preloader in 2s after document loaded
   let preloaderCont = $("#preloader");
-  setTimeout(() => {
-    preloaderCont.fadeOut(200);
-  }, 2000);
+  preloaderCont.delay(2000).fadeOut(200); // hide preloaderCont in 2s 
 
   // Navbar toggler
   let btnToggler = $(".navbar-toggler");
