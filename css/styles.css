@@ -97,7 +97,7 @@ a.cta-btn {
 /* Buttons */
 
 .cta-btn-container {
-    margin: 2rem auto;
+    margin: 2rem 0;
     height: auto;
 }
 
@@ -211,6 +211,10 @@ div#preloader {
     color: #53749d;
 }
 
+.navbar-nav .nav-link:hover {
+    color: #0e2b4e;
+}
+
 .dropdown-menu.w-3rem {
     min-width: 3rem !important;
     padding: 12px;
@@ -236,6 +240,14 @@ section.hero {
 .hero .hero-text-content {
     padding: 1rem;
     margin-top: 1.5rem;
+    height: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    align-items: start;
+    border: 0;
 }
 
 .hero .hero-image {
@@ -243,7 +255,7 @@ section.hero {
 }
 
 .hero .hero-description {
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
 }
 
 .cards {
@@ -714,8 +726,8 @@ footer.footer {
         margin-top: -30px;
     }
     .cta-btn-container {
-        margin: 3rem auto;
-        margin-top: 7rem;
+        margin: 3rem 0;
+        margin-top: 3rem;
         height: auto;
     }
     .blog .cta-btn-container {
@@ -753,7 +765,7 @@ footer.footer {
         margin: 0;
     }
     .heading-outline {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     section.hero {
         height: 80vh;
