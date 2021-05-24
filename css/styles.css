@@ -72,7 +72,7 @@ a.cta-btn {
     font-weight: 700;
     width: 100%;
     max-width: 100%;
-    margin-bottom: 0.525rem;
+    /* margin-bottom: 0.525rem; */
 }
 
 .heading-outline-orange {
@@ -260,7 +260,8 @@ section.hero {
 
 .cards {
     margin: auto;
-    height: 300px;
+    height: 315px;
+    max-width: 440px;
     text-align: center;
     border-radius: 2px;
     display: block;
@@ -269,8 +270,8 @@ section.hero {
 }
 
 .cards .card-icon {
-    height: 38px;
-    width: 38px;
+    height: 50px;
+    width: 50px;
     text-align: center;
     margin: auto;
     margin-top: 3rem;
