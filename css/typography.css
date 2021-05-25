@@ -32,6 +32,18 @@
 @import url(../fonts/Lato-Light.ttf);
 @import url(../fonts/Lato-Medium.ttf);
 @import url(../fonts/Lato-Regular.ttf);
+@import url(../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf);
+@import url(../fonts/raleway/Raleway-VariableFont_wght.ttf);
+@font-face {
+    font-family: 'Raleway Italic';
+    src: url(../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-VariableFont_wght.ttf)
+}
+
 @font-face {
     font-family: 'Lato Bold';
     src: url(../fonts/Lato-Bold.ttf)
@@ -60,7 +72,7 @@
 */
 
 body {
-    font-family: 'Lato Regular', sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 16px;
     overflow: auto;
 }
@@ -72,7 +84,7 @@ section h4,
 section h5,
 section h6 {
     margin: 0;
-    font-family: 'Lato Regular', sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
@@ -84,7 +96,7 @@ h4 a,
 h5 a,
 h6 a {
     font-weight: inherit;
-    font-family: 'Lato Bold', sans-serif;
+    font-family: Raleway, sans-serif;
 }
 
 h1 {
@@ -128,6 +140,10 @@ p {
     letter-spacing: 0;
     line-height: 28px;
     margin: 0;
+}
+
+.title {
+    font-family: Raleway, sans-serif;
 }
 
 p img {
@@ -358,7 +374,7 @@ dd {
 }
 
 
-/* 
+/*
 --------------------------
 - Custom Typography
 --------------------------

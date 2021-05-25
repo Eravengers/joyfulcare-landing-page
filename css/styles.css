@@ -354,28 +354,11 @@ section.hero {
     width: 80%;
 }
 
-.about-us .about-image-container .img-3 {
-    height: auto;
+.about-us .about-image-container .img {
+    height: 100%;
+    max-height: 420px;
     width: 100%;
-}
-
-.about-us .about-image-container .img-1,
-.about-us .about-image-container .img-2 {
-    width: 40%;
-    height: auto;
-    z-index: 2;
-}
-
-.about-us .about-image-container .img-1 {
-    position: relative;
-    top: 50px;
-    left: 75%;
-}
-
-.about-us .about-image-container .img-2 {
-    position: relative;
-    bottom: 50px;
-    left: -15%;
+    margin-top: -4px;
 }
 
 .about-us .about-details {
@@ -790,7 +773,7 @@ footer.footer {
         font-size: 1.625rem;
         line-height: 40px;
     }
-    .about-us .about-image-container .img-3 {
+    .about-us .about-image-container .img {
         height: 100%;
         max-height: 380px;
     }
