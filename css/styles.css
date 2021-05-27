@@ -525,6 +525,14 @@ section.blog {
 }
 
 
+/* Partner images */
+
+.partner-img {
+    width: 120px;
+    max-height: 120px;
+}
+
+
 /* Contact section */
 
 section.contact {
@@ -552,7 +560,7 @@ section.contact {
     justify-content: center;
 }
 
-.contact .contact-map .contact-overlay {
+.contact .contact-map .contact-ove rlay {
     padding: 1.625rem;
     margin: auto;
     font-size: 16px;
