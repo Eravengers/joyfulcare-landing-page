@@ -227,6 +227,10 @@ header {
     margin: 0;
 }
 
+section.section {
+    margin: 3rem auto;
+}
+
 section.hero {
     display: block;
     background-color: #285185;
@@ -526,7 +530,7 @@ section.contact {
     justify-content: center;
 }
 
-.contact .contact-map .contact-ove rlay {
+.contact .contact-map .contact-overlay {
     padding: 1.625rem;
     margin: auto;
     font-size: 16px;
