@@ -396,40 +396,6 @@ section.services {
     font-size: 1.125rem;
 }
 
-
-/* Testimonial section */
-
-section.testimonials {
-    background-color: #fbf3ee;
-    padding: 1rem;
-}
-
-.testimonials .testimonial-container {
-    margin: 3rem auto;
-}
-
-.testimonial-container .testimonial-rating {
-    margin-top: 1rem;
-}
-
-.testimonial-container .testimonial-rating .fa {
-    color: #fe9532;
-}
-
-.testimonial-container .testimonial-name {
-    color: #285185;
-    font-weight: 600;
-    font-size: 1.525rem;
-}
-
-.testimonial-container .testimonial-text {
-    color: #d67940;
-    margin: auto;
-    margin-top: 1.325rem;
-    max-width: 80%;
-    font-size: 1.225rem;
-}
-
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -527,7 +493,7 @@ section.blog {
 
 /* Partner images */
 
-.partner-img {
+.partners .partner-img {
     width: 120px;
     max-height: 120px;
 }
