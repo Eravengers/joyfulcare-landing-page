@@ -52,6 +52,7 @@ html {
 a.cta-link,
 a.cta-btn {
     text-decoration: none !important;
+    font-weight: 700;
 }
 
 .title {
