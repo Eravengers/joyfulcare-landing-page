@@ -133,9 +133,9 @@
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0"
-        style="display:none;visibility:hidden"></iframe>
-    </noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0"
+				style="display:none;visibility:hidden"></iframe>
+		</noscript>
     <!-- End Google Tag Manager (noscript) -->
 </head>
 
@@ -159,9 +159,9 @@
                     <img src="assets/Logo.svg" class="logo" alt="Joyful care logo" />
                 </a>
                 <button class="navbar-toggler noOutline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-cross displayNone"></span>
-            <span class="lnr lnr-menu"></span>
-          </button>
+						<span class="lnr lnr-cross displayNone"></span>
+						<span class="lnr lnr-menu"></span>
+					</button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -307,7 +307,7 @@
                                 Joyful Care provides more than friendly communication that ensures client's comfort and peace of mind that is needed by families.
                             </p>
                             <a href="#companionship" class="cta-link services-card-link text-bold" role="button" data-toggle="modal" data-target="#detailsModal" data-title="Companionship" data-text="Our companionship and homemaking programs make our client's days happier and smoother. If you need a few hours of light housekeeping per week or a full-time plan to help with prescriptions and meal planning, our programs can be customized to your specific needs. <br><br>Professionals in in homemaker/companionship care act as another entity inside the household, doing everything from washing and trash disposal to reading aloud and playing cards. They are there to assist people with remembering to take their drugs, keeping up around the home, and even driving someone to an appointment. <br><br> Many of the programs rendered by the organization include: Transportation, Reading a book aloud, Playing games, Accompanying the patient for a walk outside, Letter writing, and Monitoring the home. ">
-                  Learn More</a>
+									Learn More</a>
                         </div>
                     </a>
                 </div>
@@ -325,7 +325,7 @@
                                 Joyful Care provides assistance to patients who are unable to independently perform their routine activities.
                             </p>
                             <a href="#patient-care-assistant" class="cta-link services-card-link text-bold" role="button" data-toggle="modal" data-target="#detailsModal" data-title="Patient Care Assistant" data-text="You want your parent, friend, or loved one to be able to maintain their privacy and security in their own home for as long as possible. <br> <br>Assisted Living care is now a common option for the elderly, as it allows them to live in the safety and security of their own home, and relieves the care of caregivers and family members. <br><br> PSA supervises, treats, and dresses clients who need care due to advanced age, physical injury, or behavioral illness. Often helps participants in other tasks related to their independent living where they are unable to handle independently due to medical or age limits.">
-                  Learn More</a>
+									Learn More</a>
                         </div>
                     </a>
                 </div>
@@ -361,12 +361,18 @@
                     <p class="about-details">
                         We understand your loved one's desire to maintain their privacy and security in the family surroundings of home for as long as possible. Joyful Care provides a safe option that allows patients to remain within the comfort and serenity of their own home,
                         adding a piece of mind to caregivers and family members.
+
+                        <span id="dots">...</span><span id="moreText">erisque enim ligula venenatis dolor. Maecenas nisl est,
+								ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis
+								dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+								turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+								dapibus pulvinar nibh tempor porta.</span>
                     </p>
 
                     <!-- Learn more btn -->
                     <div class="cta-btn-container">
-                        <a href="#learnmore" class="text-bold color-theme-orange" role="button" data-toggle="modal" data-target="#detailsModal" data-title="About Us" data-text="Everything you need to support you in your efforts as a family caregiver. <br><br> Joyful Care is dedicated to providing families with the best in-home care facilities available. Our commitment to you is simple: we'll help your loved one stay at home while still giving you peace of mind. <br><br> We at Joyful Care recognize why you want the best home care for your senior loved one. You're looking for a knowledgeable, competent elder care provider who can treat your loved one with integrity and reverence. <br><br> Our home care providers are experts with the qualifications and expertise you're looking for. We'll pair you with a home care provider that will look after your loved one's health and well-being. ">Learn
-                More</a>
+                        <a href="#learnMoreBtn" id="learnMoreBtn" class="text-bold color-theme-orange" role="button" data-toggle="modal" data-target="#detailsModal" data-title="About Us" data-text="Everything you need to support you in your efforts as a family caregiver. <br><br> Joyful Care is dedicated to providing families with the best in-home care facilities available. Our commitment to you is simple: we'll help your loved one stay at home while still giving you peace of mind. <br><br> We at Joyful Care recognize why you want the best home care for your senior loved one. You're looking for a knowledgeable, competent elder care provider who can treat your loved one with integrity and reverence. <br><br> Our home care providers are experts with the qualifications and expertise you're looking for. We'll pair you with a home care provider that will look after your loved one's health and well-being. ">Learn
+								More</a>
                     </div>
                     <!-- /Learn more btn -->
 
@@ -379,9 +385,17 @@
     <!-- /About -->
 
     <!-- Partners section -->
-    <section class="section partners" id="partners">
+    <section class="section partners my-5" id="partners">
         <div class="container">
             <div class="row text-center">
+                <div class="col-12 text-center">
+                    <div class="heading-outline">
+                        <span class="heading-outline-orange">Partners</span>
+                    </div>
+                    <h3 class="about-us--title color-theme-blue mb-4">Trusted by
+                    </h3>
+                </div>
+
                 <!-- Partners individual image -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <img class="partner-img" src="assets/Images/partners/partner1.svg" alt="partner image" srcset="assets/Images/partners/partner1.svg">
@@ -426,8 +440,8 @@
                                         </div>
                                         <div class="mail-text">
                                             <a class="cta-link color-theme-gray" href="mailto:info@joyfulcarect.com">
-                          info@joyfulcarect.com
-                        </a>
+													info@joyfulcarect.com
+												</a>
                                         </div>
                                     </div>
 
@@ -437,8 +451,8 @@
                                         </div>
                                         <div class="call-text">
                                             <a class="cta-link color-theme-gray" href="tel:2032433990">
-                          (203) 243-3990
-                        </a>
+													(203) 243-3990
+												</a>
                                         </div>
                                     </div>
 
@@ -448,8 +462,8 @@
                                         </div>
                                         <div class="location-text">
                                             <a class="cta-link color-theme-gray">
-                          14 Glen Pl, Brideport CT 06610
-                        </a>
+													14 Glen Pl, Brideport CT 06610
+												</a>
                                         </div>
                                     </div>
 
@@ -493,8 +507,8 @@
                             </div>
 
                             <button class="button">
-                  Send
-                </button>
+									Send
+								</button>
                         </form>
                         <!-- /Contact form ends -->
 
@@ -518,16 +532,16 @@
                         <img src="assets/Logo footer.svg" alt="Joyful Care logo" class="">
                     </div>
                     <address class="footer-address">
-              14 Glen Pl, Bridgeport CT 06610.
-            </address>
+							14 Glen Pl, Bridgeport CT 06610.
+						</address>
                     <div class="legal">
                         <span class="copyright" id="copyright">
-              </span>
+							</span>
                         <span class="legal-link">
-                <a href="#privacy">Privacy</a>
-                -
-                <a href="#terms">Terms</a>
-              </span>
+								<a href="#privacy">Privacy</a>
+								-
+								<a href="#terms">Terms</a>
+							</span>
                     </div>
                 </div>
                 <!-- /First column -->
@@ -570,11 +584,15 @@
                     <div class="newsletter-input-box">
                         <input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address" class="newsletter-input">
                         <button class="button newsletter-button">
-                Subscribe
-              </button>
+								Subscribe
+							</button>
                     </div>
 
-                    <div class="stay-connected">'</div>
+                    <div class="stay-connected d-inline">
+                        <a href="#" title="Joyful Care on Facebook" class="social-icon">
+                            <img class="" src="assets/Images/social-icons/facebook icons.svg" alt="Joyful Care on Facebook" srcset="">
+                        </a>
+                    </div>
                 </div>
 
                 <!-- /Third column -->
