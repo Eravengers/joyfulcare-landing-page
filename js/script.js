@@ -59,5 +59,29 @@ $(function() {
     $("#copyright").text(`© ${copyrightYear}`);
 
 
+    // Read more / Read less buttons
+
+    function readMoreLess() {
+        var dots = $("#dots"),
+            moreText = $("#moreText"),
+            learnMoreBtn = $("#learnMoreBtn");
+
+        //if Read more/less btn is clicked
+        learnMoreBtn.on("click", function() {
+
+            console.log("Learn more btn clicked");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                learnMoreBtn.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                learnMoreBtn.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        })
+    }
+    readMoreLess();
 
 }(jQuery))
