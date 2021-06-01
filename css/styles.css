@@ -640,6 +640,37 @@ footer.footer {
     border-radius: 2px;
 }
 
+.social-icons .social-icon {
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.stay-connected .social-icons {
+    margin: auto;
+}
+
+.stay-connected .social-icons *+* {
+    margin: 0;
+}
+
+.social-icons a.social-icon {
+    background-color: transparent;
+    text-decoration: none;
+    margin: auto 8px;
+}
+
+.social-icons .social-icon img {
+    width: 44px;
+    height: 44px;
+    padding: 0.625rem;
+}
+
 .modal-header .small-line {
     width: 58px;
     height: 4px;
