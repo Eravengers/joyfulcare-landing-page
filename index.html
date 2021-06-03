@@ -45,6 +45,8 @@
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
 
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect" />
+
     <!-- Site Verifications -->
     <meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
     <meta name="google-analytics" content="UA-XXXXXXX-X">
@@ -169,10 +171,10 @@
                             <a class="nav-link mr-4 js-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mr-4 js-scroll" href="#services">Our Services</a>
+                            <a class="nav-link mr-4 js-scroll" href="services.html">Our Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mr-4 js-scroll" href="#about">About Us</a>
+                            <a class="nav-link mr-4 js-scroll" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mr-4 js-scroll button contact-us-btn" href="#contact">Contact Us</a>
@@ -203,7 +205,7 @@
                         </h1>
                         <p class="hero-description text-description color-theme-white text-leftP
 												">
-                            Get affordable care at the comfort of your home
+                            Get affordable care at the comfort of your home.
                         </p>
 
                         <!-- Get in touch btn -->
@@ -346,7 +348,7 @@
                 <!-- About image container -->
                 <div class="about-us-content col-sm-12 col-md-6 col-lg-6">
                     <div class="about-image-container animated fadeInUp">
-                        <img src="assets/Image 3.svg" alt="image" class="animated fadeIn img">
+                        <img src="assets/Image-3.svg" alt="image" class="animated fadeIn img">
                     </div>
                 </div>
                 <!-- /About image container -->
@@ -361,11 +363,17 @@
                     <p class="about-details">
                         We understand your loved one's desire to maintain their privacy and security in the family surroundings of home for as long as possible. Joyful Care provides a safe option that allows patients to remain within the comfort and serenity of their own home,
                         adding a piece of mind to caregivers and family members.
+
+                        <span id="dots">...</span><span id="moreText">erisque enim ligula venenatis dolor. Maecenas nisl est,
+                ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis
+                dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+                dapibus pulvinar nibh tempor porta.</span>
                     </p>
 
                     <!-- Learn more btn -->
                     <div class="cta-btn-container">
-                        <a href="#learnmore" class="text-bold color-theme-orange" role="button" data-toggle="modal" data-target="#detailsModal" data-title="About Us" data-text="Everything you need to support you in your efforts as a family caregiver. <br><br> Joyful Care is dedicated to providing families with the best in-home care facilities available. Our commitment to you is simple: we'll help your loved one stay at home while still giving you peace of mind. <br><br> We at Joyful Care recognize why you want the best home care for your senior loved one. You're looking for a knowledgeable, competent elder care provider who can treat your loved one with integrity and reverence. <br><br> Our home care providers are experts with the qualifications and expertise you're looking for. We'll pair you with a home care provider that will look after your loved one's health and well-being. ">Learn
+                        <a href="#learnMoreBtn" id="learnMoreBtn" class="text-bold color-theme-orange" role="button" data-toggle="modal" data-target="#detailsModal" data-title="About Us" data-text="Everything you need to support you in your efforts as a family caregiver. <br><br> Joyful Care is dedicated to providing families with the best in-home care facilities available. Our commitment to you is simple: we'll help your loved one stay at home while still giving you peace of mind. <br><br> We at Joyful Care recognize why you want the best home care for your senior loved one. You're looking for a knowledgeable, competent elder care provider who can treat your loved one with integrity and reverence. <br><br> Our home care providers are experts with the qualifications and expertise you're looking for. We'll pair you with a home care provider that will look after your loved one's health and well-being. ">Learn
                 More</a>
                     </div>
                     <!-- /Learn more btn -->
@@ -382,6 +390,14 @@
     <section class="section partners" id="partners">
         <div class="container">
             <div class="row text-center">
+                <div class="col-12 text-center">
+                    <div class="heading-outline">
+                        <span class="heading-outline-orange">Partners</span>
+                    </div>
+                    <h3 class="about-us--title color-theme-blue mb-4">Trusted by
+                    </h3>
+                </div>
+
                 <!-- Partners individual image -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <img class="partner-img" src="assets/Images/partners/partner1.svg" alt="partner image" srcset="assets/Images/partners/partner1.svg">
@@ -543,10 +559,10 @@
                                 <a href="#home">Home</a>
                             </li>
                             <li class="footer-link">
-                                <a href="#about">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li class="footer-link">
-                                <a href="#services">Our Services</a>
+                                <a href="services.html">Our Services</a>
                             </li>
                             <li class="footer-link">
                                 <a href="#contact">Contact Us</a>
@@ -573,8 +589,22 @@
                 Subscribe
               </button>
                     </div>
+                    <!-- Social media icons -->
+                    <div class="stay-connected d-inline">
+                        <div class="social-icons">
+                            <a href="#" title="Joyful Care on Facebook" class="social-icon">
+                                <img class="social-icon" src="assets/Icons/social-icons/facebook-icon.svg" alt="Joyful Care on Facebook" srcset="assets/Icons/social-icons/facebook-icon.svg">
+                            </a>
 
-                    <div class="stay-connected">'</div>
+                            <a href="#" title="Joyful Care on Twitter" class="social-icon">
+                                <img class="social-icon" src="assets/Icons/social-icons/twitter-icon.svg" alt="Joyful Care on Twitter" srcset="assets/Icons/social-icons/twitter-icon.svg">
+                            </a>
+
+                            <a href="#" title="Joyful Care on Instagram" class="social-icon">
+                                <img class="social-icon" src="assets/Icons/social-icons/instagram-icon.svg" alt="Joyful Care on Instagram" srcset="assets/Icons/social-icons/instagram-icon.svg">
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- /Third column -->
