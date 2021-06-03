@@ -364,8 +364,9 @@ section.hero {
 }
 
 .about-us .about-image-container {
-    margin: auto;
-    width: 80%;
+    margin: 0;
+    width: 100%;
+    float: right;
 }
 
 .about-us .about-image-container .img {
