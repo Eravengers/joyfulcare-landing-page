@@ -363,15 +363,13 @@ section.hero {
 }
 
 .about-us .about-image-container {
-    margin: auto;
-    width: 80%;
-}
-
-.about-us .about-image-container .img {
+    background-image: url(../assets/Image-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100%;
-    max-height: 420px;
     width: 100%;
-    margin-top: -4px;
+    margin: auto;
+    text-align: center;
 }
 
 .about-us .about-details {
@@ -794,10 +792,6 @@ footer.footer {
     .text-description {
         font-size: 1.625rem;
         line-height: 40px;
-    }
-    .about-us .about-image-container .img {
-        height: 100%;
-        max-height: 380px;
     }
     .about-us .about-details {
         line-height: 32px;
