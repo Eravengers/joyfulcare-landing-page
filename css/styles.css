@@ -235,20 +235,28 @@ header {
     margin: 0;
 }
 
-section.section {
+section.section:not(section.hero.index-hero) {
     margin: 4rem auto;
 }
 
 section.hero {
     display: block;
     background-color: #285185;
-    background-image: url(../assets/Hero-image.svg);
-    box-shadow: 0 0 0 2000px #28508571 inset;
+    box-shadow: 0 0 0 2000px #285085a6 inset;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+section.hero.index-hero {
     width: 100%;
     height: 75vh;
-    margin: auto;
+    background-image: url(../assets/Hero-image.svg);
+}
+
+section.hero.page-hero {
+    width: 100%;
+    height: 35vh;
+    background-image: url(../assets/Hero-image.svg);
 }
 
 .hero .hero-text-content {
@@ -256,7 +264,6 @@ section.hero {
     margin-top: 1.5rem;
     height: 100%;
     padding: 1rem;
-    margin-top: 1.5rem;
     height: 100%;
     display: grid;
     place-content: center;
@@ -737,7 +744,6 @@ footer.footer {
         text-align: left;
         padding: 3rem;
         margin-top: 2rem;
-        margin-left: 2rem;
     }
     .cta-btn-container {
         margin: 3rem 0;
@@ -785,7 +791,7 @@ footer.footer {
     .heading-outline {
         font-size: 5rem;
     }
-    section.hero {
+    section.hero.index-hero {
         height: 80vh;
     }
     .cta-btn {
