@@ -54,6 +54,10 @@ a.cta-btn {
     text-decoration: none !important;
 }
 
+.navbar-nav .nav-link.active {
+    color: #da641c;
+}
+
 .title {
     font-weight: 700;
     font-size: 1.925rem;
