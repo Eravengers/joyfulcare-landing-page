@@ -296,7 +296,7 @@ section.hero.page-hero {
     cursor: pointer;
 }
 
-.cards .card-icon {
+.card-icon {
     height: 50px;
     width: 50px;
     text-align: center;
@@ -308,14 +308,19 @@ section.hero.page-hero {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    line-height: 3rem;
 }
 
-.cards .card-icon.card-icon-orange {
+.card-icon.card-icon-orange {
     background-color: #de9466;
 }
 
-.cards .card-icon.card-icon-white {
+.card-icon.card-icon-white {
     background-color: #fff;
+}
+
+.card-icon.card-icon-blue {
+    background-color: #285185;
 }
 
 .cards .card-icon img {
@@ -424,12 +429,26 @@ section.services {
     font-size: 1.125rem;
 }
 
+.companionship-bg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../assets/services/Companionship-Image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -webkit-transform 0.5s ease;
+    -o-transition: -webkit-transform 0.5s ease;
 }
 
 .carousel-indicators {
