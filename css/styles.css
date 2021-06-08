@@ -765,7 +765,7 @@ footer.footer {
 }
 
 @media screen and (min-width: 801px) {
-    section.hero {
+    section.hero.index-hero {
         background-color: #285185;
         background-image: none;
     }
