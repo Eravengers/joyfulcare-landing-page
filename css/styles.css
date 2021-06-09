@@ -54,6 +54,10 @@ a.cta-btn {
     text-decoration: none !important;
 }
 
+.navbar-nav .nav-link.active {
+    color: #da641c;
+}
+
 .title {
     font-weight: 700;
     font-size: 1.925rem;
@@ -235,20 +239,30 @@ header {
     margin: 0;
 }
 
-section.section {
+section.section:not(section.hero.index-hero) {
     margin: 4rem auto;
 }
 
 section.hero {
     display: block;
     background-color: #285185;
-    background-image: url(../assets/Hero-image.svg);
-    box-shadow: 0 0 0 2000px #28508571 inset;
+    box-shadow: 0 0 0 2000px #285085c2 inset;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+section.hero.index-hero {
     width: 100%;
     height: 75vh;
-    margin: auto;
+    background-image: url(../assets/Hero-image.svg);
+}
+
+section.hero.page-hero {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 55vh;
+    background-image: url(../assets/Hero-image.svg);
 }
 
 .hero .hero-text-content {
@@ -256,7 +270,6 @@ section.hero {
     margin-top: 1.5rem;
     height: 100%;
     padding: 1rem;
-    margin-top: 1.5rem;
     height: 100%;
     display: grid;
     place-content: center;
@@ -283,7 +296,7 @@ section.hero {
     cursor: pointer;
 }
 
-.cards .card-icon {
+.card-icon {
     height: 50px;
     width: 50px;
     text-align: center;
@@ -295,14 +308,19 @@ section.hero {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    line-height: 3rem;
 }
 
-.cards .card-icon.card-icon-orange {
+.card-icon.card-icon-orange {
     background-color: #de9466;
 }
 
-.cards .card-icon.card-icon-white {
+.card-icon.card-icon-white {
     background-color: #fff;
+}
+
+.card-icon.card-icon-blue {
+    background-color: #285185;
 }
 
 .cards .card-icon img {
@@ -411,12 +429,26 @@ section.services {
     font-size: 1.125rem;
 }
 
+.companionship-bg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../assets/services/Companionship-Image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -webkit-transform 0.5s ease;
+    -o-transition: -webkit-transform 0.5s ease;
 }
 
 .carousel-indicators {
@@ -737,7 +769,6 @@ footer.footer {
         text-align: left;
         padding: 3rem;
         margin-top: 2rem;
-        margin-left: 2rem;
     }
     .cta-btn-container {
         margin: 3rem 0;
@@ -759,7 +790,7 @@ footer.footer {
 }
 
 @media screen and (min-width: 801px) {
-    section.hero {
+    section.hero.index-hero {
         background-color: #285185;
         background-image: none;
     }
@@ -776,6 +807,9 @@ footer.footer {
         -moz-mask-image: linear-gradient(to right, transparent 5%, black 75%);
         -o-mask-image: linear-gradient(to right, transparent 5%, black 75%);
     }
+    section.hero.page-hero {
+        height: 45vh;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -785,7 +819,7 @@ footer.footer {
     .heading-outline {
         font-size: 5rem;
     }
-    section.hero {
+    section.hero.index-hero {
         height: 80vh;
     }
     .cta-btn {
