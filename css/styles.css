@@ -504,6 +504,33 @@ section.services {
 	height: 0;
 	border: 0;
 }
+.dropdown-menu {
+	font-weight: normal;
+	position: relative;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 10rem;
+	height: 7rem;
+	padding: 0.5rem 12px;
+	margin: .225rem 0 0;
+	font-size: 1rem;
+	color: inherit;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	color: #212529;
+	background-clip: padding-box;
+	border: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+
 
 .faqs .dropdown .caret-down {
 	position: relative;
@@ -929,9 +956,10 @@ footer.footer {
 	.w-lg-75 {
 		max-width: 75%;
 	}
-.faqs .dropdown .caret-down {
-	left: 42rem;
-}
+
+	.faqs .dropdown .caret-down {
+		left: 42rem;
+	}
 
 	.contact .contact-map .contact-img-map {
 		height: 100%;
