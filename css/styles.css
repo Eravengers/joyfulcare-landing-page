@@ -506,9 +506,9 @@ section.services {
 }
 
 .faqs .dropdown .caret-down {
-	position: absolute;
-	right: 1rem;
-	top: 2rem;
+	position: relative;
+	left: 18rem;
+	top: -3rem;
 	margin-left: .255em;
 	vertical-align: .255em;
 	display: inline-block;
@@ -519,7 +519,7 @@ section.services {
 	border-top: .3em solid;
 	border-right: .3em solid transparent;
 	border-bottom: 0;
-	border-left: .3em solid transparent;
+	border-left: .3em solid transparent
 }
 
 /* Blog */
@@ -852,6 +852,11 @@ footer.footer {
 	.modal-image-container .modal-title#detailsModalLabel {
 		font-size: 2.525rem;
 	}
+
+	.faqs .dropdown .caret-down {
+		left: 40rem;
+	}
+
 }
 
 @media screen and (min-width: 801px) {
@@ -924,6 +929,9 @@ footer.footer {
 	.w-lg-75 {
 		max-width: 75%;
 	}
+.faqs .dropdown .caret-down {
+	left: 42rem;
+}
 
 	.contact .contact-map .contact-img-map {
 		height: 100%;
