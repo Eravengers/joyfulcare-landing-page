@@ -485,6 +485,7 @@ section.services {
 	border: 1px solid #4e555d56;
 	display: inline-block;
 	font-weight: 700;
+	cursor: pointer;
 	white-space: normal;
 	vertical-align: middle;
 	-webkit-user-select: none;
@@ -504,6 +505,7 @@ section.services {
 	height: 0;
 	border: 0;
 }
+
 .dropdown-menu {
 	font-weight: normal;
 	position: relative;
