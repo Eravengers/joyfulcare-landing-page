@@ -3511,6 +3511,7 @@ input[type=submit].btn-block {
 .dropdown-menu.show {
 	display: block;
 	z-index: 1000;
+	width: 100%;
 }
 
 .dropdown-header {
