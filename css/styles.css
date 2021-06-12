@@ -416,8 +416,8 @@ section.hero.page-hero {
 
 
 /* Services section */
-
-section.services {
+section.services-home {
+	background-color: #285185;
 	padding: 1rem;
 }
 
