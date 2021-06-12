@@ -52,6 +52,7 @@ html {
 a.cta-link,
 a.cta-btn {
 	text-decoration: none !important;
+	font-weight: bold;
 }
 
 .navbar-nav .nav-link.active,
@@ -439,39 +440,30 @@ section.services {
 	font-size: 1.125rem;
 }
 
-.companionship-bg {
+.services-bg {
 	display: block;
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	background-image: url("../assets/services/Companionship-Image.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.carousel-item {
-	transition: -webkit-transform 0.5s ease;
-	transition: transform 0.5s ease;
-	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-	-webkit-backface-visibility: visible;
-	backface-visibility: visible;
-	-webkit-transition: -webkit-transform 0.5s ease;
-	-moz-transition: -webkit-transform 0.5s ease;
-	-ms-transition: -webkit-transform 0.5s ease;
-	-o-transition: -webkit-transform 0.5s ease;
+.companionship-bg {
+	background-image: url("../assets/services/Companionship-Image.svg");
 }
 
-.carousel-indicators {
-	position: absolute;
-	bottom: -50px !important;
+.pca-bg {
+	background-image: url("../assets/services/pca-Image.svg");
 }
 
-.carousel-indicators li {
-	background-color: #f7e4d9 !important;
+.read-more {
+	cursor: pointer;
+	color: #285185;
 }
 
-.carousel-indicators li.active {
-	background-color: #de9466 !important;
+.read-more:hover {
+	color:#da641c
 }
 
 /* FAQs */
