@@ -52,7 +52,6 @@ html {
 a.cta-link,
 a.cta-btn {
 	text-decoration: none !important;
-	font-weight: bold;
 }
 
 .navbar-nav .nav-link.active,
@@ -419,7 +418,6 @@ section.hero.page-hero {
 /* Services section */
 
 section.services {
-	background-color: #285185;
 	padding: 1rem;
 }
 
@@ -449,21 +447,25 @@ section.services {
 	background-size: cover;
 }
 
-.companionship-bg {
+.services .companionship-bg {
 	background-image: url("../assets/services/Companionship-Image.svg");
 }
 
-.pca-bg {
+.services .pca-bg {
 	background-image: url("../assets/services/pca-Image.svg");
 }
 
-.read-more {
+.services .read-more {
 	cursor: pointer;
 	color: #285185;
 }
 
-.read-more:hover {
-	color:#da641c
+.services .read-more:hover {
+	color: #da641c
+}
+
+.services ul.services-list {
+	list-style-type: disc;
 }
 
 /* FAQs */
