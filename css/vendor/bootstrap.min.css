@@ -3512,6 +3512,12 @@ input[type=submit].btn-block {
 	display: block;
 	z-index: 1000;
 	width: 100%;
+	border: 1px solid #de9466;
+	border-top: 0;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	text-decoration: none;
+
 }
 
 .dropdown-header {
