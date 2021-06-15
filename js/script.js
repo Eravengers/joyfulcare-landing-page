@@ -67,45 +67,64 @@ $(function () {
 			learnMoreBtn = $("#learnMoreBtn");
 
 		// Services section
+
 		//readMoreCompanionshipBtn
 		let readMoreCompanionshipBtn = $("#readMoreCompanionshipBtn"),
-		readMoreCompanionshipBtnTxt = $("readMoreCompanionshipBtnTxt"),
-			readMoreCompanionshipCaret = $("readMoreCompanionshipCaret"),
+			readMoreCompanionshipBtnTxt = $("#readMoreCompanionshipBtnTxt"),
+			readMoreCompanionshipCaret = $("#readMoreCompanionshipCaret"),
 			readMoreCompanionship = $("#readMoreCompanionship");
+
 		readMoreCompanionship.slideToggle(); //hide readMoreCompanionship by default;
+		readMoreCompanionshipCaret.text("Read more"); //sets text to "Read more" by default
 
 		readMoreCompanionshipBtn.on("click", function () {
 			readMoreCompanionship.slideToggle(300); //toggles readMoreCompanionship when the btn is clicked
-			let newText = $(this).text() == "Read more" ? "Read more" : "Read less",
-				newCaret = readMoreCompanionshipCaret.hasClass("fa-caret-down") == "fa-caret-down" ? "fa-caret-up" : "fa-caret-down";
-			readMoreCompanionshipBtn.text(newText); //sets new text
-			// console.log(newText);
-			readMoreCompanionshipCaret.addClass("newCaret"); // sets newCaret as class
-			console.log(newCaret);
-			console.log(readMoreCompanionshipCaret.hasClass("fa-caret-down"));
+			let newText = $(this).text().trim(); // Gets text and remove whitespace;
+			// Alternate between texts
+			if (newText == "Read more") {
+				newText = "Read less";
+				readMoreCompanionshipCaret.addClass("fa-caret-up");
+				readMoreCompanionshipCaret.removeClass("fa-caret-down");
+			} else {
+				newText = "Read more";
+				readMoreCompanionshipCaret.removeClass("fa-caret-up");
+				readMoreCompanionshipCaret.addClass("fa-caret-down");
+			}
+
+			readMoreCompanionshipCaret.text(newText); //sets new text
+
+			// For development use ONLY
+			// console.log(`Text is ${newText}`);
 		});
 
+		//readMorePcaBtn
+		let readMorePcaBtn = $("#readMorePcaBtn"),
+			readMorePcaBtnTxt = $("#readMorePcaBtnTxt"),
+			readMorePcaCaret = $("#readMorePcaCaret"),
+			readMorePca = $("#readMorePca");
 
-	//readMorePcaBtn
-			let readMorePcaBtn = $("#readMorePcaBtn"),
-				readMorePcaBtnTxt = $("readMorePcaBtnTxt"),
-				readMorePcaCaret = $("readMorePcaCaret"),
-				readMorePca = $("#readMorePca");
-			readMorePca.slideToggle(); //hide readMorePca by default;
+		readMorePca.slideToggle(); //hide readMorePca by default;
+		readMorePcaCaret.text("Read more"); //sets text to "Read more" by default
+		readMorePcaBtn.on("click", function () {
+			readMorePca.slideToggle(300); //toggles readMorePca when the btn is clicked
+			let newText = $(this).text().trim(); // Gets text and remove whitespace;
+			// Alternate between texts
+			if (newText == "Read more") {
+				newText = "Read less";
+				readMorePcaCaret.addClass("fa-caret-up");
+				readMorePcaCaret.removeClass("fa-caret-down");
+			} else {
+				newText = "Read more";
+				readMorePcaCaret.removeClass("fa-caret-up");
+				readMorePcaCaret.addClass("fa-caret-down");
+			}
 
-			readMorePcaBtn.on("click", function () {
-				readMorePca.slideToggle(300); //toggles readMorePca when the btn is clicked
-				let newText = $(this).text() == "Read more" ? "Read more" : "Read less",
-					newCaret = readMorePcaCaret.hasClass("fa-caret-down") == "fa-caret-down" ? "fa-caret-up" : "fa-caret-down";
-				readMorePcaBtn.text(newText); //sets new text
-				// console.log(newText);
-				readMorePcaCaret.addClass("newCaret"); // sets newCaret as class
-				console.log(newCaret);
-				console.log(readMorePcaCaret.hasClass("fa-caret-down"));
+			readMorePcaCaret.text(newText); //sets new text
+
+			// For development use ONLY
+			// console.log(`Text is ${newText}`);
 		});
 
-
-		
 		//if Read more/less btn is clicked
 		/* learnMoreBtn.on("click", function() {
 
