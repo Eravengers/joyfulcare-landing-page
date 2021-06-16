@@ -456,16 +456,16 @@ section.services-home {
 	background-image: url("../assets/services/pca-Image.svg");
 }
 
-.services .read-more {
+.read-more {
 	cursor: pointer;
 	color: #da641c;
 }
 
-.services .read-more:hover {
+.read-more:hover {
 	color: #285185
 }
 
-.services .read-more .read-more-btn {
+.read-more-btn {
 	padding: 1.225rem 2rem;
 	margin: 1rem auto;
 	line-height: 8px;
@@ -478,7 +478,7 @@ section.services-home {
 	-o-border-radius: 4px;
 }
 
-.services .read-more .read-more-btn:hover {
+.read-more-btn:hover {
 	background-color: #fff;
 	border: 1px solid #285185;
 }
