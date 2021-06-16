@@ -124,24 +124,8 @@ $(function () {
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);
 		});
-
-		//if Read more/less btn is clicked
-		/* learnMoreBtn.on("click", function() {
-
-		    console.log("Learn more btn clicked");
-
-		    if (dots.style.display === "none") {
-		        dots.style.display = "inline";
-		        learnMoreBtn.innerHTML = "Read more";
-		        moreText.style.display = "none";
-		    } else {
-		        dots.style.display = "none";
-		        learnMoreBtn.innerHTML = "Read less";
-		        moreText.style.display = "inline";
-		    }
-		}); */
 	}
 
-	// readMoreLess();
+	readMoreLess();
 
 }(jQuery))

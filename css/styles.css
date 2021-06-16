@@ -439,13 +439,13 @@ section.services-home {
 }
 
 .services-bg {
-		display: block;
-		height: 100%;
-		width: 100%;
-		max-height: 350px;
-		margin: 0;
-		background-repeat: no-repeat;
-		background-size: cover;
+	display: block;
+	height: 100%;
+	width: 100%;
+	max-height: 350px;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .services .companionship-bg {
@@ -456,13 +456,31 @@ section.services-home {
 	background-image: url("../assets/services/pca-Image.svg");
 }
 
-.services .read-more {
+.read-more {
 	cursor: pointer;
-	color: #285185;
+	color: #da641c;
 }
 
-.services .read-more:hover {
-	color: #da641c
+.read-more:hover {
+	color: #285185
+}
+
+.read-more-btn {
+	padding: 1.225rem 2rem;
+	margin: 1rem auto;
+	line-height: 8px;
+	background-color: #fff;
+	border: 1px solid #285185;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+.read-more-btn:hover {
+	background-color: #fff;
+	border: 1px solid #285185;
 }
 
 .services ul.services-list {
