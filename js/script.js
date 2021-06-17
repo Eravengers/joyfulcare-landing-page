@@ -106,7 +106,7 @@ $(function () {
 			// console.log(`Text is ${newText}`);
 		});
 
-		
+
 		//readMorePcaBtn
 		let readMorePcaBtn = $("#readMorePcaBtn"),
 			readMorePcaBtnTxt = $("#readMorePcaBtnTxt"),
