@@ -102,6 +102,10 @@ a.cta-btn {
 	-moz-text-stroke-color: #ffffff7a;
 }
 
+/* #caretText { */
+	/* position: relative; */
+	/* left: 1rem; */
+/* } */
 
 /* Buttons */
 
@@ -476,6 +480,8 @@ section.services-home {
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
+	position: absolute;
+	right: 1rem;
 }
 
 .read-more-btn:hover {
@@ -726,7 +732,7 @@ footer.footer {
 }
 
 .footer a:visited {
-	color: #d67940;
+	color: #fff;
 }
 
 .footer .footer-title {

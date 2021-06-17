@@ -99,7 +99,7 @@ $(function () {
 
 		//readMorePcaBtn
 		let readMorePcaBtn = $("#readMorePcaBtn"),
-			readMorePcaBtnTxt = $("#readMorePcaBtnTxt"),
+			readMorePcaBtnTxt = $("#caretText"),
 			readMorePcaCaret = $("#readMorePcaCaret"),
 			readMorePca = $("#readMorePca");
 
@@ -119,7 +119,7 @@ $(function () {
 				readMorePcaCaret.addClass("fa-caret-down");
 			}
 
-			readMorePcaCaret.text(newText); //sets new text
+			readMorePcaBtnTxt.text(newText); //sets new text
 
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);

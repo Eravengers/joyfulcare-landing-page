@@ -8237,6 +8237,11 @@ button.bg-dark:hover {
 	margin-top: 3rem !important
 }
 
+.mt-6,
+.my-6 {
+	margin-top: 6rem !important
+}
+
 .mr-5,
 .mx-5 {
 	margin-right: 3rem !important
