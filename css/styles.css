@@ -102,11 +102,10 @@ a.cta-btn {
 	-moz-text-stroke-color: #ffffff7a;
 }
 
-.fa-caret-down.read-more-btn {
-	position: relative;
-	left: 1rem;
-	top: 0.625rem;
-}
+/* #caretText { */
+	/* position: relative; */
+	/* left: 1rem; */
+/* } */
 
 /* Buttons */
 
@@ -481,6 +480,8 @@ section.services-home {
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
+	position: absolute;
+	right: 1rem;
 }
 
 .read-more-btn:hover {
