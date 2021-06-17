@@ -58,24 +58,34 @@ $(function () {
 
 	$("#copyright").text(`© ${copyrightYear}`);
 
+	// Modal
+	$('#detailsModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget) // Button that triggered the modal
+		var modalTitle = button.data('title') // Extract info from data-* attributes
+		var modalText = button.data('text') // Extract info from data-* attributes
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this)
+		modal.find('.modal-title').text(modalTitle);
+		modal.find('.modal-text').html(modalText);
+	})
+
 
 	// Read more / Read less buttons
 
 	function readMoreLess() {
-		var dots = $("#dots"),
-			moreText = $("#moreText"),
-			learnMoreBtn = $("#learnMoreBtn");
 
 		// Services section
 
 		//readMoreCompanionshipBtn
 		let readMoreCompanionshipBtn = $("#readMoreCompanionshipBtn"),
 			readMoreCompanionshipBtnTxt = $("#readMoreCompanionshipBtnTxt"),
-			readMoreCompanionshipCaret = $("#readMoreCompanionshipCaret"),
-			readMoreCompanionship = $("#readMoreCompanionship");
+			readMoreCompanionshipText = $("#caretTextCompanionshipText"),
+			readMoreCompanionship = $("#readMoreCompanionship"),
+			readMoreCompanionshipCaret = $("#readMoreCompanionshipCaret");
 
 		readMoreCompanionship.slideToggle(); //hide readMoreCompanionship by default;
-		readMoreCompanionshipCaret.text("Read more"); //sets text to "Read more" by default
+		readMoreCompanionshipText.text("Read more"); //sets text to "Read more" by default
 
 		readMoreCompanionshipBtn.on("click", function () {
 			readMoreCompanionship.slideToggle(300); //toggles readMoreCompanionship when the btn is clicked
@@ -91,20 +101,22 @@ $(function () {
 				readMoreCompanionshipCaret.addClass("fa-caret-down");
 			}
 
-			readMoreCompanionshipCaret.text(newText); //sets new text
-
+			readMoreCompanionshipText.text(newText); //sets new text
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);
 		});
 
+
 		//readMorePcaBtn
 		let readMorePcaBtn = $("#readMorePcaBtn"),
-			readMorePcaBtnTxt = $("#caretText"),
-			readMorePcaCaret = $("#readMorePcaCaret"),
-			readMorePca = $("#readMorePca");
+			readMorePcaBtnTxt = $("#readMorePcaBtnTxt"),
+			readMorePcaText = $("#caretTextPcaText"),
+			readMorePca = $("#readMorePca"),
+			readMorePcaCaret = $("#readMorePcaCaret");
 
 		readMorePca.slideToggle(); //hide readMorePca by default;
-		readMorePcaCaret.text("Read more"); //sets text to "Read more" by default
+		readMorePcaText.text("Read more"); //sets text to "Read more" by default
+
 		readMorePcaBtn.on("click", function () {
 			readMorePca.slideToggle(300); //toggles readMorePca when the btn is clicked
 			let newText = $(this).text().trim(); // Gets text and remove whitespace;
@@ -119,8 +131,7 @@ $(function () {
 				readMorePcaCaret.addClass("fa-caret-down");
 			}
 
-			readMorePcaBtnTxt.text(newText); //sets new text
-
+			readMorePcaText.text(newText); //sets new text
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);
 		});
