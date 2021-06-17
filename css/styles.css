@@ -811,76 +811,12 @@ footer.footer {
 	background-color: #da641c;
 	border-radius: 6px;
 	clear: both;
-	vertical-align: middle;
-	position: absolute;
-	top: 30px;
 }
 
 .modal .modal-body .modal-text {
 	font-size: 1.125rem;
 	margin-top: 1.225rem;
 }
-
-.modal-image-container {
-	width: 100%;
-	margin: auto;
-	margin-top: 1rem;
-}
-
-.modal-image-container .modal-img {
-	width: 100%;
-	max-width: 100%;
-}
-
-.modal-image-container .modal-title#blogDetailsModalLabel {
-	font-size: 1.525rem;
-	position: absolute;
-	top: 3rem;
-	padding: 0;
-	color: #fff;
-	background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
-}
-
-.modal-image-container .modal-title#detailsModalLabel {
-	margin: 0 1rem 1rem;
-	line-height: 0.5;
-}
-.modal-header .small-line {
-	width: 58px;
-	height: 4px;
-	background-color: #da641c;
-	border-radius: 6px;
-	clear: both;
-	vertical-align: middle;
-	position: absolute;
-	top: 30px;
-}
-
-.modal .modal-body .modal-text {
-	font-size: 1.125rem;
-	margin-top: 1.225rem;
-}
-
-.modal-image-container {
-	width: 100%;
-	margin: auto;
-	margin-top: 1rem;
-}
-
-.modal-image-container .modal-img {
-	width: 100%;
-	max-width: 100%;
-}
-
-.modal-image-container .modal-title#blogDetailsModalLabel {
-	font-size: 1.525rem;
-	position: absolute;
-	top: 3rem;
-	padding: 0;
-	color: #fff;
-	background-image: linear-gradient(to bottom, rgba(8, 3, 3, 0.2), transparent);
-}
-
 
 /* Responsiveness */
 
@@ -926,15 +862,15 @@ footer.footer {
 		max-width: 280px;
 	}
 
-	.modal-image-container .modal-title#blogDetailsModalLabel,
-	.modal-image-container .modal-title#detailsModalLabel {
-		font-size: 2.525rem;
+	.modal.show .modal-dialog {
+		-webkit-transform: translate(0, 40%) !important;
+		transform: translate(0, 40%) !important;
 	}
 
-	.faqs .dropdown .caret-down {
-		left: 40rem;
+	.modal {
+		position: fixed;
+		top: -20% !important;
 	}
-
 }
 
 @media screen and (min-width: 801px) {
@@ -1051,15 +987,6 @@ footer.footer {
 	.footer .pd-1 {
 		padding-right: 1rem;
 		padding-left: 1rem;
-	}
-
-	.modal-image-container .modal-title#blogDetailsModalLabel {
-		top: 4rem;
-	}
-
-	.modal-image-container .modal-title#blogDetailsModalLabel,
-	.modal-image-container .modal-title#detailsModalLabel {
-		font-size: 3.125rem;
 	}
 
 	.footer input.newsletter-input,
