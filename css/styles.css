@@ -471,12 +471,15 @@ section.services-home {
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
-	float: right;
 	transition: linear .6s background-color;
 	-webkit-transition: linear .6s background-color;
 	-moz-transition: linear .6s background-color;
 	-ms-transition: linear .6s background-color;
 	-o-transition: linear .6s background-color;
+}
+
+.read-more-btn--right {
+	float: right;
 }
 
 .read-more-btn:hover {
