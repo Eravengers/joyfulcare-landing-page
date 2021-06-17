@@ -4786,16 +4786,14 @@ input[type=submit].btn-block {
 
 .card {
 	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
+	display: grid;
+	place-content: center;
 	min-width: 0;
 	word-wrap: break-word;
 	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, .125);
-	border-radius: .25rem
+	border-radius: .25rem;
 }
 
 .card>hr {
@@ -8240,6 +8238,11 @@ button.bg-dark:hover {
 .mt-6,
 .my-6 {
 	margin-top: 6rem !important
+}
+
+.mt-10,
+.my-10 {
+	margin-top: 10rem !important
 }
 
 .mr-5,

@@ -103,8 +103,8 @@ a.cta-btn {
 }
 
 /* #caretText { */
-	/* position: relative; */
-	/* left: 1rem; */
+/* position: relative; */
+/* left: 1rem; */
 /* } */
 
 /* Buttons */
@@ -251,7 +251,7 @@ header {
 }
 
 section.section:not(section.hero.index-hero) {
-	margin: 4rem auto;
+	margin: 6rem auto;
 }
 
 section.hero {
@@ -460,33 +460,28 @@ section.services-home {
 	background-image: url("../assets/services/pca-Image.svg");
 }
 
-.read-more {
-	cursor: pointer;
-	color: #da641c;
-}
-
-.read-more:hover {
-	color: #285185
-}
-
 .read-more-btn {
-	padding: 1.225rem 2rem;
+	cursor: pointer;
 	margin: 1rem auto;
-	line-height: 8px;
-	background-color: #fff;
-	border: 1px solid #285185;
+	background-color: #d67940;
+	border: 1px solid #d67940;
+	color: #fff;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
-	position: absolute;
-	right: 1rem;
+	float: right;
+	transition: linear .6s background-color;
+	-webkit-transition: linear .6s background-color;
+	-moz-transition: linear .6s background-color;
+	-ms-transition: linear .6s background-color;
+	-o-transition: linear .6s background-color;
 }
 
 .read-more-btn:hover {
-	background-color: #fff;
-	border: 1px solid #285185;
+	background-color: #da641c;
+	border: 1px solid #da641c;
 }
 
 .services ul.services-list {
@@ -805,8 +800,8 @@ footer.footer {
 }
 
 .social-icons .social-icon img {
-	width: 44px;
-	height: 44px;
+	width: 32px;
+	height: 32px;
 	padding: 0.625rem;
 }
 
