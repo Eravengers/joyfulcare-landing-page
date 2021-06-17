@@ -102,10 +102,11 @@ a.cta-btn {
 	-moz-text-stroke-color: #ffffff7a;
 }
 
-/* #caretText { */
-/* position: relative; */
-/* left: 1rem; */
-/* } */
+#caretText {
+
+}
+.fa-caret-down-icon {position: relative;
+left: 1rem;}
 
 /* Buttons */
 

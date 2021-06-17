@@ -74,20 +74,18 @@ $(function () {
 	// Read more / Read less buttons
 
 	function readMoreLess() {
-		var dots = $("#dots"),
-			moreText = $("#moreText"),
-			learnMoreBtn = $("#learnMoreBtn");
 
 		// Services section
 
 		//readMoreCompanionshipBtn
 		let readMoreCompanionshipBtn = $("#readMoreCompanionshipBtn"),
 			readMoreCompanionshipBtnTxt = $("#readMoreCompanionshipBtnTxt"),
-			readMoreCompanionshipCaret = $("#readMoreCompanionshipCaret"),
-			readMoreCompanionship = $("#readMoreCompanionship");
+			readMoreCompanionshipText = $("#caretTextCompanionshipText"),
+			readMoreCompanionship = $("#readMoreCompanionship"),
+			readMoreCompanionshipCaret = $("#readMoreCompanionshipCaret");
 
 		readMoreCompanionship.slideToggle(); //hide readMoreCompanionship by default;
-		readMoreCompanionshipCaret.text("Read more"); //sets text to "Read more" by default
+		readMoreCompanionshipText.text("Read more"); //sets text to "Read more" by default
 
 		readMoreCompanionshipBtn.on("click", function () {
 			readMoreCompanionship.slideToggle(300); //toggles readMoreCompanionship when the btn is clicked
@@ -103,20 +101,22 @@ $(function () {
 				readMoreCompanionshipCaret.addClass("fa-caret-down");
 			}
 
-			readMoreCompanionshipCaret.text(newText); //sets new text
-
+			readMoreCompanionshipText.text(newText); //sets new text
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);
 		});
 
+		
 		//readMorePcaBtn
 		let readMorePcaBtn = $("#readMorePcaBtn"),
-			readMorePcaBtnTxt = $("#caretText"),
-			readMorePcaCaret = $("#readMorePcaCaret"),
-			readMorePca = $("#readMorePca");
+			readMorePcaBtnTxt = $("#readMorePcaBtnTxt"),
+			readMorePcaText = $("#caretTextPcaText"),
+			readMorePca = $("#readMorePca"),
+			readMorePcaCaret = $("#readMorePcaCaret");
 
 		readMorePca.slideToggle(); //hide readMorePca by default;
-		readMorePcaCaret.text("Read more"); //sets text to "Read more" by default
+		readMorePcaText.text("Read more"); //sets text to "Read more" by default
+
 		readMorePcaBtn.on("click", function () {
 			readMorePca.slideToggle(300); //toggles readMorePca when the btn is clicked
 			let newText = $(this).text().trim(); // Gets text and remove whitespace;
@@ -131,8 +131,7 @@ $(function () {
 				readMorePcaCaret.addClass("fa-caret-down");
 			}
 
-			readMorePcaBtnTxt.text(newText); //sets new text
-
+			readMorePcaText.text(newText); //sets new text
 			// For development use ONLY
 			// console.log(`Text is ${newText}`);
 		});
