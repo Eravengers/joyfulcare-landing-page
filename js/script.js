@@ -59,6 +59,41 @@ $(function () {
 	$("#copyright").text(`© ${copyrightYear}`);
 
 
+	// Modal for other details contents
+	$('#detailsModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget) // Button that triggered the modal
+		var modalTitle = button.data('title') // Extract info from data-* attributes
+		var modalText = button.data('text') // Extract info from data-* attributes
+		var modalSrc = button.data('src') // Extract info from data-* attributes
+		var modalType = button.data('type') // Extract type of modal from data-* attributes
+
+
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this)
+		modal.find('.modal-title').text(modalTitle);
+		modal.find('.modal-text').html(modalText);
+
+		// Check modal type (if blog or ...)
+
+		// modalType === blog
+		if (modalType !== undefined) {
+			modal.find('#blogPostImg').attr("src", modalSrc);
+			modal.find('#blogPostImg').css("display", "block"); // Display set to "block" the blog image if there is none
+			modal.find('#blogDetailsModalLabel').css("display", "block"); // Display set to "block" the blog image if there is none
+			modal.find('#detailsModalLabel').css("display", "none"); // Hide set to "block" the blog image if there is none
+
+			// === modalType !== blog
+		} else if (modalType == undefined) {
+			modal.find('#blogPostImg').css("display", "none"); // Hide the blog image if there is none
+			modal.find('#blogDetailsModalLabel').css("display", "none"); // Hide the blog image if there is none
+			modal.find('#detailsModalLabel').css("display", "block"); // Display set to "block" the blog image if there is none
+
+		}
+
+	})
+
+
 	// Read more / Read less buttons
 
 	function readMoreLess() {
