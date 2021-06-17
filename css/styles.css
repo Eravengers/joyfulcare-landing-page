@@ -102,6 +102,11 @@ a.cta-btn {
 	-moz-text-stroke-color: #ffffff7a;
 }
 
+.fa-caret-down.read-more-btn {
+	position: relative;
+	left: 1rem;
+	top: 0.625rem;
+}
 
 /* Buttons */
 
