@@ -82,6 +82,7 @@ a.cta-btn {
 	width: 100%;
 	max-width: 100%;
 	/* margin-bottom: 0.525rem; */
+	display: contents;
 }
 
 .heading-outline-orange {
@@ -251,7 +252,7 @@ header {
 }
 
 section.section:not(section.hero.index-hero) {
-	margin: 6rem auto;
+	margin: 6rem auto !important;
 }
 
 section.hero {
