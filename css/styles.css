@@ -251,7 +251,7 @@ header {
 }
 
 section.section:not(section.hero.index-hero) {
-	margin: 6rem auto;
+	margin: 6rem auto !important;
 }
 
 section.hero {
