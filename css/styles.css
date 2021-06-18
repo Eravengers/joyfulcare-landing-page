@@ -82,6 +82,7 @@ a.cta-btn {
 	width: 100%;
 	max-width: 100%;
 	/* margin-bottom: 0.525rem; */
+	display: contents;
 }
 
 .heading-outline-orange {
