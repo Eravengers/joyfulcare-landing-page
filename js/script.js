@@ -10,7 +10,7 @@ $(function () {
 	let btnToggler = $(".navbar-toggler");
 	btnToggler.on("click", function () {
 		btnToggler.children().toggleClass("displayNone");
-	})
+	});
 
 	// ScrollToTop
 
@@ -60,15 +60,15 @@ $(function () {
 
 	// Modal
 	$('#detailsModal').on('show.bs.modal', function (event) {
-		var button = $(event.relatedTarget) // Button that triggered the modal
-		var modalTitle = button.data('title') // Extract info from data-* attributes
-		var modalText = button.data('text') // Extract info from data-* attributes
+		var button = $(event.relatedTarget); // Button that triggered the modal
+		var modalTitle = button.data('title'); // Extract info from data-* attributes
+		var modalText = button.data('text'); // Extract info from data-* attributes
 		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
 		var modal = $(this)
 		modal.find('.modal-title').text(modalTitle);
 		modal.find('.modal-text').html(modalText);
-	})
+	});
 
 
 	// Read more / Read less buttons
@@ -91,7 +91,7 @@ $(function () {
 			readMoreCompanionship.slideToggle(300); //toggles readMoreCompanionship when the btn is clicked
 			let newText = $(this).text().trim(); // Gets text and remove whitespace;
 			// Alternate between texts
-			if (newText == "Read more") {
+			if (newText === "Read more") {
 				newText = "Read less";
 				readMoreCompanionshipCaret.addClass("fa-caret-up");
 				readMoreCompanionshipCaret.removeClass("fa-caret-down");
@@ -121,7 +121,7 @@ $(function () {
 			readMorePca.slideToggle(300); //toggles readMorePca when the btn is clicked
 			let newText = $(this).text().trim(); // Gets text and remove whitespace;
 			// Alternate between texts
-			if (newText == "Read more") {
+			if (newText === "Read more") {
 				newText = "Read less";
 				readMorePcaCaret.addClass("fa-caret-up");
 				readMorePcaCaret.removeClass("fa-caret-down");
