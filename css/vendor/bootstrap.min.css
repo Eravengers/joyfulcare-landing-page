@@ -4786,7 +4786,8 @@ input[type=submit].btn-block {
 
 .card {
 	position: relative;
-	display: grid;
+	padding-top: 2rem;
+	/* display: grid; */
 	place-content: center;
 	min-width: 0;
 	word-wrap: break-word;
