@@ -198,7 +198,7 @@ $recipient = "eunithelp@gmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You! Your message was sent sucessfully" . " -" . "<a href='index.html' class='cta-btn cta-link'> Return Home</a>";
+echo "Thank You! Your message was sent successfully" . " -" . "<a href='../index.html' class='cta-btn cta-link'> Return Home</a>";
 ?>
 
 		<!-- Footer -->
