@@ -20,7 +20,7 @@
 		<meta name="apple-touch-fullscreen" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#285185">
-		<link rel="apple-touch-icon" href="img/favicons/logo.png">
+		<link rel="apple-touch-icon" href="../../img/favicons/logo.png">
 		<meta name="msapplication-TileColor" content="#285185">
 		<meta name="msapplication-TileImage" content="img/favicons/logo.png">
 		<meta name="twitter:card" content="summary_large_image">
@@ -69,30 +69,30 @@
 
 
 		<!-- favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon.ico">
-		<link rel="shortcut icon" sizes="16x16" href="img/favicons/favicon-16.ico">
-		<link rel="shortcut icon" sizes="32x32" href="img/favicons/favicon-32.ico">
-		<link rel="shortcut icon" sizes="64x64" href="img/favicons/favicon-64.ico">
-		<link rel="shortcut icon" sizes="72x72" href="img/favicons/favicon-72.ico">
-		<link rel="shortcut icon" sizes="92x92" href="img/favicons/favicon-92.ico">
-		<link rel="shortcut icon" sizes="96x96" href="img/favicons/favicon-96.ico">
-		<link rel="shortcut icon" sizes="120x120" href="img/favicons/favicon-120.ico">
-		<link rel="shortcut icon" sizes="144x144" href="img/favicons/favicon-144.ico">
-		<link rel="shortcut icon" sizes="192x192" href="img/favicons/favicon-192.ico">
-		<link rel="shortcut icon" sizes="512x512" href="img/favicons/favicon-512.ico">
-		<link rel="apple-touch-icon" sizes="16x16" href="img/favicons/favicon-16.ico">
-		<link rel="apple-touch-icon" sizes="32x32" href="img/favicons/favicon-32.ico">
-		<link rel="apple-touch-icon" sizes="64x64" href="img/favicons/favicon-64.ico">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/favicon-72.ico">
-		<link rel="apple-touch-icon" sizes="92x92" href="img/favicons/favicon-92.ico">
-		<link rel="apple-touch-icon" sizes="96x96" href="img/favicons/favicon-96.ico">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/favicon-120.ico">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/favicon-144.ico">
-		<link rel="apple-touch-icon" sizes="192x192" href="img/favicons/favicon-192.ico">
-		<link rel="apple-touch-icon" sizes="512x512" href="img/favicons/favicon-512.ico">
-		<link rel="apple-touch-icon-precomposed" href="img/favicons/logo.png">
-		<link rel="apple-touch-icon" href="img/favicons/logo.png">
-		<link rel="mask-icon" href="img/favicons/logo.png" color="#285185">
+		<link rel="shortcut icon" type="image/x-icon" href="../../img/favicons/favicon.ico">
+		<link rel="shortcut icon" sizes="16x16" href="../../img/favicons/favicon-16.ico">
+		<link rel="shortcut icon" sizes="32x32" href="../../img/favicons/favicon-32.ico">
+		<link rel="shortcut icon" sizes="64x64" href="../../img/favicons/favicon-64.ico">
+		<link rel="shortcut icon" sizes="72x72" href="../../img/favicons/favicon-72.ico">
+		<link rel="shortcut icon" sizes="92x92" href="../../img/favicons/favicon-92.ico">
+		<link rel="shortcut icon" sizes="96x96" href="../../img/favicons/favicon-96.ico">
+		<link rel="shortcut icon" sizes="120x120" href="../../img/favicons/favicon-120.ico">
+		<link rel="shortcut icon" sizes="144x144" href="../../img/favicons/favicon-144.ico">
+		<link rel="shortcut icon" sizes="192x192" href="../../img/favicons/favicon-192.ico">
+		<link rel="shortcut icon" sizes="512x512" href="../../img/favicons/favicon-512.ico">
+		<link rel="apple-touch-icon" sizes="16x16" href="../../img/favicons/favicon-16.ico">
+		<link rel="apple-touch-icon" sizes="32x32" href="../../img/favicons/favicon-32.ico">
+		<link rel="apple-touch-icon" sizes="64x64" href="../../img/favicons/favicon-64.ico">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../img/favicons/favicon-72.ico">
+		<link rel="apple-touch-icon" sizes="92x92" href="../../img/favicons/favicon-92.ico">
+		<link rel="apple-touch-icon" sizes="96x96" href="../../img/favicons/favicon-96.ico">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../img/favicons/favicon-120.ico">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../img/favicons/favicon-144.ico">
+		<link rel="apple-touch-icon" sizes="192x192" href="../../img/favicons/favicon-192.ico">
+		<link rel="apple-touch-icon" sizes="512x512" href="../../img/favicons/favicon-512.ico">
+		<link rel="apple-touch-icon-precomposed" href="../../img/favicons/logo.png">
+		<link rel="apple-touch-icon" href="../../img/favicons/logo.png">
+		<link rel="mask-icon" href="../../img/favicons/logo.png" color="#285185">
 
 
 		<!--[if lt IE 9]>
@@ -160,7 +160,7 @@
 				<!-- Navigation -->
 				<nav class="navbar navbar-expand-lg">
 					<a class="navbar-brand justify-start" href="index.html">
-						<img src="assets/Logo.svg" class="logo" alt="Joyful care logo" />
+						<img src="../../assets/Logo.svg" class="logo" alt="Joyful care logo" />
 					</a>
 					<button class="navbar-toggler noOutline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,7 +212,7 @@ echo "Thank You! Your message was sent sucessfully" . " -" . "<a href='index.htm
 						<!-- First column -->
 						<div class="col-sm-12 col-md-3 col-lg-4">
 							<div class="footer-logo">
-								<img src="assets/Logo footer.svg" alt="Joyful Care logo" class="">
+								<img src="../../assets/Logo footer.svg" alt="Joyful Care logo" class="">
 							</div>
 							<address class="footer-address">
 								14 Glen Pl, Bridgeport CT 06610
@@ -231,17 +231,17 @@ echo "Thank You! Your message was sent sucessfully" . " -" . "<a href='index.htm
 							<div class="stay-connected d-inline">
 								<div class="social-icons">
 									<a href="#" title="Joyful Care on Facebook" class="social-icon">
-										<img class="social-icon" src="assets/Icons/social-icons/facebook-icon.svg"
+										<img class="social-icon" src="../../assets/Icons/social-icons/facebook-icon.svg"
 											alt="Joyful Care on Facebook" srcset="assets/Icons/social-icons/facebook-icon.svg">
 									</a>
 
 									<a href="#" title="Joyful Care on Twitter" class="social-icon">
-										<img class="social-icon" src="assets/Icons/social-icons/twitter-icon.svg"
+										<img class="social-icon" src="../../assets/Icons/social-icons/twitter-icon.svg"
 											alt="Joyful Care on Twitter" srcset="assets/Icons/social-icons/twitter-icon.svg">
 									</a>
 
 									<a href="#" title="Joyful Care on Instagram" class="social-icon">
-										<img class="social-icon" src="assets/Icons/social-icons/instagram-icon.svg"
+										<img class="social-icon" src="../../assets/Icons/social-icons/instagram-icon.svg"
 											alt="Joyful Care on Instagram" srcset="assets/Icons/social-icons/instagram-icon.svg">
 									</a>
 								</div>
@@ -304,7 +304,7 @@ echo "Thank You! Your message was sent sucessfully" . " -" . "<a href='index.htm
 
 			<!-- ScrollToTop Button -->
 			<a class="btn scrollToTop hideScrollTop" href="#top">
-				<img src="assets/Scroll up.svg" alt="Scroll top">
+				<img src="../../assets/Scroll up.svg" alt="Scroll top">
 			</a>
 			<!-- ScrollToTop Button END-->
 
