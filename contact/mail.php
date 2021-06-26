@@ -229,17 +229,17 @@ echo "Thank You! Your message was sent sucessfully" . " -" . "<a href='index.htm
 							<div class="social-icons">
 								<a href="#" title="Joyful Care on Facebook" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/facebook-icon.svg"
-										alt="Joyful Care on Facebook" srcset="assets/Icons/social-icons/facebook-icon.svg">
+										alt="Joyful Care on Facebook" srcset="../../assets/Icons/social-icons/facebook-icon.svg">
 								</a>
 
 								<a href="#" title="Joyful Care on Twitter" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/twitter-icon.svg"
-										alt="Joyful Care on Twitter" srcset="assets/Icons/social-icons/twitter-icon.svg">
+										alt="Joyful Care on Twitter" srcset="../../assets/Icons/social-icons/twitter-icon.svg">
 								</a>
 
 								<a href="#" title="Joyful Care on Instagram" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/instagram-icon.svg"
-										alt="Joyful Care on Instagram" srcset="assets/Icons/social-icons/instagram-icon.svg">
+										alt="Joyful Care on Instagram" srcset="../../assets/Icons/social-icons/instagram-icon.svg">
 								</a>
 							</div>
 						</div>
