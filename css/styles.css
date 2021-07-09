@@ -286,6 +286,7 @@ header {
 	margin: 0;
 }
 
+
 section.section:not(section.hero.index-hero) {
 	margin: 6rem auto !important;
 }
