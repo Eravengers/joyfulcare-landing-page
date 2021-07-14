@@ -45,6 +45,15 @@ html {
 	outline: 0;
 }
 
+.fixed-header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	background-color: #fff;
+}
+
 .js-scroll {
 	scroll-behavior: smooth;
 }
