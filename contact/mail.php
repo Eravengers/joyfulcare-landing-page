@@ -159,7 +159,7 @@
 			<div class="container">
 				<!-- Navigation -->
 				<nav class="navbar navbar-expand-lg">
-					<a class="navbar-brand justify-start" href="index.html">
+					<a class="navbar-brand justify-start" href="../../index.html">
 						<img src="../../assets/Logo.svg" class="logo" alt="Joyful care logo" />
 					</a>
 					<button class="navbar-toggler noOutline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -321,12 +321,12 @@
 		<?php $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
+$formcontent="From: $name \n\n Message: $message";
 $recipient = "info@joyfulcarect.com";
-$subject = "Contact Form";
+$subject = "Contact form message regarding Joyful Care";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-// echo "Thank You! Your message was sent successfully" . " -" . "<a href='../index.html' class='cta-btn cta-link'> Return Home</a>";
+// echo "Thank You! Your message was sent successfully" . " -" . "<a href='../../index.html' class='cta-btn cta-link'> Return Home</a>";
 ?>
 
 		<!-- Footer -->
@@ -434,10 +434,10 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		<!-- ScrollToTop Button END-->
 
 		<!-- Vendor scripts -->
-		<!-- <script src="js/vendor/jquery-3.1.1.min.js"></script> -->
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/vendor/jquery-ui.js"></script>
-		<script src="js/vendor/magnific-popup.min.js"></script>
+		<!-- <script src="../../js/vendor/jquery-3.1.1.min.js"></script> -->
+		<script src="../../js/vendor/bootstrap.min.js"></script>
+		<script src="../../js/vendor/jquery-ui.js"></script>
+		<script src="../../js/vendor/magnific-popup.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 		</script>
@@ -447,11 +447,11 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
 			integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
 		</script>
-		<script src="js/vendor/buorg.js"></script>
+		<script src="../../js/vendor/buorg.js"></script>
 
 
 		<!-- Custom script -->
-		<script src="js/script.js" async defer></script>
+		<script src="../../js/script.js" async defer></script>
 
 
 	</body>
