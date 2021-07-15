@@ -174,7 +174,7 @@
 								<a class="nav-link mr-4 js-scroll" href="../../index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4 js-scroll" href="#services">Our Services</a>
+								<a class="nav-link mr-4 js-scroll" href="../../index.html#services">Our Services</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link mr-4 js-scroll" href="../../index.html#about">About Us</a>
@@ -389,7 +389,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 									<a href="../../index.html#about">About Us</a>
 								</li>
 								<li class="footer-link">
-									<a href="#services">Our Services</a>
+									<a href="../../index.html#services">Our Services</a>
 								</li>
 								<li class="footer-link">
 									<a href="../../index.html#contact">Contact Us</a>
