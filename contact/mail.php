@@ -171,16 +171,16 @@
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link mr-4 js-scroll" href="#home">Home</a>
+								<a class="nav-link mr-4 js-scroll" href="../../index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link mr-4 js-scroll" href="#services">Our Services</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4 js-scroll" href="#about">About Us</a>
+								<a class="nav-link mr-4 js-scroll" href="../../index.html#about">About Us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4 js-scroll button contact-us-btn" href="#contact">Contact Us</a>
+								<a class="nav-link mr-4 js-scroll button contact-us-btn" href="../../index.html#contact">Contact Us</a>
 							</li>
 						</ul>
 					</div>
@@ -383,19 +383,19 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 						<div class="footer-links-container">
 							<ul class="footer-links">
 								<li class="footer-link">
-									<a href="#home">Home</a>
+									<a href="../../index.html">Home</a>
 								</li>
 								<li class="footer-link">
-									<a href="#about">About Us</a>
+									<a href="../../index.html#about">About Us</a>
 								</li>
 								<li class="footer-link">
 									<a href="#services">Our Services</a>
 								</li>
 								<li class="footer-link">
-									<a href="#contact">Contact Us</a>
+									<a href="../../index.html#contact">Contact Us</a>
 								</li>
 								<li class="footer-link">
-									<a href="faq.html">FAQ</a>
+									<a href="../../faq.html">FAQ</a>
 								</li>
 							</ul>
 						</div>
