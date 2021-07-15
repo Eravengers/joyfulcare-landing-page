@@ -52,6 +52,7 @@ html {
 	left: 0;
 	z-index: 1030;
 	background-color: #fff;
+	box-shadow: 1px 1px 5px #9695954f;
 }
 
 .js-scroll {
@@ -508,7 +509,6 @@ section.services-home {
 	display: block;
 	height: 100%;
 	width: 100%;
-	max-height: 350px;
 	margin: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -516,10 +516,14 @@ section.services-home {
 
 .services .companionship-bg {
 	background-image: url("../assets/services/Companionship-Image.svg");
+	height: 350px;
+	max-height: 350px;
 }
 
 .services .pca-bg {
 	background-image: url("../assets/services/pca-Image.svg");
+	height: 350px;
+	max-height: 350px;
 }
 
 .read-more-btn {
