@@ -321,10 +321,9 @@
 		<!-- /Services main content -->
 
 
+	<!-- Contact section -->
 
-		<!-- Contact section -->
-
-		<section class="section contact mt-6" id="contact">
+		<section class="section contact" id="contact">
 			<div class="container">
 				<div class="row">
 
@@ -375,34 +374,64 @@
 					</div>
 					<!-- /Contact Map -->
 
-					<!-- Contact form starts -->
-							<form action="contact/mail.php" method="POST" class="w-lg-75 mt-3">
-								<div class="form-group">
+					<!-- Contact form -->
+					<div class="col-sm-12 col-md-12 col-lg-6 mt-5">
+						<div class="contact-form">
+							<div class="heading-outline">
+								<span class="heading-outline-orange">Contact Us</span>
+							</div>
+							<h3 class="title color-theme-blue">We are here for you</h3>
+							<p class="title-description mb-3">
+								Allow Joyful Care to simplify your life.
+							</p>
 
+							<!-- Contact form starts -->
+							<form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3">
+								<div class="form-group">
+<!--  -->
 									<p class="color-theme-orange">Send us a message</p>
 									<!-- Remove .displayNone to display the label -->
+
+
 									<label for="name" class="displayNone">Name</label>
-									<input type="text" name="name" class="form-control" id="formName" placeholder="Name" required>
+									<input type="text" name="name" class="form-control" id="formName" placeholder="Name"
+										onkeyup="validateName()">
+
+									<!-- Display errors -->
+									<p class="error-message" id="name-error"></p>
+
 								</div>
 
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="email" class="displayNone">Name</label>
 									<input type="email" name="email" class="form-control" id="formEmail" placeholder="Email address"
-										required>
+										onkeyup="validateEmail()">
+
+									<!-- Display errors -->
+									<p class="error-message" id="email-error"></p>
 								</div>
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="message" class="displayNone">Your message</label>
 									<textarea class="form-control" name="message" id="formMessage" rows="4" placeholder="Your message"
-										required></textarea>
+										onkeyup="validateMessage()"></textarea>
+
+									<!-- Display errors -->
+									<p class="error-message" id="message-error"></p>
 								</div>
 
 								<button class="button">
 									Send
 								</button>
+								<!-- Display errors -->
+								<p class="error-message" id="submit-error"></p>
 							</form>
 							<!-- /Contact form ends -->
+
+						</div>
+					</div>
+					<!-- /Contact form -->
 
 				</div>
 			</div>
@@ -533,6 +562,8 @@
 
 		<!-- Custom script -->
 		<script src="js/script.js" async defer></script>
+		<script src="js/validation.js"></script>
+
 
 	</body>
 
