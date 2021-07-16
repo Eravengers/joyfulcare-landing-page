@@ -57,7 +57,7 @@ function validateMessage() {
 	}
 
 	producePrompt("Looks good", "message-error", "#5cb85c");
-	// return true;
+	return true;
 
 }
 
