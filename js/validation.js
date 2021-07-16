@@ -87,7 +87,7 @@ function validateForm() {
 	}
 
 
-	if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+	if (validateName() == false || validateEmail() == false || validateMessage() == false) {
 		jsShow("submit-error");
 		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
 		setTimeout(function () {
