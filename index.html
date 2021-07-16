@@ -571,32 +571,40 @@
 									<p class="color-theme-orange">Send us a message</p>
 									<!-- Remove .displayNone to display the label -->
 
-									<!-- Display errors -->
-									<p class="error-message" id="name-error"></p>
-									<p class="error-message" id="email-error"></p>
-									<p class="error-message" id="message-error"></p>
-									<p class="error-message" id="submit-error"></p>
-
 
 									<label for="name" class="displayNone">Name</label>
-									<input type="text" name="name" class="form-control" id="formName" placeholder="Name" onkeyup="validateName()">
+									<input type="text" name="name" class="form-control" id="formName" placeholder="Name"
+										onkeyup="validateName()">
+
+									<!-- Display errors -->
+									<p class="error-message" id="name-error"></p>
+
 								</div>
 
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="email" class="displayNone">Name</label>
-									<input type="email" name="email" class="form-control" id="formEmail" placeholder="Email address" onkeyup="validateEmail()">
+									<input type="email" name="email" class="form-control" id="formEmail" placeholder="Email address"
+										onkeyup="validateEmail()">
+
+									<!-- Display errors -->
+									<p class="error-message" id="email-error"></p>
 								</div>
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="message" class="displayNone">Your message</label>
-									<textarea class="form-control" name="message" id="formMessage" rows="4"
-										placeholder="Your message" onkeyup="validateMessage()"></textarea>
+									<textarea class="form-control" name="message" id="formMessage" rows="4" placeholder="Your message"
+										onkeyup="validateMessage()"></textarea>
+
+									<!-- Display errors -->
+									<p class="error-message" id="message-error"></p>
 								</div>
 
 								<button class="button">
 									Send
 								</button>
+								<!-- Display errors -->
+								<p class="error-message" id="submit-error"></p>
 							</form>
 							<!-- /Contact form ends -->
 
