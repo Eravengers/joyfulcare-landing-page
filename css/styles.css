@@ -508,7 +508,6 @@ section.services-home {
 .services-bg {
 	display: block;
 	height: 100%;
-	width: 100%;
 	margin: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -823,7 +822,7 @@ footer.footer {
 }
 
 .footer .newsletter-input-box {
-	margin: 2.825rem auto;
+	margin: 1.625rem auto 2.825rem;
 }
 
 .footer button.newsletter-button {
@@ -965,6 +964,14 @@ footer.footer {
 	section.hero.page-hero,
 	section.hero.faq-hero {
 		height: 45vh;
+	}
+
+	.services .companionship-bg {
+		margin-right: 1.625rem;
+	}
+
+	.services .pca-bg {
+		margin-left: 1.625rem;
 	}
 }
 
