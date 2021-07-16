@@ -4,14 +4,14 @@ function validateName() {
 
 	if (name.length === 0) {
 
-		producePrompt("Name is required", "name-error", "#d9534f");
+		producePrompt("Name field cannot be empty.", "name-error", "#d9534f");
 		return false;
 
 	}
 
 	if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
-		producePrompt("First and last name, please.", "name-error", "#d9534f");
+		producePrompt("First and last name required.", "name-error", "#d9534f");
 		return false;
 
 	}
@@ -29,14 +29,14 @@ function validateEmail() {
 
 	if (email.length === 0) {
 
-		producePrompt("Email Invalid", "email-error", "#d9534f");
+		producePrompt("Email field cannot be empty.", "email-error", "#d9534f");
 		return false;
 
 	}
 
 	if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
-		producePrompt("Invalid Email", "email-error", "#d9534f");
+		producePrompt("Invalid email address.", "email-error", "#d9534f");
 		return false;
 
 	}
