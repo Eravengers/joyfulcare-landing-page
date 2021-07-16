@@ -16,7 +16,7 @@ function validateName() {
 
 	}
 
-	producePrompt("Valid", "name-error", "#5cb85c");
+	producePrompt("Looks good", "name-error", "#5cb85c");
 	return true;
 
 }
@@ -41,7 +41,7 @@ function validateEmail() {
 
 	}
 
-	producePrompt("Valid", "email-error", "#5cb85c");
+	producePrompt("Looks good", "email-error", "#5cb85c");
 	return true;
 
 }
@@ -56,7 +56,7 @@ function validateMessage() {
 		return false;
 	}
 
-	producePrompt("Valid", "message-error", "#5cb85c");
+	producePrompt("Looks good", "message-error", "#5cb85c");
 	// return true;
 
 }
