@@ -501,22 +501,30 @@
 					</div>
 					<!-- /Second column -->
 
-					<!-- Third column -->
+				<!-- Third column -->
 					<div class="col-sm-12 col-md-3 col-lg-4">
 						<div class="footer-title">
 							Newsletter
 						</div>
 						<div class="newsletter-text">
 							Sign up for free newsletters
+
+							<!-- Display newsletter errors -->
+							<p class="error-message" id="newsletter-error"></p>
 						</div>
+
+
 						<div class="newsletter-input-box">
-							<input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address" id="newletterEmail"
-								class="newsletter-input">
-							<button class="button newsletter-button">
+
+							<input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address"
+								id="newletterEmail" class="newsletter-input" onkeyup="validateNewsletterField();">
+
+							<button class="button newsletter-button" onclick="return validateNewsletterField()">
 								Subscribe
 							</button>
+
 						</div>
-						
+
 					</div>
 
 					<!-- /Third column -->

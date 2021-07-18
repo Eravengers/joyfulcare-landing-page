@@ -64,8 +64,7 @@ function validateMessage() {
 function validateForm() {
 	var nameLocation = document.getElementById("formName"),
 		emailLocation = document.getElementById("formEmail"),
-		messageLocation = document.getElementById("formMessage"),
-		newsletterLocation = document.getElementById("newletterEmail");
+		messageLocation = document.getElementById("formMessage");
 
 	// Coloring the border of the input fields
 
@@ -104,22 +103,32 @@ function validateForm() {
 
 	}
 
+	function jsShow(id) {
+		document.getElementById(id).style.display = "block";
+	}
+
+	function jsHide(id) {
+		document.getElementById(id).style.display = "none";
+	}
 
 
-	// validate newsletterField
+	function producePrompt(message, promptLocation, color) {
 
-	if (validateNewsletter() == false) {
-		jsShow("submit-error");
-		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
-		setTimeout(function () {
-			jsHide("submit-error");
-		}, 2000);
-		return false;
-	} else { }
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
+
 }
 
-function validateNewsletter() {
-	var newsletterField = document.getElementById("newletterEmail").value;
+
+
+// validate newsletterField
+
+function validateNewsletterField() {
+	var newsletterField = document.getElementById("newletterEmail").value,
+		newsletterLocation = document.getElementById("newletterEmail");
+
+
 	if (newsletterField.length === 0) {
 		producePrompt("Newsletter field cannot be empty.", "newsletter-error", "#d9534f");
 		return false;
@@ -132,21 +141,16 @@ function validateNewsletter() {
 
 	producePrompt("Looks good", "newsletter-error", "#5cb85c");
 	return true;
-}
 
-function jsShow(id) {
-	document.getElementById(id).style.display = "block";
-}
+	function producePrompt(message, promptLocation, color) {
 
-function jsHide(id) {
-	document.getElementById(id).style.display = "none";
-}
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
 
-
-
-
-function producePrompt(message, promptLocation, color) {
-
-	document.getElementById(promptLocation).innerHTML = message;
-	document.getElementById(promptLocation).style.color = color;
+	if (!validateNewsletterField()) {
+		newsletterLocation.style.borderColor = "#d9534f";
+	} else {
+		newsletterLocation.style.borderColor = "#5cb85c";
+	}
 }
