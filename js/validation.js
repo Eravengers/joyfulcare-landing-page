@@ -64,7 +64,8 @@ function validateMessage() {
 function validateForm() {
 	var nameLocation = document.getElementById("formName"),
 		emailLocation = document.getElementById("formEmail"),
-		messageLocation = document.getElementById("formMessage");
+		messageLocation = document.getElementById("formMessage"),
+		newsletterLocation = document.getElementById("newletterEmail");
 
 	// Coloring the border of the input fields
 
@@ -86,6 +87,11 @@ function validateForm() {
 		messageLocation.style.borderColor = "#5cb85c";
 	}
 
+	if (!validateNewsletter()) {
+		newsletterLocation.style.borderColor = "#d9534f";
+	} else {
+		newsletterLocation.style.borderColor = "#5cb85c";
+	}
 
 	if (validateName() == false || validateEmail() == false || validateMessage() == false) {
 		jsShow("submit-error");
@@ -97,6 +103,35 @@ function validateForm() {
 	} else {
 
 	}
+
+
+
+	// validate newsletterField
+
+	if (validateNewsletter() == false) {
+		jsShow("submit-error");
+		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
+		setTimeout(function () {
+			jsHide("submit-error");
+		}, 2000);
+		return false;
+	} else { }
+}
+
+function validateNewsletter() {
+	var newsletterField = document.getElementById("newletterEmail").value;
+	if (newsletterField.length === 0) {
+		producePrompt("Newsletter field cannot be empty.", "newsletter-error", "#d9534f");
+		return false;
+	}
+	if (!newsletterField.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+		producePrompt("Invalid email address.", "newsletter-error", "#d9534f");
+		return false;
+	}
+
+	producePrompt("Looks good", "newsletter-error", "#5cb85c");
+	return true;
 }
 
 function jsShow(id) {

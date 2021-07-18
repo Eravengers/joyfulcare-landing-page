@@ -566,7 +566,7 @@
 							<!-- Contact form starts -->
 							<form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3">
 								<div class="form-group">
-<!--  -->
+									<!--  -->
 									<p class="color-theme-orange">Send us a message</p>
 									<!-- Remove .displayNone to display the label -->
 
@@ -733,13 +733,21 @@
 						</div>
 						<div class="newsletter-text">
 							Sign up for free newsletters
+
+							<!-- Display newsletter errors -->
+							<p class="error-message" id="newsletter-error"></p>
 						</div>
+
+
 						<div class="newsletter-input-box">
-							<input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address" id="newletterEmail"
-								class="newsletter-input">
-							<button class="button newsletter-button">
+
+							<input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address"
+								id="newletterEmail" class="newsletter-input" onkeyup="validateNewsletter();">
+
+							<button class="button newsletter-button" onclick="return validateForm()">
 								Subscribe
 							</button>
+
 						</div>
 
 					</div>
