@@ -72,7 +72,6 @@ $(function () {
 		modal.find('.modal-text').html(modalText);
 	});
 
-
 	// Read more / Read less buttons
 
 	function readMoreLess() {

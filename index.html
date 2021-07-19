@@ -564,7 +564,8 @@
 							</p>
 
 							<!-- Contact form starts -->
-							<form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3">
+							<!-- <form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3"> -->
+							<form onsubmit="return validateForm();" class="w-lg-75 mt-3">
 								<div class="form-group">
 									<!--  -->
 									<p class="color-theme-orange">Send us a message</p>
@@ -599,7 +600,8 @@
 									<p class="error-message" id="message-error"></p>
 								</div>
 
-								<button class="button">
+								<button id="contactSubmitModal" class="button" data-toggle="modal" data-target="#detailsModal"
+									data-title="<h1>Thank you</h1>" data-text="<b>Your message was sent successfully</b><br>">
 									Send
 								</button>
 								<!-- Display errors -->
