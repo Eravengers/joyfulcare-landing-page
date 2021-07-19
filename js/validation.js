@@ -100,7 +100,7 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else {
-
+		return true;
 	}
 
 	function jsShow(id) {
