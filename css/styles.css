@@ -775,6 +775,17 @@ section.contact {
 	margin-top: 2rem;
 }
 
+.contact-us-modal {
+	display: none;
+	position: fixed;
+	top: 10%;
+	transform: translate(0%, 40%);
+	-webkit-transform: translate(0%, 40%);
+	-moz-transform: translate(0%, 40%);
+	-ms-transform: translate(0%, 40%);
+	-o-transform: translate(0%, 40%);
+}
+
 footer.footer {
 	background-color: #285185;
 	margin-top: 2rem;
@@ -938,8 +949,19 @@ footer.footer {
 
 	.modal {
 		position: fixed;
-		top: -20% !important;
+		top: -30% !important;
 	}
+
+	.contact-us-modal {
+		position: fixed;
+		top: 10%;
+		transform: translate(50%, 40%);
+		-webkit-transform: translate(50%, 40%);
+		-moz-transform: translate(50%, 40%);
+		-ms-transform: translate(50%, 40%);
+		-o-transform: translate(50%, 40%);
+	}
+
 }
 
 @media screen and (min-width: 801px) {
@@ -974,6 +996,17 @@ footer.footer {
 	.services .pca-bg {
 		margin-left: 1.625rem;
 	}
+
+	.contact-us-modal {
+		position: fixed;
+		top: 10%;
+		transform: translate(100%, 40%);
+		-webkit-transform: translate(100%, 40%);
+		-moz-transform: translate(100%, 40%);
+		-ms-transform: translate(100%, 40%);
+		-o-transform: translate(100%, 40%);
+	}
+
 }
 
 @media screen and (min-width: 1024px) {

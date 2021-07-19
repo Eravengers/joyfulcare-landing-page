@@ -19,9 +19,12 @@ function validateName() {
 	producePrompt("Looks good", "name-error", "#5cb85c");
 	return true;
 
+	function producePrompt(message, promptLocation, color) {
+
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
 }
-
-
 
 function validateEmail() {
 
@@ -44,6 +47,11 @@ function validateEmail() {
 	producePrompt("Looks good", "email-error", "#5cb85c");
 	return true;
 
+	function producePrompt(message, promptLocation, color) {
+
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
 }
 
 function validateMessage() {
@@ -59,12 +67,20 @@ function validateMessage() {
 	producePrompt("Looks good", "message-error", "#5cb85c");
 	return true;
 
+	function producePrompt(message, promptLocation, color) {
+
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
 }
 
 function validateForm() {
 	var nameLocation = document.getElementById("formName"),
 		emailLocation = document.getElementById("formEmail"),
-		messageLocation = document.getElementById("formMessage");
+		messageLocation = document.getElementById("formMessage"),
+		contactSubmitBtn = document.getElementById("contactSubmitBtn"),
+		closeContactModal = document.getElementById("closeContactModal"),
+		contactDetailsModal = document.getElementById("contactDetailsModal");
 
 	// Coloring the border of the input fields
 
@@ -86,23 +102,6 @@ function validateForm() {
 		messageLocation.style.borderColor = "#5cb85c";
 	}
 
-	if (!validateNewsletter()) {
-		newsletterLocation.style.borderColor = "#d9534f";
-	} else {
-		newsletterLocation.style.borderColor = "#5cb85c";
-	}
-
-	if (validateName() == false || validateEmail() == false || validateMessage() == false) {
-		jsShow("submit-error");
-		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
-		setTimeout(function () {
-			jsHide("submit-error");
-		}, 2000);
-		return false;
-	} else {
-		return true;
-	}
-
 	function jsShow(id) {
 		document.getElementById(id).style.display = "block";
 	}
@@ -118,7 +117,31 @@ function validateForm() {
 		document.getElementById(promptLocation).style.color = color;
 	}
 
+	if (validateName() === false || validateEmail() === false || validateMessage() === false) {
+
+		jsShow("submit-error");
+		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
+		setTimeout(function () {
+			jsHide("submit-error");
+		}, 2000);
+		return false;
+	} else if (validateName() && validateEmail() && validateMessage()) {
+		contactSubmitBtn.addEventListener("click", function () {
+			contactDetailsModal.addClass("animate fadeIn").fadeIn();
+		});
+		closeContactModal.addEventListener("click", function () {
+			contactDetailsModal.addClass("animate fadeOut").fadeOut();
+		});
+	}
+	contactSubmitBtn.on("click", function () {
+		contactDetailsModal.addClass("animate fadeIn").fadeIn();
+	});
+	closeContactModal.on("click", function () {
+		contactDetailsModal.addClass("animate fadeOut").fadeOut();
+	});
+
 }
+
 
 
 

@@ -321,10 +321,10 @@
 		<!-- /Services main content -->
 
 
-	<!-- Contact section -->
+		<!-- Contact section -->
 
 		<section class="section contact" id="contact">
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
 
 					<!-- Contact Map -->
@@ -388,7 +388,7 @@
 							<!-- Contact form starts -->
 							<form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3">
 								<div class="form-group">
-<!--  -->
+									<!--  -->
 									<p class="color-theme-orange">Send us a message</p>
 									<!-- Remove .displayNone to display the label -->
 
@@ -421,7 +421,7 @@
 									<p class="error-message" id="message-error"></p>
 								</div>
 
-								<button class="button">
+								<button id="contactSubmitBtn" class="button" onclick="return validateForm();">
 									Send
 								</button>
 								<!-- Display errors -->
@@ -435,6 +435,44 @@
 
 				</div>
 			</div>
+
+			<!-- Contact Modal -->
+
+			<div class="contact-us-modal" id="contactDetailsModal" tabindex="-1" role="dialog"
+				aria-labelledby="detailsModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+
+						<div class="container mt-4">
+							<!-- Modal content starts-->
+							<div class="modal-header">
+								<div class="small-line">
+
+								</div>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeContactModal">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-title color-theme-blue">
+								<h2>Thank you</h2>
+							</div>
+							<div class="heading-outline">
+								<span class="heading-outline-orange modal-subtitle"></span>
+							</div>
+
+							<div class="modal-body">
+								<p class="modal-text">
+									<br><b>Your message was sent successfully</b><br>
+								</p>
+							</div>
+							<!-- Modal content ends-->
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- /Contact Modal -->
+
 		</section>
 		<!-- /Contact section -->
 

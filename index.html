@@ -565,7 +565,6 @@
 
 							<!-- Contact form starts -->
 							<form action="contact/mail.php" method="POST" onsubmit="return validateForm();" class="w-lg-75 mt-3">
-							<!-- <form onsubmit="return validateForm();" class="w-lg-75 mt-3"> -->
 								<div class="form-group">
 									<!--  -->
 									<p class="color-theme-orange">Send us a message</p>
@@ -600,8 +599,7 @@
 									<p class="error-message" id="message-error"></p>
 								</div>
 
-								<button onclick="return validateForm(); " id="contactSubmitModal" class="button" data-toggle="modal" data-target="#contactDetailsModal"
-									data-title="<h1>Thank you</h1>" data-text="<b>Your message was sent successfully</b><br>">
+								<button id="contactSubmitBtn" class="button" onclick="return validateForm();">
 									Send
 								</button>
 								<!-- Display errors -->
@@ -618,8 +616,8 @@
 
 			<!-- Contact Modal -->
 
-			<div class="modal fade" id="contactDetailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel"
-				aria-hidden="true">
+			<div class="contact-us-modal" id="contactDetailsModal" tabindex="-1" role="dialog"
+				aria-labelledby="detailsModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 
@@ -629,19 +627,20 @@
 								<div class="small-line">
 
 								</div>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeContactModal">
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-title color-theme-blue" id="detailsModalLabel">
+							<div class="modal-title color-theme-blue">
+								<h2>Thank you</h2>
 							</div>
 							<div class="heading-outline">
 								<span class="heading-outline-orange modal-subtitle"></span>
 							</div>
 
 							<div class="modal-body">
-								<p class="modal-text" id="modal-text">
-
+								<p class="modal-text">
+									<br><b>Your message was sent successfully</b><br>
 								</p>
 							</div>
 							<!-- Modal content ends-->
