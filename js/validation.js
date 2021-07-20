@@ -37,7 +37,7 @@ function validateEmail() {
 
 	}
 
-	if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+	if (!email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
 
 		producePrompt("Invalid email address.", "email-error", "#d9534f");
 		return false;
@@ -130,7 +130,7 @@ function validateForm() {
 		clearFormInputs();
 		hideContactPopup();
 		// Prevent page from reloading
-		return false;
+		// return false;
 	}
 
 }
@@ -188,7 +188,7 @@ function validateNewsletterField() {
 		producePrompt("Newsletter field cannot be empty.", "newsletter-error", "#d9534f");
 		return false;
 	}
-	if (!newsletterField.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+	if (!newsletterField.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
 
 		producePrompt("Invalid email address.", "newsletter-error", "#d9534f");
 		return false;
