@@ -130,7 +130,7 @@ function validateForm() {
 		clearFormInputs();
 		hideContactPopup();
 		// Prevent page from reloading
-		// return false;
+		return true;
 	}
 
 }
