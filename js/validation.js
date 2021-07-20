@@ -126,19 +126,23 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else if (validateName() && validateEmail() && validateMessage()) {
-		contactSubmitBtn.addEventListener("click", function () {
+
+		// When all checks succeed
+
+		// show the successfully submitted modal
+		contactSubmitBtn.addEventListener("click", function (event) {
 			contactDetailsModal.addClass("animate fadeIn").fadeIn();
+			// Prevent default submit click behavior
+			event.preventDefault();
 		});
-		closeContactModal.addEventListener("click", function () {
+
+		// hide the successfully submitted modal
+		closeContactModal.addEventListener("click", function (event) {
 			contactDetailsModal.addClass("animate fadeOut").fadeOut();
+			// Prevent default submit click behavior
+			event.preventDefault();
 		});
 	}
-	contactSubmitBtn.on("click", function () {
-		contactDetailsModal.addClass("animate fadeIn").fadeIn();
-	});
-	closeContactModal.on("click", function () {
-		contactDetailsModal.addClass("animate fadeOut").fadeOut();
-	});
 
 }
 
