@@ -125,30 +125,58 @@ function validateForm() {
 			jsHide("submit-error");
 		}, 2000);
 		return false;
-	} else if (validateName() && validateEmail() && validateMessage()) {
-
-		// When all checks succeed
-
-		// show the successfully submitted modal
-		contactSubmitBtn.addEventListener("click", function (event) {
-			contactDetailsModal.addClass("animate fadeIn").fadeIn();
-			// Prevent default submit click behavior
-			event.preventDefault();
-		});
-
-		// hide the successfully submitted modal
-		closeContactModal.addEventListener("click", function (event) {
-			contactDetailsModal.addClass("animate fadeOut").fadeOut();
-			// Prevent default submit click behavior
-			event.preventDefault();
-		});
+	} else {
+		showContactModal();
+		clearFormInputs();
+		hideContactPopup();
+		// Prevent page from reloading
+		return false;
 	}
 
 }
 
+function showContactModal() {
+	contactDetailsModal.style.display = "block";
+	contactDetailsModal.style.opacity = 1;
+};
+
+function clearFormInputs() {
+
+	// sets all contact inputs to empty
+	var clearedName = document.getElementById("formName").value = "",
+		clearedEmail = document.getElementById("formEmail").value = ""
+	clearedMessage = document.getElementById("formMessage").value = "";
+
+	/* console.log(`${clearedName}, ${clearedEmail}, ${clearedMessage}`) */
+
+	restoreFormState();
+
+	function restoreFormState() {
+
+		document.getElementById("name-error").innerHTML = "";
+		document.getElementById("email-error").innerHTML = "";
+		document.getElementById("message-error").innerHTML = "";
+
+		document.getElementById("formName").style.borderColor = "#ced4da";
+		document.getElementById("formEmail").style.borderColor = "#ced4da";
+		document.getElementById("formMessage").style.borderColor = "#ced4da";
+	}
+}
+
+function hideContactPopup() {
+
+	setTimeout(() => {
+
+		// auto hide the successfully submitted modal in 2s
+		contactDetailsModal.style.opacity = 0;
+	}, 2000);
 
 
-
+	// hide the successfully submitted modal when closeContactModal is clicked
+	closeContactModal.addEventListener("click", function () {
+		contactDetailsModal.style.opacity = 0;
+	});
+}
 // validate newsletterField
 
 function validateNewsletterField() {

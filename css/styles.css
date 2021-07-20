@@ -776,6 +776,7 @@ section.contact {
 }
 
 .contact-us-modal {
+	opacity: 0;
 	display: none;
 	position: fixed;
 	top: 10%;
@@ -784,6 +785,11 @@ section.contact {
 	-moz-transform: translate(0%, 40%);
 	-ms-transform: translate(0%, 40%);
 	-o-transform: translate(0%, 40%);
+	transition: linear 0.6s opacity;
+	-webkit-transition: linear 0.6s opacity;
+	-moz-transition: linear 0.6s opacity;
+	-ms-transition: linear 0.6s opacity;
+	-o-transition: linear 0.6s opacity;
 }
 
 footer.footer {
