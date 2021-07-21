@@ -16,7 +16,7 @@ function validateName() {
 
 	}
 
-	producePrompt("Looks good", "name-error", "#5cb85c");
+	producePrompt("", "name-error", "#5cb85c");
 	return true;
 
 	function producePrompt(message, promptLocation, color) {
@@ -44,7 +44,7 @@ function validateEmail() {
 
 	}
 
-	producePrompt("Looks good", "email-error", "#5cb85c");
+	producePrompt("", "email-error", "#5cb85c");
 	return true;
 
 	function producePrompt(message, promptLocation, color) {
@@ -64,7 +64,7 @@ function validateMessage() {
 		return false;
 	}
 
-	producePrompt("Looks good", "message-error", "#5cb85c");
+	producePrompt("", "message-error", "#5cb85c");
 	return true;
 
 	function producePrompt(message, promptLocation, color) {
@@ -194,7 +194,7 @@ function validateNewsletterField() {
 		return false;
 	}
 
-	producePrompt("Looks good", "newsletter-error", "#5cb85c");
+	producePrompt("", "newsletter-error", "#5cb85c");
 	return true;
 
 	function producePrompt(message, promptLocation, color) {
