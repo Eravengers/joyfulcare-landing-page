@@ -60,7 +60,7 @@ function validateMessage() {
 	var left = required - message.length;
 
 	if (required === 0) {
-		producePrompt("Message is required.", "message-error", "#d9534f");
+		producePrompt("Message field cannot be empty.", "message-error", "#d9534f");
 		return false;
 	}
 
