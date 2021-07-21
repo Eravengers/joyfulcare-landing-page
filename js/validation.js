@@ -56,11 +56,11 @@ function validateEmail() {
 
 function validateMessage() {
 	var message = document.getElementById("formMessage").value;
-	var required = 30;
+	var required = message.length;
 	var left = required - message.length;
 
-	if (left > 0) {
-		producePrompt(left + " more characters required", "message-error", "#d9534f");
+	if (required === 0) {
+		producePrompt("Message is required.", "message-error", "#d9534f");
 		return false;
 	}
 
