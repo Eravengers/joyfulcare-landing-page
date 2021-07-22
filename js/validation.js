@@ -130,47 +130,46 @@ function validateForm() {
 		return false;
 	} else {
 
-		const URL = "contact/mail.php",
-			name = document.getElementById("formName").value,
-			email = document.getElementById("formEmail").value,
-			message = document.getElementById("formMessage").value;
-
-		const data = {
-			name: name,
-			email: email,
-			message: message
-		};
-
-		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("POST", `${URL}`);
-		xmlhttp.setRequestHeader("Content-Type", "application/json");
-		xmlhttp.send(JSON.stringify(data));
-		xmlhttp.onreadystatechange = function () {
-			if (xmlhttp.readyState === 4) {
-				const response = JSON.parse(xmlhttp.responseText);
-				if (xmlhttp.status === 200) {
-					showContactModal();
-					clearFormInputs();
-					hideContactPopup();
-					Swal.fire(
-						'Sent Successfully!',
-						'Thank you for contacting us!',
-						'success'
-					);
-					return false;
-				} else {
-					console.log(`${response}`);
-					Swal.fire(
-						'Opps!!!',
-						`${response}`,
-						'error'
-					);
-				}
-			}
-		}
-
 	}
 
+	const URL = "contact/mail.php",
+		name = document.getElementById("formName").value,
+		email = document.getElementById("formEmail").value,
+		message = document.getElementById("formMessage").value;
+
+	const data = {
+		name: name,
+		email: email,
+		message: message
+	};
+
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("POST", `${URL}`);
+	xmlhttp.setRequestHeader("Content-Type", "application/json");
+	xmlhttp.send(JSON.stringify(data));
+	xmlhttp.onreadystatechange = function () {
+		if (xmlhttp.readyState === 4) {
+			const response = JSON.parse(xmlhttp.responseText);
+			if (xmlhttp.status === 200) {
+				showContactModal();
+				clearFormInputs();
+				hideContactPopup();
+				Swal.fire(
+					'Sent Successfully!',
+					'Thank you for contacting us!',
+					'success'
+				);
+				return true;
+			} else {
+				console.log(`${response}`);
+				Swal.fire(
+					'Opps!!!',
+					`${response}`,
+					'error'
+				);
+			}
+		}
+	}
 }
 
 function showContactModal() {
