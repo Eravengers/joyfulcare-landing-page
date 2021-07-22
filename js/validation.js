@@ -152,9 +152,19 @@ function validateForm() {
 					showContactModal();
 					clearFormInputs();
 					hideContactPopup();
+					Swal.fire(
+						'Sent Successfully!',
+						'Thank you for contacting us!',
+						'success'
+					);
 					return false;
 				} else {
-					console.log(`${response}`)
+					console.log(`${response}`);
+					Swal.fire(
+						'Opps!!!',
+						`${response}`,
+						'error'
+					);
 				}
 			}
 		}
