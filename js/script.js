@@ -50,7 +50,7 @@ $(function () {
 					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;
 
-					console.log(`Loc without Off: ${$(hash).offset().top} Loc with Off: ${$(hash).offset().top - offset} `);
+					// console.log(`Loc without Off: ${$(hash).offset().top} Loc with Off: ${$(hash).offset().top - offset} `);
 				});
 				return false;
 			} // End if
