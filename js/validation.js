@@ -152,6 +152,7 @@ function validateForm() {
 					showContactModal();
 					clearFormInputs();
 					hideContactPopup();
+					return false;
 				} else {
 					console.log(`${response}`)
 				}
