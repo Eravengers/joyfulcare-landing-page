@@ -9,16 +9,13 @@ function validateName() {
 
 	}
 
-	/*
-	*** Don't need this for now
-
 	if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
 		producePrompt("First and last name required.", "name-error", "#d9534f");
 		return false;
 
 	}
- */
+
 	producePrompt("", "name-error", "#5cb85c");
 	return true;
 
@@ -59,11 +56,11 @@ function validateEmail() {
 
 function validateMessage() {
 	var message = document.getElementById("formMessage").value;
-	var required = message.length;
+	var required = 30;
 	var left = required - message.length;
 
-	if (required === 0) {
-		producePrompt("Message field cannot be empty.", "message-error", "#d9534f");
+	if (left > 0) {
+		producePrompt(left + " more characters required", "message-error", "#d9534f");
 		return false;
 	}
 
@@ -129,47 +126,13 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else {
-
+		showContactModal();
+		clearFormInputs();
+		hideContactPopup();
+		// Prevent page from reloading
+		return false;
 	}
 
-	const URL = "contact/mail.php",
-		name = document.getElementById("formName").value,
-		email = document.getElementById("formEmail").value,
-		message = document.getElementById("formMessage").value;
-
-	const data = {
-		name: name,
-		email: email,
-		message: message
-	};
-
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("POST", `${URL}`);
-	xmlhttp.setRequestHeader("Content-Type", "application/json");
-	xmlhttp.send(JSON.stringify(data));
-	xmlhttp.onreadystatechange = function () {
-		if (xmlhttp.readyState === 4) {
-			const response = JSON.parse(xmlhttp.responseText);
-			if (xmlhttp.status === 200) {
-				showContactModal();
-				clearFormInputs();
-				hideContactPopup();
-				Swal.fire(
-					'Sent Successfully!',
-					'Thank you for contacting us!',
-					'success'
-				);
-				return true;
-			} else {
-				console.log(`${response}`);
-				Swal.fire(
-					'Opps!!!',
-					`${response}`,
-					'error'
-				);
-			}
-		}
-	}
 }
 
 function showContactModal() {
