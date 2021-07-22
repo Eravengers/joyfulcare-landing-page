@@ -129,11 +129,35 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else {
-		showContactModal();
-		clearFormInputs();
-		hideContactPopup();
-		// Prevent page from reloading
-		return false;
+
+		const URL = "contact/mail.php",
+			name = document.getElementById("formName").value,
+			email = document.getElementById("formEmail").value,
+			message = document.getElementById("formMessage").value;
+
+		const data = {
+			name: name,
+			email: email,
+			message: message
+		};
+
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("POST", `${URL}`);
+		xmlhttp.setRequestHeader("Content-Type", "application/json");
+		xmlhttp.send(JSON.stringify(data));
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState === 4) {
+				const response = JSON.parse(xmlhttp.responseText);
+				if (xmlhttp.status === 200) {
+					showContactModal();
+					clearFormInputs();
+					hideContactPopup();
+				} else {
+					console.log(`${response}`)
+				}
+			}
+		}
+
 	}
 
 }
