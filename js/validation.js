@@ -9,13 +9,16 @@ function validateName() {
 
 	}
 
+	/*
+	*** Don't need this for now
+
 	if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
 		producePrompt("First and last name required.", "name-error", "#d9534f");
 		return false;
 
 	}
-
+ */
 	producePrompt("", "name-error", "#5cb85c");
 	return true;
 
