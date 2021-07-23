@@ -129,11 +129,11 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else {
-		showContactModal();
+		/* showContactModal();
 		clearFormInputs();
 		hideContactPopup();
 		// Prevent page from reloading
-		return false;
+		return false; */
 	}
 
 }
