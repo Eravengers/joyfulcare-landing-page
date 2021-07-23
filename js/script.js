@@ -37,25 +37,21 @@ $(function () {
 				event.preventDefault();
 
 				// Store hash
-				var hash = this.hash,
-					offset = 300;
-				if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+				var hash = this.hash;
 
 				// Using jQuery's animate() method to add smooth page scroll
 				// The optional number (300) specifies the number of milliseconds it takes to scroll to the specified area
-				$('body').animate({
-					scrollTop: $(hash).offset().top - offset
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
 				}, 300, function () {
 
 					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;
-
-					// console.log(`Loc without Off: ${$(hash).offset().top} Loc with Off: ${$(hash).offset().top - offset} `);
 				});
-				return false;
 			} // End if
 		});
 	});
+
 
 	// Add current year to copyright
 	let date = new Date();
