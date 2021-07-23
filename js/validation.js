@@ -142,7 +142,6 @@ function showContactModal() {
 	contactDetailsModal.style.display = "block";
 	contactDetailsModal.style.opacity = 1;
 };
-
 function clearFormInputs() {
 
 	// sets all contact inputs to empty
