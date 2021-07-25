@@ -558,7 +558,7 @@ section.services-home {
 .faqs .accordion {
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 12px auto;
 	padding: 1rem 12px;
 	background-color: #fff;
 	color: #215885;
@@ -587,13 +587,16 @@ section.services-home {
 .faqs .accordion:hover,
 .faqs .accordion.active:hover {
 	cursor: pointer;
-	background-color: rgba(204, 204, 204, 0.726);
+	background-color: rgba(204, 204, 204, 0.411);
+	float: right;
+	outline: none;
 }
 
 /* Unicode icon for "plus" sign (+) */
 .faqs .accordion:not(.active):after {
 	content: '\02795';
 	float: right;
+	outline: none;
 }
 
 /* Unicode icon for "minus" sign (-) */
@@ -611,14 +614,15 @@ section.services-home {
 
 .dropdown-menu {
 	font-weight: normal;
-	background-color: #1f73e7b7;
-	color: #212529;
+	background-color: #285185;
+	color: #fff;
 	width: 100%;
+	font-weight: normal;
 	display: none;
 	max-height: 120px;
 	float: left;
 	padding: 1rem 12px;
-	margin: 0;
+	margin: -12px 0 0 0;
 	list-style: none;
 	background-clip: padding-box;
 	overflow: hidden;
