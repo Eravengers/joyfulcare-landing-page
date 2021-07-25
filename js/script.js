@@ -36,7 +36,7 @@ $(function () {
 
 	}
 
-	
+
 	// ScrollToTop
 
 	$(window).scroll(function () {
