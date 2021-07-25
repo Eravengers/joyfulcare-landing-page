@@ -141,4 +141,26 @@ $(function () {
 
 	readMoreLess();
 
+
+	// Accordion
+	var accordion = document.getElementsByClassName("accordion");
+
+	var i;
+	for (i = 0; i < accordion.length; i++) {
+		accordion[i].addEventListener("click", function () {
+			// Toggle between adding and removing active class to accordion
+			this.classList.toggle("active");
+
+			// Toggle between hiding and showing the dropdown menu
+
+			var dropDownMenu = this.nextElementSibling;
+			if (dropDownMenu.style.display === "block") {
+				dropDownMenu.style.display = "none";
+			} else {
+				dropDownMenu.style.display = "block";
+			}
+		});
+	}
+
 }(jQuery));
+

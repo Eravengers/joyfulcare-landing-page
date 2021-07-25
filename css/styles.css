@@ -114,10 +114,6 @@ a.cta-btn {
 	-moz-text-stroke-color: #ffffff7a;
 }
 
-.fa-caret-down-icon {
-	position: relative;
-	left: 1rem;
-}
 
 /* Buttons */
 
@@ -559,13 +555,15 @@ section.services-home {
 
 /* FAQs */
 
-.faqs .faqs-individual {
+.faqs .accordion {
 	width: 100%;
 	height: auto;
-	margin: 0.555rem auto;
+	margin: 0 auto;
+	padding: 1rem 12px;
 	background-color: #fff;
 	color: #215885;
 	border: 1px solid #4e555d56;
+	outline: 0;
 	display: inline-block;
 	font-weight: 700;
 	cursor: pointer;
@@ -577,9 +575,31 @@ section.services-home {
 	user-select: none;
 	padding: .755rem .75rem;
 	font-size: 1rem;
-	border-radius: .25rem;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	text-decoration: none;
+	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	-moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	-ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	-o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Add rgba(204, 204, 204, 0.726) to the accordion on hover and also an .active class by JS when clicked */
+.faqs .accordion:hover,
+.faqs .accordion.active:hover {
+	cursor: pointer;
+	background-color: rgba(204, 204, 204, 0.726);
+}
+
+/* Unicode icon for "plus" sign (+) */
+.faqs .accordion:not(.active):after {
+	content: '\02795';
+	float: right;
+}
+
+/* Unicode icon for "minus" sign (-) */
+.faqs .accordion.active:before {
+	content: '\02796';
+	float: right;
 }
 
 .faqs .dropdown .dropdown-toggle::after {
@@ -591,48 +611,24 @@ section.services-home {
 
 .dropdown-menu {
 	font-weight: normal;
-	position: relative;
-	top: 100%;
-	left: 0;
-	z-index: 1000;
-	display: none;
-	float: left;
-	min-width: 10rem;
-	height: 7rem;
-	padding: 0.5rem 12px;
-	margin: .225rem 0 0;
-	font-size: 1rem;
-	color: inherit;
-	text-align: left;
-	list-style: none;
-	background-color: #fff;
+	background-color: #1f73e7b7;
 	color: #212529;
+	width: 100%;
+	display: none;
+	max-height: 120px;
+	float: left;
+	padding: 1rem 12px;
+	margin: 0;
+	list-style: none;
 	background-clip: padding-box;
-	border: 0;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-ms-border-radius: 0;
-	-o-border-radius: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	-webkit-transition: max-height 0.2s ease-out;
+	-moz-transition: max-height 0.2s ease-out;
+	-ms-transition: max-height 0.2s ease-out;
+	-o-transition: max-height 0.2s ease-out;
 }
 
-
-.faqs .dropdown .caret-down {
-	position: relative;
-	left: 18rem;
-	top: -3rem;
-	margin-left: .255em;
-	vertical-align: .255em;
-	display: inline-block;
-	color: #215885;
-	width: 0;
-	height: 0;
-	content: "";
-	border-top: .3em solid;
-	border-right: .3em solid transparent;
-	border-bottom: 0;
-	border-left: .3em solid transparent
-}
 
 /* Blog */
 
@@ -1061,9 +1057,6 @@ footer.footer {
 		max-width: 75%;
 	}
 
-	.faqs .dropdown .caret-down {
-		left: 42rem;
-	}
 
 	.contact .contact-map .contact-img-map {
 		height: 100%;
