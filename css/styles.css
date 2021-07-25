@@ -593,7 +593,7 @@ section.services-home {
 }
 
 /* Unicode icon for "plus" sign (+) */
-.faqs .accordion:not(.active):after {
+.faqs .accordion:not(.active):before {
 	content: '\02795';
 	float: right;
 	outline: none;
@@ -603,6 +603,7 @@ section.services-home {
 .faqs .accordion.active:before {
 	content: '\02796';
 	float: right;
+	outline: none;
 }
 
 .faqs .dropdown .dropdown-toggle::after {
@@ -619,18 +620,18 @@ section.services-home {
 	width: 100%;
 	font-weight: normal;
 	display: none;
-	max-height: 120px;
+	max-height: 160px;
 	float: left;
 	padding: 1rem 12px;
 	margin: -12px 0 0 0;
 	list-style: none;
 	background-clip: padding-box;
 	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-	-webkit-transition: max-height 0.2s ease-out;
-	-moz-transition: max-height 0.2s ease-out;
-	-ms-transition: max-height 0.2s ease-out;
-	-o-transition: max-height 0.2s ease-out;
+	transition: max-height 0.6s ease-out;
+	-webkit-transition: max-height 0.6s ease-out;
+	-moz-transition: max-height 0.6s ease-out;
+	-ms-transition: max-height 0.6s ease-out;
+	-o-transition: max-height 0.6s ease-out;
 }
 
 

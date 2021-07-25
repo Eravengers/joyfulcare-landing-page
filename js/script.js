@@ -154,7 +154,6 @@ $(function () {
 			// Toggle between hiding and showing the dropdown menu
 
 			var dropDownMenu = this.nextElementSibling;
-			// dropDownMenu.slideToggle();
 
 			if (dropDownMenu.style.display === "block") {
 				dropDownMenu.style.display = "none";
