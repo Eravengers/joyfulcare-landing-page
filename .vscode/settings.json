@@ -1,7 +1,12 @@
 {
   "liveServer.settings.port": 5501,
   "cSpell.words": [
-    "preconnect"
+		"buorg",
+		"buorgclose",
+		"eqeqeq",
+		"esversion",
+		"preconnect",
+		"scaleout"
 	],
 	"workbench.editor.highlightModifiedTabs": true,
 	"extensions.webWorker": true
