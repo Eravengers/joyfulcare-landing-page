@@ -96,7 +96,10 @@ a.cta-btn {
 	/* display: contents; */
 }
 
-.heading-outline.sent-message {font-size: 3.235rem;}
+.heading-outline.sent-message {
+	font-size: 2.235rem;
+}
+
 .heading-outline-orange {
 	-webkit-text-stroke-color: #d679407a;
 	-o-stroke-color: #d679407a;
