@@ -10,7 +10,7 @@
 		<meta name="title" content="Joyful Care | Homemaking & Companionship">
 		<meta name="author" content="@bacfinc">
 		<meta name="description" content="Joyful Care | Homemaking & Companionship">
-		<meta name="keywords" content="">
+		<meta name="keywords" content="home care, elserly, services, nanny, help for elderly">
 		<meta http-equiv="Content-Type" content="text/html">
 		<meta name="theme-color" content="#285185">
 		<link rel="manifest" href="manifest.json">
