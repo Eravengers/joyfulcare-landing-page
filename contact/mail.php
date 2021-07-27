@@ -180,7 +180,7 @@
 								<a class="nav-link mr-4" href="../../index.html#about">About Us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4 js-scroll button contact-us-btn" href="../../index.html#contact">Contact Us</a>
+								<a class="nav-link mr-4 button contact-us-btn" href="../../index.html#contact">Contact Us</a>
 							</li>
 						</ul>
 					</div>
@@ -196,7 +196,7 @@
 				<div class="row">
 					<div class="col-md-12 col-12-6 p--0">
 						<div class="hero-text-content text-center">
-							<div class="heading-outline">
+							<div class="heading-outline sent-message">
 								<span class="heading-outline-white">Message sent!</span>
 							</div>
 							<h2 class="services-title color-theme-white">Your message was sent successfully!</h2>
@@ -402,20 +402,28 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 					</div>
 					<!-- /Second column -->
 
-					<!-- Third column -->
+				<!-- Third column -->
 					<div class="col-sm-12 col-md-3 col-lg-4">
 						<div class="footer-title">
 							Newsletter
 						</div>
 						<div class="newsletter-text">
 							Sign up for free newsletters
+
+							<!-- Display newsletter errors -->
+							<p class="error-message" id="newsletter-error"></p>
 						</div>
+
+
 						<div class="newsletter-input-box">
+
 							<input type="email" name="email" placeholder="Your Email Address" aria-placeholder="Your Email Address"
-								class="newsletter-input">
-							<button class="button newsletter-button">
+								id="newletterEmail" class="newsletter-input" onkeyup="validateNewsletterField();">
+
+							<button class="button newsletter-button" onclick="return validateNewsletterField()">
 								Subscribe
 							</button>
+
 						</div>
 
 					</div>
@@ -452,6 +460,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 
 		<!-- Custom script -->
 		<script src="../../js/script.js" async defer></script>
+		<script src="../../js/validation.js" async defer></script>
 
 
 
