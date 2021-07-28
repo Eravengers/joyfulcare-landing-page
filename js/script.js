@@ -83,7 +83,7 @@
 
 	// Smooth scroll for the navigation menu and links with .js-scroll classes
 	var scrollToOffset = $('#top').outerHeight() - 16;
-	console.log(scrollToOffset);
+	console.log(scrollToOffset);git 
 
 	if (window.matchMedia("(max-width: 991px)").matches) {
 		scrollToOffset += 16;
