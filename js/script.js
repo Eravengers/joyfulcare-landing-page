@@ -1,4 +1,6 @@
-$(function () {
+(function ($) {
+	"use strict";
+
 
 	// Preloader
 	// fadeOut the preloader in 2s after document loaded
@@ -52,31 +54,61 @@ $(function () {
 
 
 	// scrollToTopView();
-	$(document).ready(function () {
-		// Add smooth scrolling to all links
-		$("a.js-scroll").on('click', function (event) {
+	// $(document).ready(function () {
+	// 	// Add smooth scrolling to all links
+	// 	$("a.js-scroll").on('click', function (event) {
 
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				// Prevent default anchor click behavior
-				event.preventDefault();
+	// 		// Make sure this.hash has a value before overriding default behavior
+	// 		if (this.hash !== "") {
+	// 			// Prevent default anchor click behavior
+	// 			event.preventDefault();
 
-				// Store hash
-				var hash = this.hash;
+	// 			// Store hash
+	// 			var hash = this.hash;
 
-				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (300) specifies the number of milliseconds it takes to scroll to the specified area
+	// 			// Using jQuery's animate() method to add smooth page scroll
+	// 			// The optional number (300) specifies the number of milliseconds it takes to scroll to the specified area
+	// 			$('html, body').animate({
+	// 				scrollTop: $(hash).offset().top
+	// 			}, 300, function () {
+
+	// 				// Add hash (#) to URL when done scrolling (default click behavior)
+	// 				window.location.hash = hash;
+	// 			});
+	// 		} // End if
+	// 	});
+	// });
+
+
+
+	// Smooth scroll for the navigation menu and links with .js-scroll classes
+	var scrollToOffset = $('#top').outerHeight() - 16;
+	console.log(scrollToOffset);
+
+	if (window.matchMedia("(max-width: 991px)").matches) {
+		scrollToOffset += 16;
+	}
+	$("document").on('click', '.js-scroll', function (e) {
+
+		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+			e.preventDefault();
+			var target = $(this.hash);
+			if (target.length) {
+
+				var scrollTo = target.offset().top - scrollToOffset;
+
+				if ($(this).attr("href") === '#top') {
+					scrollTo = 0;
+				}
+
 				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 300, function () {
+					scrollTop: scrollTo
+				}, 1500);
 
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-				});
-			} // End if
-		});
+				return false;
+			}
+		}
 	});
-
 
 	// Add current year to copyright
 	let date = new Date();
