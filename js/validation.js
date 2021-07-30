@@ -129,9 +129,6 @@ function validateForm() {
 		}, 2000);
 		return false;
 	} else {
-
-		// We do not need this for now
-
 		/* showContactModal();
 		clearFormInputs();
 		hideContactPopup();
@@ -145,7 +142,6 @@ function showContactModal() {
 	contactDetailsModal.style.display = "block";
 	contactDetailsModal.style.opacity = 1;
 };
-
 function clearFormInputs() {
 
 	// sets all contact inputs to empty

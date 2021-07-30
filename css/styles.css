@@ -181,6 +181,7 @@ a.cta-btn {
 	margin: 1rem 0;
 }
 
+
 /* Browser update */
 
 .buorg {
@@ -296,7 +297,6 @@ div#preloader {
 header {
 	margin: 0;
 }
-
 
 section.section:not(section.hero.index-hero) {
 	margin: 6rem auto !important;
@@ -476,6 +476,7 @@ section.hero.faq-hero {
 
 
 /* Services section */
+
 section.services-home {
 	background-color: #285185;
 	padding: 1rem;
@@ -557,6 +558,7 @@ section.services-home {
 	list-style-type: disc;
 }
 
+
 /* FAQs */
 
 .faqs .accordion {
@@ -587,7 +589,9 @@ section.services-home {
 	-o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+
 /* Add rgba(204, 204, 204, 0.726) to the accordion on hover and also an .active class by JS when clicked */
+
 .faqs .accordion:hover,
 .faqs .accordion.active:hover {
 	cursor: pointer;
@@ -596,14 +600,18 @@ section.services-home {
 	outline: none;
 }
 
+
 /* Unicode icon for "plus" sign (+) */
+
 .faqs .accordion:not(.active):before {
 	content: '\02795';
 	float: right;
 	outline: none;
 }
 
+
 /* Unicode icon for "minus" sign (-) */
+
 .faqs .accordion.active:before {
 	content: '\02796';
 	float: right;
@@ -909,6 +917,7 @@ footer.footer {
 	margin-top: 1.225rem;
 }
 
+
 /* Responsiveness */
 
 @media screen and (min-width: 768px) {
@@ -972,7 +981,6 @@ footer.footer {
 		-ms-transform: translate(50%, 40%);
 		-o-transform: translate(50%, 40%);
 	}
-
 }
 
 @media screen and (min-width: 801px) {
@@ -1017,7 +1025,6 @@ footer.footer {
 		-ms-transform: translate(100%, 40%);
 		-o-transform: translate(100%, 40%);
 	}
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -1065,7 +1072,6 @@ footer.footer {
 	.w-lg-75 {
 		max-width: 75%;
 	}
-
 
 	.contact .contact-map .contact-img-map {
 		height: 100%;

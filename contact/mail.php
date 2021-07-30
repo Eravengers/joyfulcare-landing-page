@@ -208,114 +208,109 @@
 		</section>
 		<!-- /Hero -->
 
-		<!--Services main content -->
-		<section class="section services services-main-content" id="services">
-			<div class="container">
+	<!--Services main content -->
+	<section class="section services services-main-content">
+        <div class="container mt-5">
 
-				<div class="row">
-					<!-- Companionship image -->
-					<div class="col-md-12 col-lg-6">
-						<div class="companionship-bg services-bg"></div>
-					</div>
-					<!-- /Companionship image -->
+            <div class="row">
+                <!-- Companionship image -->
+                <div class="col-12 col-md-12 col-lg-6  mb-lg-5">
+                    <div class="companionship-bg services-bg"></div>
+                </div>
+                <!-- /Companionship image -->
 
-					<!-- Companionship content -->
-					<div class="col-md-12 col-lg-6">
-						<div class="card-icon d-inline">
-							<img src="../../assets/services/s-companionship.svg" alt="friend icon" />
-						</div>
-						<span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
-						<div class="sub-title">
-							<h4 class="my-4">
-								The value of Friendship
-							</h4>
-							<p class="lead color-theme-blue">
-								At Joyful Care, we provide lively social interactions to our clients through companionship service. Our
-								trustworthy caregivers look after our clients with love, respect, and care.
-							</p>
-							<div class="color-theme-blue" id="readMoreCompanionship">
-								<p class="lead">
-									We make every effort to establish a positive relationship with the client. We strive to create
-									memorable experiences full of enjoyable activities that bring smiles to their faces.
-								</p>
-								<p class="lead color-theme-blue">
-									Joyful Care Companionship Services Include:
-								<ul class="services-list my-3 ml-4 color-theme-blue lead">
-									<li>Round the clock service (24/7)</li>
-									<li>Light housekeeping</li>
-									<li>Social activities</li>
-									<li>Meal preparation</li>
-									<li>Laundry</li>
-									<li>Grocery shopping</li>
-									<li>Errands</li>
-									<li>Accompany to medical appointments</li>
-								</ul>
-								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+                <!-- Companionship content -->
+                <div class="col-12 col-md-12 col-lg-6 mt-2 mb-lg-5">
+                    <div class="card-icon d-inline">
+                        <img src="assets/services/s-companionship.svg" alt="friend icon" />
+                    </div>
+                    <span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
+                    <div class="sub-title">
+                        <h4 class="my-4">
+                            The Value of Friendship
+                        </h4>
+                        <p class="lead color-theme-blue">
+                            At Joyful Care, we provide lively social interactions for our clients through companionship service. Our trustworthy caregivers look after our clients with love, respect, and care.
+                        </p>
+                        <div class="color-theme-blue" id="readMoreCompanionship">
+                            <p class="lead">
+                                We make every effort to establish a positive relationship with the client. We strive to create memorable experiences full of enjoyable activities that bring smiles to their faces.
+                            </p>
+                            <p class="lead color-theme-blue">
+                                Joyful Care Companionship Services Include:
+                                <ul class="services-list my-3 ml-4 color-theme-blue lead">
+                                    <li>Round the clock service (24/7)</li>
+                                    <li>Light housekeeping</li>
+                                    <li>Social activities</li>
+                                    <li>Meal preparation</li>
+                                    <li>Laundry</li>
+                                    <li>Grocery shopping</li>
+                                    <li>Errands</li>
+                                    <li>Accompany to medical appointments</li>
+                                </ul>
+                                <a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
 									Give Us a Call Today</a>
-								</p>
-							</div>
-							<span class="read-more-btn cta-btn text-right read-more-btn--right mt-3" id="readMoreCompanionshipBtn">
+                            </p>
+                        </div>
+                        <span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMoreCompanionshipBtn">
 								<span id="caretTextCompanionshipText"></span>
 
-								<i class="fa fa-caret-down fa-caret-down-icon text-bold lead" id="readMoreCompanionshipCaret"></i>
-							</span>
-						</div>
-					</div>
-					<!-- Companionship content -->
-				</div>
+                        <i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMoreCompanionshipCaret"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Companionship content -->
+            </div>
 
-				<div class="row mt-6">
-					<!-- pca content -->
-					<div class="col-md-12 col-lg-6">
-						<div class="card-icon d-inline">
-							<img src="../../assets/services/s-pca.svg" alt="friend icon" />
-						</div>
-						<span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
-						<div class="sub-title">
-							<h4 class="my-4">
-								Kick-off the Day with Assurance
-							</h4>
-							<p class="lead color-theme-blue">
-								Joyful Care aims to provide affordable care and assistance to help patients live healthy, feel loved,
-								and happy at home. Our trained and trustworthy care assistant helps the patient with their activities
-								and specific tasks.
-							</p>
-							<div class="readMorePca" id="readMorePca">
-								<p class="lead color-theme-blue">
-									Our Patient Care Assistance services can also meet the needs of seniors who want to live independently
-									but need assistance with the basic tasks and activities of daily life.
-								</p>
-								<p class="lead color-theme-blue">
-									Patient Care Assistance services include the following activities:
-								<ul class="services-list my-3 ml-4 color-theme-blue lead">
-									<li>Medication reminding</li>
-									<li>A monitoring skin condition</li>
-									<li>Giving personal care</li>
-									<li>Appointing planning</li>
-									<li>Turning, positioning, and transferring</li>
-								</ul>
-								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+            <div class="row">
+                <!-- pca content -->
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="card-icon d-inline">
+                        <img src="assets/services/s-pca.svg" alt="friend icon" />
+                    </div>
+                    <span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
+                    <div class="sub-title">
+                        <h4 class="my-4">
+                            Kick-off the Day with Assurance
+                        </h4>
+                        <p class="lead color-theme-blue">
+                            Joyful Care aims to provide affordable care and assistance to help patients live healthy, feel loved, and happy at home. Our trained and trustworthy care assistant helps the patient with daily activities and specific tasks.
+                        </p>
+                        <div class="readMorePca" id="readMorePca">
+                            <p class="lead color-theme-blue">
+                                Our Patient Care Assistance services can also meet the needs of seniors who want to live independently but need assistance with the basic tasks and activities of daily life.
+                            </p>
+                            <p class="lead color-theme-blue">
+                                Patient Care Assistance services include the following activities:
+                                <ul class="services-list my-3 ml-4 color-theme-blue lead">
+                                    <li>Medication reminders</li>
+                                    <li>Monitor skin condition</li>
+                                    <li>Personal care assistance</li>
+                                    <li>Appointment planning</li>
+                                    <li>Turning, positioning and transferring client</li>
+                                </ul>
+                                <a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
 									Give Us a Call Today</a>
-								</p>
-							</div>
-							<span class="read-more-btn cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
+                            </p>
+                        </div>
+                        <span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
 								<span id="caretTextPcaText"></span>
 
-								<i class="fa fa-caret-down fa-caret-down-icon text-bold lead" id="readMorePcaCaret"></i>
-							</span>
-						</div>
-					</div>
-					<!-- pca content -->
-					<!-- pca image -->
-					<div class="col-md-12 col-lg-6">
-						<div class="pca-bg services-bg"></div>
-					</div>
-					<!-- /pca image -->
-				</div>
+                        <i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMorePcaCaret"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- pca content -->
+                <!-- pca image -->
+                <div class="col-12 col-md-12 col-lg-6 mt-5">
+                    <div class="pca-bg services-bg  mt-5"></div>
+                </div>
+                <!-- /pca image -->
+            </div>
 
-			</div>
-		</section>
-		<!-- /Services main content -->
+        </div>
+    </section>
+    <!-- /Services main content -->
 
 
 		<?php $name = $_POST['name'];
