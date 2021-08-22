@@ -1,13 +1,18 @@
 {
   "liveServer.settings.port": 5501,
   "cSpell.words": [
+		"Brideport",
 		"bacfinc",
 		"buorg",
 		"buorgclose",
 		"eqeqeq",
 		"esversion",
+		"msapplication",
+		"newletter",
 		"pageview",
+		"precomposed",
 		"preconnect",
+		"progid",
 		"scaleout"
 	],
 	"workbench.editor.highlightModifiedTabs": true,
