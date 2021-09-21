@@ -10,7 +10,7 @@
 		<meta name="title" content="Joyful Care | Homemaking & Companionship">
 		<meta name="author" content="@bacfinc">
 		<meta name="description" content="Joyful Care | Homemaking & Companionship">
-		<meta name="keywords" content="home care, elserly, services, nanny, help for elderly">
+		<meta name="keywords" content="home care, elderly, services, nanny, help for elderly">
 		<meta http-equiv="Content-Type" content="text/html">
 		<meta name="theme-color" content="#285185">
 		<link rel="manifest" href="manifest.json">
@@ -208,120 +208,152 @@
 		</section>
 		<!-- /Hero -->
 
-	<!--Services main content -->
-	<section class="section services services-main-content">
-        <div class="container mt-5">
+		<!--Services main content -->
+		<section class="section services services-main-content">
+			<div class="container mt-5">
 
-            <div class="row">
-                <!-- Companionship image -->
-                <div class="col-12 col-md-12 col-lg-6  mb-lg-5">
-                    <div class="companionship-bg services-bg"></div>
-                </div>
-                <!-- /Companionship image -->
+				<div class="row">
+					<!-- Companionship image -->
+					<div class="col-12 col-md-12 col-lg-6  mb-lg-5">
+						<div class="companionship-bg services-bg"></div>
+					</div>
+					<!-- /Companionship image -->
 
-                <!-- Companionship content -->
-                <div class="col-12 col-md-12 col-lg-6 mt-2 mb-lg-5">
-                    <div class="card-icon d-inline">
-                        <img src="assets/services/s-companionship.svg" alt="friend icon" />
-                    </div>
-                    <span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
-                    <div class="sub-title">
-                        <h4 class="my-4">
-                            The Value of Friendship
-                        </h4>
-                        <p class="lead color-theme-blue">
-                            At Joyful Care, we provide lively social interactions for our clients through companionship service. Our trustworthy caregivers look after our clients with love, respect, and care.
-                        </p>
-                        <div class="color-theme-blue" id="readMoreCompanionship">
-                            <p class="lead">
-                                We make every effort to establish a positive relationship with the client. We strive to create memorable experiences full of enjoyable activities that bring smiles to their faces.
-                            </p>
-                            <p class="lead color-theme-blue">
-                                Joyful Care Companionship Services Include:
-                                <ul class="services-list my-3 ml-4 color-theme-blue lead">
-                                    <li>Round the clock service (24/7)</li>
-                                    <li>Light housekeeping</li>
-                                    <li>Social activities</li>
-                                    <li>Meal preparation</li>
-                                    <li>Laundry</li>
-                                    <li>Grocery shopping</li>
-                                    <li>Errands</li>
-                                    <li>Accompany to medical appointments</li>
-                                </ul>
-                                <a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+					<!-- Companionship content -->
+					<div class="col-12 col-md-12 col-lg-6 mt-2 mb-lg-5">
+						<div class="card-icon d-inline">
+							<img src="assets/services/s-companionship.svg" alt="friend icon" />
+						</div>
+						<span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
+						<div class="sub-title">
+							<h4 class="my-4">
+								The Value of Friendship
+							</h4>
+							<p class="lead color-theme-blue">
+								At Joyful Care, we provide lively social interactions for our clients through companionship service. Our
+								trustworthy caregivers look after our clients with love, respect, and care.
+							</p>
+							<div class="color-theme-blue" id="readMoreCompanionship">
+								<p class="lead">
+									We make every effort to establish a positive relationship with the client. We strive to create
+									memorable experiences full of enjoyable activities that bring smiles to their faces.
+								</p>
+								<p class="lead color-theme-blue">
+									Joyful Care Companionship Services Include:
+								<ul class="services-list my-3 ml-4 color-theme-blue lead">
+									<li>Round the clock service (24/7)</li>
+									<li>Light housekeeping</li>
+									<li>Social activities</li>
+									<li>Meal preparation</li>
+									<li>Laundry</li>
+									<li>Grocery shopping</li>
+									<li>Errands</li>
+									<li>Accompany to medical appointments</li>
+								</ul>
+								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
 									Give Us a Call Today</a>
-                            </p>
-                        </div>
-                        <span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMoreCompanionshipBtn">
+								</p>
+							</div>
+							<span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3"
+								id="readMoreCompanionshipBtn">
 								<span id="caretTextCompanionshipText"></span>
 
-                        <i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMoreCompanionshipCaret"></i>
-                        </span>
-                    </div>
-                </div>
-                <!-- Companionship content -->
-            </div>
+								<i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMoreCompanionshipCaret"></i>
+							</span>
+						</div>
+					</div>
+					<!-- Companionship content -->
+				</div>
 
-            <div class="row">
-                <!-- pca content -->
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class="card-icon d-inline">
-                        <img src="assets/services/s-pca.svg" alt="friend icon" />
-                    </div>
-                    <span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
-                    <div class="sub-title">
-                        <h4 class="my-4">
-                            Kick-off the Day with Assurance
-                        </h4>
-                        <p class="lead color-theme-blue">
-                            Joyful Care aims to provide affordable care and assistance to help patients live healthy, feel loved, and happy at home. Our trained and trustworthy care assistant helps the patient with daily activities and specific tasks.
-                        </p>
-                        <div class="readMorePca" id="readMorePca">
-                            <p class="lead color-theme-blue">
-                                Our Patient Care Assistance services can also meet the needs of seniors who want to live independently but need assistance with the basic tasks and activities of daily life.
-                            </p>
-                            <p class="lead color-theme-blue">
-                                Patient Care Assistance services include the following activities:
-                                <ul class="services-list my-3 ml-4 color-theme-blue lead">
-                                    <li>Medication reminders</li>
-                                    <li>Monitor skin condition</li>
-                                    <li>Personal care assistance</li>
-                                    <li>Appointment planning</li>
-                                    <li>Turning, positioning and transferring client</li>
-                                </ul>
-                                <a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+				<div class="row">
+					<!-- pca content -->
+					<div class="col-12 col-md-12 col-lg-6">
+						<div class="card-icon d-inline">
+							<img src="assets/services/s-pca.svg" alt="friend icon" />
+						</div>
+						<span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
+						<div class="sub-title">
+							<h4 class="my-4">
+								Kick-off the Day with Assurance
+							</h4>
+							<p class="lead color-theme-blue">
+								Joyful Care aims to provide affordable care and assistance to help patients live healthy, feel loved,
+								and happy at home. Our trained and trustworthy care assistant helps the patient with daily activities
+								and specific tasks.
+							</p>
+							<div class="readMorePca" id="readMorePca">
+								<p class="lead color-theme-blue">
+									Our Patient Care Assistance services can also meet the needs of seniors who want to live independently
+									but need assistance with the basic tasks and activities of daily life.
+								</p>
+								<p class="lead color-theme-blue">
+									Patient Care Assistance services include the following activities:
+								<ul class="services-list my-3 ml-4 color-theme-blue lead">
+									<li>Medication reminders</li>
+									<li>Monitor skin condition</li>
+									<li>Personal care assistance</li>
+									<li>Appointment planning</li>
+									<li>Turning, positioning and transferring client</li>
+								</ul>
+								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
 									Give Us a Call Today</a>
-                            </p>
-                        </div>
-                        <span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
+								</p>
+							</div>
+							<span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
 								<span id="caretTextPcaText"></span>
 
-                        <i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMorePcaCaret"></i>
-                        </span>
-                    </div>
-                </div>
-                <!-- pca content -->
-                <!-- pca image -->
-                <div class="col-12 col-md-12 col-lg-6 mt-5">
-                    <div class="pca-bg services-bg  mt-5"></div>
-                </div>
-                <!-- /pca image -->
-            </div>
+								<i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMorePcaCaret"></i>
+							</span>
+						</div>
+					</div>
+					<!-- pca content -->
+					<!-- pca image -->
+					<div class="col-12 col-md-12 col-lg-6 mt-5">
+						<div class="pca-bg services-bg  mt-5"></div>
+					</div>
+					<!-- /pca image -->
+				</div>
 
-        </div>
-    </section>
-    <!-- /Services main content -->
+			</div>
+		</section>
+		<!-- /Services main content -->
 
 
-		<?php $name = $_POST['name'];
+		<?php 
+$name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $formcontent="From: $name \n\n Message: $message";
 $recipient = "info@joyfulcarect.com";
-$subject = "Contact form message regarding Joyful Care";
+$subject = "Contact form message from Joyful Care";
 $mailheader = "From: $email \r\n";
+
+$recaptcha = $_POST['g-recaptcha-response'];
+$res = reCaptcha($recaptcha);
+if(!$res['success']){
+  // Error message
+	echo "There is an error verifying reCAPTCHA, please try again.";
+}
+
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 // echo "Thank You! Your message was sent successfully" . " -" . "<a href='../../index.html' class='cta-btn cta-link'> Return Home</a>";
+
+function reCaptcha($recaptcha){
+  $secret = "YOUR SECRET KEY";
+  $ip = $_SERVER['REMOTE_ADDR'];
+
+  $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
+  $url = "https://www.google.com/recaptcha/api/siteverify";
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+  $data = curl_exec($ch);
+  curl_close($ch);
+
+  return json_decode($data, true);
+}
 ?>
 
 		<!-- Footer -->
@@ -397,7 +429,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 					</div>
 					<!-- /Second column -->
 
-				<!-- Third column -->
+					<!-- Third column -->
 					<div class="col-sm-12 col-md-3 col-lg-4">
 						<div class="footer-title">
 							Newsletter
@@ -445,7 +477,8 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		<!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> -->
 		<script src="../../js/vendor/buorg.js"></script>
 
-		<!-- </script> -->
+		<!-- Google reCAPTCHA -->
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
 		</script>
