@@ -60,7 +60,6 @@
 		<!-- Vendor stylesheets -->
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/reset.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/animate.min.css">
-		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/linearicons.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/font-awesome.min.css">
 		<link rel="stylesheet" href="../../css/vendor/bootstrap.min.css" />
 		<link rel="stylesheet" href="../../css/vendor/owl.carousel.min.css" />
@@ -222,7 +221,7 @@
 					<!-- Companionship content -->
 					<div class="col-12 col-md-12 col-lg-6 mt-2 mb-lg-5">
 						<div class="card-icon d-inline">
-							<img src="assets/services/s-companionship.svg" alt="friend icon" />
+							<img src="../../assets/services/s-companionship.svg" alt="friend icon" />
 						</div>
 						<span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
 						<div class="sub-title">
@@ -269,7 +268,7 @@
 					<!-- pca content -->
 					<div class="col-12 col-md-12 col-lg-6">
 						<div class="card-icon d-inline">
-							<img src="assets/services/s-pca.svg" alt="friend icon" />
+							<img src="../../assets/services/s-pca.svg" alt="friend icon" />
 						</div>
 						<span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
 						<div class="sub-title">
@@ -333,6 +332,7 @@ $res = reCaptcha($recaptcha);
 if(!$res['success']){
   // Error message
 	echo "There is an error verifying reCAPTCHA, please try again.";
+	echo "<script='text/javascript'>alert('Error!');</script>";
 }
 
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
@@ -469,7 +469,7 @@ function reCaptcha($recaptcha){
 		<!-- ScrollToTop Button END-->
 
 		<!-- Vendor scripts -->
-		<script src="../../js/vendor/jquery-3.1.1.min.js"></script>
+		<script src="../../js/vendor/jquery-3.1.1.min.js"></script=;>
 		<script src="../../js/vendor/bootstrap.min.js"></script>
 		<script src="../../js/vendor/jquery-ui.js"></script>
 		<script src="../../js/vendor/magnific-popup.min.js"></script>
