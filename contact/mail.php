@@ -331,8 +331,7 @@ $recaptcha = $_POST['g-recaptcha-response'];
 $res = reCaptcha($recaptcha);
 if(!$res['success']){
   // Error message
-	echo "There is an error verifying reCAPTCHA, please try again.";
-	echo "<script='text/javascript'>alert('Error!');</script>";
+
 }
 
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
@@ -469,8 +468,10 @@ function reCaptcha($recaptcha){
 		<!-- ScrollToTop Button END-->
 
 		<!-- Vendor scripts -->
-		<script src="../../js/vendor/jquery-3.1.1.min.js"></script=;>
-		<script src="../../js/vendor/bootstrap.min.js"></script>
+		<script src="../../js/vendor/jquery-3.1.1.min.js">
+			< /script=;> <
+			script src = "../../js/vendor/bootstrap.min.js" >
+		</script>
 		<script src="../../js/vendor/jquery-ui.js"></script>
 		<script src="../../js/vendor/magnific-popup.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
