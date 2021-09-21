@@ -1,2 +1,4 @@
-# joyfulcare
-Geriatric Healthcare Services 
+#Joyful Care
+Joyful Care is a healthcare provider based in Connecticut.
+
+Geriatric Healthcare Services
