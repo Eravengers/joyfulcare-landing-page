@@ -1,19 +1,23 @@
 {
   "liveServer.settings.port": 5501,
   "cSpell.words": [
-		"Brideport",
+		"Adetona",
 		"bacfinc",
+		"Brideport",
 		"buorg",
 		"buorgclose",
 		"eqeqeq",
 		"esversion",
+		"Ganiat",
 		"msapplication",
 		"newletter",
 		"pageview",
 		"precomposed",
 		"preconnect",
 		"progid",
-		"scaleout"
+		"recaptcha",
+		"scaleout",
+		"sitekey"
 	],
 	"workbench.editor.highlightModifiedTabs": true,
 	"extensions.webWorker": true
