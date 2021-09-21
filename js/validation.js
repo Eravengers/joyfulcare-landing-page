@@ -220,10 +220,12 @@ function captchaAction() {
 	var captchaValue = grecaptcha.getResponse();
 	console.log("Resp" + captchaValue);
 	if (captchaValue === '') {
-		document.getElementById('captcha').innerHTML = "You can't leave Captcha Code empty";
+		document.getElementById('captcha').innerHTML = "Please verify you are not a bot";
 		return false;
 	} else {
-		document.getElementById('captcha').innerHTML = "Captcha completed";
+
+		// We do not need to give feedback at the moment
+		// document.getElementById('captcha').innerHTML = "Captcha completed";
 		return true;
 	}
 }
