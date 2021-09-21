@@ -120,7 +120,7 @@ function validateForm() {
 		document.getElementById(promptLocation).style.color = color;
 	}
 
-	if (validateName() === false || validateEmail() === false || validateMessage() === false) {
+	if (validateName() === false || validateEmail() === false || validateMessage() === false || captchaAction() === false) {
 
 		jsShow("submit-error");
 		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
@@ -136,18 +136,22 @@ function validateForm() {
 		return false; */
 	}
 
+
+
 }
 
 function showContactModal() {
 	contactDetailsModal.style.display = "block";
 	contactDetailsModal.style.opacity = 1;
-};
+}
+
+
 function clearFormInputs() {
 
 	// sets all contact inputs to empty
 	var clearedName = document.getElementById("formName").value = "",
-		clearedEmail = document.getElementById("formEmail").value = ""
-	clearedMessage = document.getElementById("formMessage").value = "";
+		clearedEmail = document.getElementById("formEmail").value = "",
+		clearedMessage = document.getElementById("formMessage").value = "";
 
 	/* console.log(`${clearedName}, ${clearedEmail}, ${clearedMessage}`) */
 
@@ -209,5 +213,17 @@ function validateNewsletterField() {
 		newsletterLocation.style.borderColor = "#d9534f";
 	} else {
 		newsletterLocation.style.borderColor = "#5cb85c";
+	}
+}
+
+function captchaAction() {
+	var captchaValue = grecaptcha.getResponse();
+	console.log("Resp" + captchaValue);
+	if (captchaValue === '') {
+		document.getElementById('captcha').innerHTML = "You can't leave Captcha Code empty";
+		return false;
+	} else {
+		document.getElementById('captcha').innerHTML = "Captcha completed";
+		return true;
 	}
 }

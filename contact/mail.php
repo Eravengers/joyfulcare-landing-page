@@ -60,7 +60,6 @@
 		<!-- Vendor stylesheets -->
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/reset.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/animate.min.css">
-		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/linearicons.min.css">
 		<link rel="stylesheet" type="text/css" media="all" href="../../css/vendor/font-awesome.min.css">
 		<link rel="stylesheet" href="../../css/vendor/bootstrap.min.css" />
 		<link rel="stylesheet" href="../../css/vendor/owl.carousel.min.css" />
