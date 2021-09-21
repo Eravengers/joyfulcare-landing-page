@@ -15,7 +15,9 @@
 		"precomposed",
 		"preconnect",
 		"progid",
-		"scaleout"
+		"recaptcha",
+		"scaleout",
+		"sitekey"
 	],
 	"workbench.editor.highlightModifiedTabs": true,
 	"extensions.webWorker": true
