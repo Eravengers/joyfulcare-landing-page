@@ -468,10 +468,8 @@ function reCaptcha($recaptcha){
 		<!-- ScrollToTop Button END-->
 
 		<!-- Vendor scripts -->
-		<script src="../../js/vendor/jquery-3.1.1.min.js">
-			< /script=;> <
-			script src = "../../js/vendor/bootstrap.min.js" >
-		</script>
+		<script src="../../js/vendor/jquery-3.1.1.min.js"></script>
+		<script src="../../js/vendor/bootstrap.min.js"></script>
 		<script src="../../js/vendor/jquery-ui.js"></script>
 		<script src="../../js/vendor/magnific-popup.min.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
