@@ -77,10 +77,31 @@ function validateMessage() {
 	}
 }
 
+function validateSelect() {
+	let selectBox = document.getElementById("service"),
+		selectedBoxValue = selectBox.options[selectBox.selectedIndex].value;
+	if (selectedBoxValue === "") {
+		producePrompt("Please select a service.", "select-error", "#d9534f");
+		// console.log(`The selected service is ${selectedBoxValue}`);
+		return false;
+	}
+	producePrompt("", "select-error", "#5cb85c");
+	console.log(selectedBoxValue);
+
+	return true;
+
+	function producePrompt(message, promptLocation, color) {
+
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
+}
+
 function validateForm() {
 	var nameLocation = document.getElementById("formName"),
 		emailLocation = document.getElementById("formEmail"),
 		messageLocation = document.getElementById("formMessage"),
+		selectLocation = document.getElementById("service"),
 		contactSubmitBtn = document.getElementById("contactSubmitBtn"),
 		closeContactModal = document.getElementById("closeContactModal"),
 		contactDetailsModal = document.getElementById("contactDetailsModal");
@@ -105,6 +126,13 @@ function validateForm() {
 		messageLocation.style.borderColor = "#5cb85c";
 	}
 
+	if (!validateSelect()) {
+		selectLocation.style.borderColor = "#d9534f";
+	} else {
+		selectLocation.style.borderColor = "#5cb85c";
+	}
+
+
 	function jsShow(id) {
 		document.getElementById(id).style.display = "block";
 	}
@@ -120,7 +148,7 @@ function validateForm() {
 		document.getElementById(promptLocation).style.color = color;
 	}
 
-	if (validateName() === false || validateEmail() === false || validateMessage() === false || captchaAction() === false) {
+	if (validateName() === false || validateEmail() === false || validateSelect() === false || validateMessage() === false || captchaAction() === false) {
 
 		jsShow("submit-error");
 		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
@@ -135,9 +163,6 @@ function validateForm() {
 		// Prevent page from reloading
 		return false; */
 	}
-
-
-
 }
 
 function showContactModal() {
@@ -147,25 +172,18 @@ function showContactModal() {
 
 
 function clearFormInputs() {
-
-	// sets all contact inputs to empty
-	var clearedName = document.getElementById("formName").value = "",
-		clearedEmail = document.getElementById("formEmail").value = "",
-		clearedMessage = document.getElementById("formMessage").value = "";
-
-	/* console.log(`${clearedName}, ${clearedEmail}, ${clearedMessage}`) */
-
 	restoreFormState();
 
 	function restoreFormState() {
+		document.getElementById("name-error").innerHTML = ""; // For name input
+		document.getElementById("email-error").innerHTML = ""; // For email input
+		document.getElementById("message-error").innerHTML = ""; // For message textarea
+		document.getElementById("select-error").innerHTML = ""; // For select dropdown
 
-		document.getElementById("name-error").innerHTML = "";
-		document.getElementById("email-error").innerHTML = "";
-		document.getElementById("message-error").innerHTML = "";
-
-		document.getElementById("formName").style.borderColor = "#ced4da";
-		document.getElementById("formEmail").style.borderColor = "#ced4da";
-		document.getElementById("formMessage").style.borderColor = "#ced4da";
+		document.getElementById("formName").style.borderColor = "#ced4da"; // For name input
+		document.getElementById("formEmail").style.borderColor = "#ced4da"; // For email input
+		document.getElementById("formMessage").style.borderColor = "#ced4da"; // For message textarea
+		document.getElementById("selectLocation").style.borderColor = "#ced4da"; // For select dropdown
 	}
 }
 
@@ -218,7 +236,7 @@ function validateNewsletterField() {
 
 function captchaAction() {
 	var captchaValue = grecaptcha.getResponse();
-	console.log("Resp" + captchaValue);
+	// console.log("Resp" + captchaValue);
 	if (captchaValue === '') {
 		document.getElementById('captcha').innerHTML = "Please verify you are not a bot";
 		return false;
