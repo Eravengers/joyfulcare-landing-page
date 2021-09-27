@@ -418,13 +418,16 @@
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="service" class="displayNone">Choose a service</label>
-									<select name="Service I want" id="service" class="form-control" required>
-										<option value="--">-- Service I want --</option>
+									<select name="Service I want is" id="service" class="form-control" required>
+										<option value="">-- Service I want is --</option>
 										<option value="Companionship">Companionship</option>
 										<option value="Patient Care Assistance">Patient Care Assistance</option>
 									</select>
+
+									<!-- Display errors -->
+									<p class="error-message" id="select-error"></p>
 								</div>
-								
+
 								<div class="form-group">
 									<!-- Remove .displayNone to display the label -->
 									<label for="message" class="displayNone">Your message</label>

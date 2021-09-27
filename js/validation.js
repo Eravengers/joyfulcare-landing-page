@@ -77,6 +77,26 @@ function validateMessage() {
 	}
 }
 
+function validateSelect() {
+	let selectBox = document.getElementById("service"),
+		selectedBoxValue = selectBox.options[selectBox.selectedIndex].value;
+	if (selectedBoxValue === "") {
+		producePrompt("Please select a service.", "select-error", "#d9534f");
+		// console.log(`The selected service is ${selectedBoxValue}`);
+		return false;
+	}
+		producePrompt("", "select-error", "#5cb85c");
+		console.log(selectedBoxValue);
+
+		return true;
+
+	function producePrompt(message, promptLocation, color) {
+
+		document.getElementById(promptLocation).innerHTML = message;
+		document.getElementById(promptLocation).style.color = color;
+	}
+}
+
 function validateForm() {
 	var nameLocation = document.getElementById("formName"),
 		emailLocation = document.getElementById("formEmail"),
@@ -105,6 +125,19 @@ function validateForm() {
 		messageLocation.style.borderColor = "#5cb85c";
 	}
 
+
+	if (!validateSelect()) {
+		messageLocation.style.borderColor = "#d9534f";
+	} else {
+		messageLocation.style.borderColor = "#5cb85c";
+	}
+
+	if (!captchaAction()) {
+		messageLocation.style.borderColor = "#d9534f";
+	} else {
+		messageLocation.style.borderColor = "#5cb85c";
+	}
+
 	function jsShow(id) {
 		document.getElementById(id).style.display = "block";
 	}
@@ -120,7 +153,7 @@ function validateForm() {
 		document.getElementById(promptLocation).style.color = color;
 	}
 
-	if (validateName() === false || validateEmail() === false || validateMessage() === false || captchaAction() === false) {
+	if (validateName() === false || validateEmail() === false || validateSelect() === false || validateMessage() === false || captchaAction() === false) {
 
 		jsShow("submit-error");
 		producePrompt("Please fix errors to submit.", "submit-error", "#d9534f");
@@ -218,7 +251,7 @@ function validateNewsletterField() {
 
 function captchaAction() {
 	var captchaValue = grecaptcha.getResponse();
-	console.log("Resp" + captchaValue);
+	// console.log("Resp" + captchaValue);
 	if (captchaValue === '') {
 		document.getElementById('captcha').innerHTML = "Please verify you are not a bot";
 		return false;
