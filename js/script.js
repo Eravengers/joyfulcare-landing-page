@@ -12,6 +12,31 @@ $(function () {
 		btnToggler.children().toggleClass("displayNone");
 	});
 
+	// Accordion
+	var accordion = document.getElementsByClassName("accordion");
+
+	var i;
+	for (i = 0; i < accordion.length; i++) {
+		accordion[i].addEventListener("click", function () {
+			// Toggle between adding and removing active class to accordion
+			this.classList.toggle("active");
+
+			// Toggle between hiding and showing the dropdown menu
+
+			var dropDownMenu = this.nextElementSibling;
+
+			if (dropDownMenu.style.display === "block") {
+				dropDownMenu.style.display = "none";
+			} else {
+				dropDownMenu.style.display = "block";
+			}
+		});
+		// Clicking outside the accordion
+		outsideElement = this.parentElement;
+
+	}
+
+
 	// ScrollToTop
 
 	$(window).scroll(function () {
@@ -37,25 +62,21 @@ $(function () {
 				event.preventDefault();
 
 				// Store hash
-				var hash = this.hash,
-					offset = 300;
-				if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+				var hash = this.hash;
 
 				// Using jQuery's animate() method to add smooth page scroll
 				// The optional number (300) specifies the number of milliseconds it takes to scroll to the specified area
-				$('body').animate({
-					scrollTop: $(hash).offset().top - offset
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
 				}, 300, function () {
 
 					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;
-
-					// console.log(`Loc without Off: ${$(hash).offset().top} Loc with Off: ${$(hash).offset().top - offset} `);
 				});
-				return false;
 			} // End if
 		});
 	});
+
 
 	// Add current year to copyright
 	let date = new Date();
@@ -71,7 +92,7 @@ $(function () {
 		var modalText = button.data('text'); // Extract info from data-* attributes
 		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-		var modal = $(this)
+		var modal = $(this);
 		modal.find('.modal-title').html(modalTitle);
 		modal.find('.modal-subtitle').html(modalSubTitle);
 		modal.find('.modal-text').html(modalText);
@@ -99,12 +120,12 @@ $(function () {
 			// Alternate between texts
 			if (newText === "Read more") {
 				newText = "Read less";
-				readMoreCompanionshipCaret.addClass("fa-minus-circle");
-				readMoreCompanionshipCaret.removeClass("fa-plus-circle");
+				readMoreCompanionshipCaret.addClass("fa-caret-up");
+				readMoreCompanionshipCaret.removeClass("fa-caret-down");
 			} else {
 				newText = "Read more";
-				readMoreCompanionshipCaret.removeClass("fa-minus-circle");
-				readMoreCompanionshipCaret.addClass("fa-plus-circle");
+				readMoreCompanionshipCaret.removeClass("fa-caret-up");
+				readMoreCompanionshipCaret.addClass("fa-caret-down");
 			}
 
 			readMoreCompanionshipText.text(newText); //sets new text
@@ -129,12 +150,12 @@ $(function () {
 			// Alternate between texts
 			if (newText === "Read more") {
 				newText = "Read less";
-				readMorePcaCaret.addClass("fa-minus-circle");
-				readMorePcaCaret.removeClass("fa-plus-circle");
+				readMorePcaCaret.addClass("fa-caret-up");
+				readMorePcaCaret.removeClass("fa-caret-down");
 			} else {
 				newText = "Read more";
-				readMorePcaCaret.removeClass("fa-minus-circle");
-				readMorePcaCaret.addClass("fa-plus-circle");
+				readMorePcaCaret.removeClass("fa-caret-up");
+				readMorePcaCaret.addClass("fa-caret-down");
 			}
 
 			readMorePcaText.text(newText); //sets new text
@@ -144,5 +165,7 @@ $(function () {
 	}
 
 	readMoreLess();
+
+
 
 }(jQuery));

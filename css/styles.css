@@ -309,7 +309,7 @@ section.section:not(section.hero.index-hero) {
 
 section.hero {
 	display: block;
-	background-color: #285185;
+	background-color: var(--color-primary, #288a4f);
 	box-shadow: 0 0 0 2000px var(--color-primary, #288a4f) inset;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -394,8 +394,8 @@ section.hero.faq-hero {
 	background-color: var(--color-white, #fff);
 }
 
-.card-icon.card-icon-blue {
-	background-color: #285185;
+.card-icon.card-icon-primary {
+	background-color: var(--color-primary, #288a4f);
 }
 
 .cards .card-icon img {
@@ -496,7 +496,7 @@ section.services-home {
 }
 
 .services .services-card {
-	background-color: #285185;
+	background-color: var(--color-primary, #288a4f);
 }
 
 .services .cards.card {
@@ -633,7 +633,7 @@ section.services-home {
 
 .dropdown-menu {
 	font-weight: normal;
-	background-color: #285185;
+	background-color: var(--color-primary, #288a4f);
 	color: var(--color-white, #fff);
 	width: 100%;
 	font-weight: normal;
@@ -991,7 +991,7 @@ footer.footer {
 
 @media screen and (min-width: 801px) {
 	section.hero.index-hero {
-		background-color: #285185;
+		background-color: var(--color-primary, #288a4f);
 		background-image: none;
 	}
 
