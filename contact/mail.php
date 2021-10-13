@@ -223,23 +223,23 @@
 						<div class="card-icon d-inline">
 							<img src="../../assets/services/s-companionship.svg" alt="friend icon" />
 						</div>
-						<span class="title color-theme-blue ml-3 my-3 text-bold">Companionship</span>
+						<span class="title color-theme-primary ml-3 my-3 text-bold">Companionship</span>
 						<div class="sub-title">
 							<h4 class="my-4">
 								The Value of Friendship
 							</h4>
-							<p class="lead color-theme-blue">
+							<p class="lead color-theme-primary">
 								At Joyful Care, we provide lively social interactions for our clients through companionship service. Our
 								trustworthy caregivers look after our clients with love, respect, and care.
 							</p>
-							<div class="color-theme-blue" id="readMoreCompanionship">
+							<div class="color-theme-primary" id="readMoreCompanionship">
 								<p class="lead">
 									We make every effort to establish a positive relationship with the client. We strive to create
 									memorable experiences full of enjoyable activities that bring smiles to their faces.
 								</p>
-								<p class="lead color-theme-blue">
+								<p class="lead color-theme-primary">
 									Joyful Care Companionship Services Include:
-								<ul class="services-list my-3 ml-4 color-theme-blue lead">
+								<ul class="services-list my-3 ml-4 color-theme-primary lead">
 									<li>Round the clock service (24/7)</li>
 									<li>Light housekeeping</li>
 									<li>Social activities</li>
@@ -249,11 +249,11 @@
 									<li>Errands</li>
 									<li>Accompany to medical appointments</li>
 								</ul>
-								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+								<a href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
 									Give Us a Call Today</a>
 								</p>
 							</div>
-							<span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3"
+							<span class="text-bold color-theme-primary cta-btn text-right read-more-btn--right mt-3"
 								id="readMoreCompanionshipBtn">
 								<span id="caretTextCompanionshipText"></span>
 
@@ -270,35 +270,35 @@
 						<div class="card-icon d-inline">
 							<img src="../../assets/services/s-pca.svg" alt="friend icon" />
 						</div>
-						<span class="title color-theme-blue ml-3 my-3 text-bold">Patient Care Assistance</span>
+						<span class="title color-theme-primary ml-3 my-3 text-bold">Patient Care Assistance</span>
 						<div class="sub-title">
 							<h4 class="my-4">
 								Kick-off the Day with Assurance
 							</h4>
-							<p class="lead color-theme-blue">
+							<p class="lead color-theme-primary">
 								Joyful Care aims to provide affordable care and assistance to help patients live healthy, feel loved,
 								and happy at home. Our trained and trustworthy care assistant helps the patient with daily activities
 								and specific tasks.
 							</p>
 							<div class="readMorePca" id="readMorePca">
-								<p class="lead color-theme-blue">
+								<p class="lead color-theme-primary">
 									Our Patient Care Assistance services can also meet the needs of seniors who want to live independently
 									but need assistance with the basic tasks and activities of daily life.
 								</p>
-								<p class="lead color-theme-blue">
+								<p class="lead color-theme-primary">
 									Patient Care Assistance services include the following activities:
-								<ul class="services-list my-3 ml-4 color-theme-blue lead">
+								<ul class="services-list my-3 ml-4 color-theme-primary lead">
 									<li>Medication reminders</li>
 									<li>Monitor skin condition</li>
 									<li>Personal care assistance</li>
 									<li>Appointment planning</li>
 									<li>Turning, positioning and transferring client</li>
 								</ul>
-								<a href="tel:2032433990" class="color-theme-orange cta-link text-bold">
+								<a href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
 									Give Us a Call Today</a>
 								</p>
 							</div>
-							<span class="text-bold color-theme-blue cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
+							<span class="text-bold color-theme-primary cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
 								<span id="caretTextPcaText"></span>
 
 								<i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMorePcaCaret"></i>
