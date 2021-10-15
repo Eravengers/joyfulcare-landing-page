@@ -275,8 +275,13 @@ div#preloader {
 /* Navigation */
 
 .logo {
-	width: 120px;
-	height: auto;
+	max-width: 160px;
+	height: 100px;
+	background-size: 120px 120px;
+}
+
+.navbar {
+	padding: 0 !important;
 }
 
 .navbar-nav {
