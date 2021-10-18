@@ -93,6 +93,8 @@
 		<link rel="apple-touch-icon" href="img/favicons/logo.png">
 		<link rel="mask-icon" href="img/favicons/logo.png" color="#285185">
 
+		<script src="https://dyupuz6787mty.cloudfront.net/packages/jquery-1.11.3.min.js"></script>
+		<script src="https://dyupuz6787mty.cloudfront.net/packages/typed.min.js"></script>
 
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -205,7 +207,9 @@
 							</div>
 							<h1>
 								<span class="color-theme-white">Your Safety is our</span>
-								<span class="color-theme-secondary"> #1 Priority </span>
+								<span class="color-theme-secondary typed">
+								</span>
+
 							</h1>
 							<p class="hero-description text-description color-theme-white text-leftP
 												">
@@ -395,7 +399,8 @@
 									Give Us a Call Today</a>
 								</p>
 							</div>
-							<span class="text-bold color-theme-primary cta-btn text-right read-more-btn--right mt-3" id="readMorePcaBtn">
+							<span class="text-bold color-theme-primary cta-btn text-right read-more-btn--right mt-3"
+								id="readMorePcaBtn">
 								<span id="caretTextPcaText"></span>
 
 								<i class="fa fa-plus-circle fa-plus-minus-icon text-bold lead" id="readMorePcaCaret"></i>
@@ -833,13 +838,13 @@
 		<!-- ScrollToTop Button END-->
 
 		<!-- Vendor scripts -->
-		<script src="js/vendor/jquery-3.1.1.min.js"></script>
+		<!-- Commented this because of the jQuery in the head tag -->
+		<!-- <script src="js/vendor/jquery-3.1.1.min.js"></script> -->
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/vendor/jquery-ui.js"></script>
 		<script src="js/vendor/magnific-popup.min.js"></script>
 		<script src="js/vendor/popper.min.js"></script>
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
-		<!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> -->
+
 
 		<!-- </script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -848,11 +853,24 @@
 
 		<!-- Google reCAPTCHA -->
 		<script src="https://www.google.com/recaptcha/api.js"></script>
-		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" -->
-		<!-- integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"> -->
+
 		<!-- </script> -->
 		<script src="js/vendor/buorg.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script>
+			$(document).ready(function () {
+				/* typed effect */
+				$(".typed").typed({
+					strings: ["#1 Priority", "#1 Concern", "#1 Goal"],
+					typeSpeed: 100,
+					fadeOut: true,
+					fadeOutDelay: 300,
+					loop: true,
+					startDelay: 1000,
+					backDelay: 1000,
+					showCursor: false
+				});
+			});
+		</script>
 		<!-- Custom script -->
 		<script src="js/script.js" async defer></script>
 		<script src="js/validation.js"></script>
