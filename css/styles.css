@@ -73,6 +73,12 @@ a.cta-btn {
 	color: var(--color-secondary, #8a2863);
 }
 
+section.section>.container,
+header.section>.container,
+footer.section>.container {
+	max-width: 1280px;
+}
+
 .title {
 	font-weight: 700;
 	font-size: 1.925rem;
