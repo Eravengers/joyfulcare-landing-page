@@ -14,11 +14,11 @@
 }
 
 .color-theme-primary {
-	color: var(--color-primary, #288a4f);
+	color: var(--color-primary, #285185);
 }
 
 .color-theme-secondary {
-	color: var(--color-secondary, #8a2863);
+	color: var(--color-secondary, #d67940);
 }
 
 .color-theme-tertiary {
