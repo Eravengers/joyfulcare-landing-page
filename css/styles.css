@@ -73,7 +73,11 @@ a.cta-btn {
 	color: var(--color-secondary, #8a2863);
 }
 
-section.section>.container,
+section.section {
+	max-width: 100%;
+}
+
+section.section>.container:not(section.section.hero>.container),
 header.section>.container,
 footer.footer>.container {
 	max-width: 1280px;
@@ -82,6 +86,12 @@ footer.footer>.container {
 .title {
 	font-weight: 700;
 	font-size: 1.925rem;
+}
+
+.typed {
+	min-height: 60px;
+	width: 100%;
+	display: flex;
 }
 
 .heading-outline {
@@ -97,9 +107,9 @@ footer.footer>.container {
 	font-weight: 700;
 	width: 100%;
 	max-width: 100%;
-	/* margin-bottom: 0.525rem; */
-	/* Set display to content to automatically add margin between each words */
-	/* display: contents; */
+	margin-bottom: 0.525rem;
+	/* Set display to content to automatically add margin between each words  */
+	display: contents;
 }
 
 .heading-outline.sent-message {
@@ -282,7 +292,7 @@ div#preloader {
 
 .logo {
 	max-width: 160px;
-	height: 100px;
+	height: auto;
 	background-size: 120px 120px;
 }
 
