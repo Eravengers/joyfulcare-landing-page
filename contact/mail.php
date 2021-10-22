@@ -142,7 +142,7 @@
 		<!-- End Google Tag Manager (noscript) -->
 	</head>
 
-	<body>
+	<body id="top">
 		<!-- Preloader -->
 		<!-- Remove displayNone to display preloader -->
 		<div id="preloader" class="displayNone">
@@ -153,7 +153,7 @@
 		<!-- Content start -->
 
 		<!-- Header -->
-		<header id="top">
+		<header class="section fixed-header">
 
 			<div class="container">
 				<!-- Navigation -->

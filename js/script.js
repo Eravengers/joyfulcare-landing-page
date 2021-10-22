@@ -65,10 +65,9 @@ $(function () {
 				var hash = this.hash;
 
 				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (300) specifies the number of milliseconds it takes to scroll to the specified area
 				$('html, body').animate({
 					scrollTop: $(hash).offset().top
-				}, 300, function () {
+				}, 0, function () { // 0 represent the number of sec to delay
 
 					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;

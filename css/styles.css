@@ -69,9 +69,11 @@ a.cta-btn {
 	text-decoration: none !important;
 }
 
-.navbar-nav .nav-link.active {
+
+/* Commented as a request from Segun/ */
+/* .navbar-nav .nav-link.active {
 	color: var(--color-secondary, #d67940);
-}
+} */
 
 section.section {
 	max-width: 100%;
@@ -382,7 +384,6 @@ section.hero.faq-hero {
 	border-radius: 2px;
 	display: block;
 	padding: 1rem;
-	cursor: pointer;
 }
 
 .card-icon {
