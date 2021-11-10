@@ -210,7 +210,7 @@
 		<!-- /Hero -->
 
 		<!--Services main content -->
-		<section class="section services services-main-content">
+		<section data-animate="fadeInUp" class="section services services-main-content">
 			<div class="container mt-5">
 
 				<div class="row">
@@ -358,7 +358,7 @@ function reCaptcha($recaptcha){
 ?>
 
 		<!-- Footer -->
-		<footer class="footer" id="footer">
+		<footer data-animate="fadeInUp" class="footer" id="footer">
 			<div class="container">
 				<div class="row">
 
