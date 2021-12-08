@@ -329,9 +329,12 @@ section.section:not(section.hero.index-hero) {
 section.hero {
 	display: block;
 	background-color: var(--color-primary, #285185);
-	box-shadow: 0 0 0 2000px var(--color-primary, #285185) inset;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+section.hero:not(section.hero.faq-hero) {
+	box-shadow: 0 0 0 2000px var(--color-primary, #285185) inset;
 }
 
 section.hero.index-hero {
