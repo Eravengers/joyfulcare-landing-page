@@ -5,6 +5,8 @@ $(function () {
 	// let preloaderCont = $("#preloader");
 	// preloaderCont.delay(2000).fadeOut(200); // hide preloaderCont in 2s
 
+  console.info("Ξunit");
+
 
 	// Navbar toggler
 	let btnToggler = $(".navbar-toggler");
