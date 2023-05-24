@@ -160,7 +160,7 @@
 			<div class="container">
 				<!-- Navigation -->
 				<nav class="navbar navbar-expand-lg">
-					<a class="navbar-brand justify-start" href="../../index.html">
+					<a hrefLang="en-us" class="navbar-brand justify-start" href="../../index.html">
 						<img src="../../assets/Logo.svg" class="logo" alt="Joyful care logo" />
 					</a>
 					<button class="navbar-toggler noOutline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -172,16 +172,16 @@
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link mr-4" href="../../index.html">Home</a>
+								<a hrefLang="en-us" class="nav-link mr-4" href="../../index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4" href="../../index.html#services">Our Services</a>
+								<a hrefLang="en-us" class="nav-link mr-4" href="../../index.html#services">Our Services</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4" href="../../index.html#about">About Us</a>
+								<a hrefLang="en-us" class="nav-link mr-4" href="../../index.html#about">About Us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link mr-4 button contact-us-btn" href="../../index.html#contact">Contact Us</a>
+								<a hrefLang="en-us" class="nav-link mr-4 button contact-us-btn" href="../../index.html#contact">Contact Us</a>
 							</li>
 						</ul>
 					</div>
@@ -251,7 +251,7 @@
 									<li>Errands</li>
 									<li>Accompany to medical appointments</li>
 								</ul>
-								<a href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
+								<a hrefLang="en-us" href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
 									Give Us a Call Today</a>
 								</p>
 							</div>
@@ -296,7 +296,7 @@
 									<li>Appointment planning</li>
 									<li>Turning, positioning and transferring client</li>
 								</ul>
-								<a href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
+								<a hrefLang="en-us" href="tel:2032433990" class="color-theme-secondary cta-link text-bold">
 									Give Us a Call Today</a>
 								</p>
 							</div>
@@ -337,7 +337,7 @@ if(!$res['success']){
 }
 
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-// echo "Thank You! Your message was sent successfully" . " -" . "<a href='../../index.html' class='cta-btn cta-link'> Return Home</a>";
+// echo "Thank You! Your message was sent successfully" . " -" . "<a hrefLang="en-us" href='../../index.html' class='cta-btn cta-link'> Return Home</a>";
 
 function reCaptcha($recaptcha){
   $secret = "YOUR SECRET KEY";
@@ -367,33 +367,33 @@ function reCaptcha($recaptcha){
 						<div class="footer-logo">
 							<img src="../../assets/Logo footer.svg" alt="Joyful Care logo" class="">
 						</div>
-						<address class="footer-address">
+						<a hrefLang="en-us"ddress class="footer-address">
 							14 Glen Pl, Bridgeport CT 06610
 						</address>
 						<div class="legal">
 							<span class="copyright" id="copyright">
 							</span>
 							<span class="legal-link">
-								<a href="privacy.html">Privacy</a>
+								<a hrefLang="en-us" href="privacy.html">Privacy</a>
 								-
-								<a href="terms.html">Terms</a>
+								<a hrefLang="en-us" href="terms.html">Terms</a>
 							</span>
 						</div>
 
 						<!-- Social media icons -->
 						<div class="stay-connected d-inline">
 							<div class="social-icons">
-								<a href="#" title="Joyful Care on Facebook" class="social-icon">
+								<a hrefLang="en-us" href="#" title="Joyful Care on Facebook" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/facebook-icon.svg"
 										alt="Joyful Care on Facebook" srcset="../../assets/Icons/social-icons/facebook-icon.svg">
 								</a>
 
-								<a href="#" title="Joyful Care on Twitter" class="social-icon">
+								<a hrefLang="en-us" href="#" title="Joyful Care on Twitter" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/twitter-icon.svg"
 										alt="Joyful Care on Twitter" srcset="../../assets/Icons/social-icons/twitter-icon.svg">
 								</a>
 
-								<a href="#" title="Joyful Care on Instagram" class="social-icon">
+								<a hrefLang="en-us" href="#" title="Joyful Care on Instagram" class="social-icon">
 									<img class="social-icon" src="../../assets/Icons/social-icons/instagram-icon.svg"
 										alt="Joyful Care on Instagram" srcset="../../assets/Icons/social-icons/instagram-icon.svg">
 								</a>
@@ -411,19 +411,19 @@ function reCaptcha($recaptcha){
 						<div class="footer-links-container">
 							<ul class="footer-links">
 								<li class="footer-link">
-									<a href="../../index.html">Home</a>
+									<a hrefLang="en-us" href="../../index.html">Home</a>
 								</li>
 								<li class="footer-link">
-									<a href="../../index.html#about">About Us</a>
+									<a hrefLang="en-us" href="../../index.html#about">About Us</a>
 								</li>
 								<li class="footer-link">
-									<a href="../../index.html#services">Our Services</a>
+									<a hrefLang="en-us" href="../../index.html#services">Our Services</a>
 								</li>
 								<li class="footer-link">
-									<a href="../../index.html#contact">Contact Us</a>
+									<a hrefLang="en-us" href="../../index.html#contact">Contact Us</a>
 								</li>
 								<li class="footer-link">
-									<a href="../../faq.html">FAQ</a>
+									<a hrefLang="en-us" href="../../faq.html">FAQ</a>
 								</li>
 							</ul>
 						</div>
@@ -462,7 +462,7 @@ function reCaptcha($recaptcha){
 
 				<div class="col">
 					<div class="col-xs-12 col-12 text-center mt-3">
-						Developed with love by <a rel="noreferrer noopener" target="_blank"
+						Developed with love by <a hrefLang="en-us" rel="noreferrer noopener" target="_blank"
 							href="https://bacfinc.com/?utm_source=Joyful+Care" class="footer-link credit-link">BACF Inc.
 						</a>
 					</div>
@@ -473,7 +473,7 @@ function reCaptcha($recaptcha){
 		<!-- /Footer -->
 
 		<!-- ScrollToTop Button -->
-		<a class="btn scrollToTop hideScrollTop" href="#top">
+		<a hrefLang="en-us" class="btn scrollToTop hideScrollTop" href="#top">
 			<img src="../../assets/Scroll up.svg" alt="Scroll top">
 		</a>
 		<!-- ScrollToTop Button END-->
